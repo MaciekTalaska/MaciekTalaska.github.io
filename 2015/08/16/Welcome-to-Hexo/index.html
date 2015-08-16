@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Checking out hexo! | Not only zeroes and ones</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hello, this is supposed to be a very first note written in Hexo. Let’s see some basics features of it:
+Hm… how about code?
+Hexo supports codeblocks…
+this is how it highlights Python…
+somepy1234567impo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Checking out hexo!">
+<meta property="og:url" content="http://yoursite.com/2015/08/16/Welcome-to-Hexo/index.html">
+<meta property="og:site_name" content="Not only zeroes and ones">
+<meta property="og:description" content="Hello, this is supposed to be a very first note written in Hexo. Let’s see some basics features of it:
+Hm… how about code?
+Hexo supports codeblocks…
+this is how it highlights Python…
+somepy1234567impo">
+<meta property="og:updated_time" content="2015-08-16T15:29:44.775Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Checking out hexo!">
+<meta name="twitter:description" content="Hello, this is supposed to be a very first note written in Hexo. Let’s see some basics features of it:
+Hm… how about code?
+Hexo supports codeblocks…
+this is how it highlights Python…
+somepy1234567impo">
+  <!-- build:css css/screen.css -->
+
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  
+  <!-- endbuild -->
+  
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+  <meta name="generator" content="Not only zeroes and ones">
+  
+  
+  
+</head>
+
+
+<body class="post-template">
+
+  <header class="main-header post-head no-cover" >
+    <nav class="main-nav  clearfix">
+        
+<!--        <a class="back-button icon-arrow-left" href="/">Home</a> -->
+        <a class="subscribe-button icon-feed" href="/atom.xml">Subscribe</a>
+    </nav>
+    
+<!--    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a> -->
+</header>
+
+  
+
+<main id="content" class="content" role="main">
+  <article class="post" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name">Checking out hexo!</h1>
+      <section class="post-meta">
+  <time datetime="2015-08-16T10:30:08.000Z" itemprop="datePublished" class="post-date">
+      2015-08-16
+  </time>
+  
+</section>
+
+    </header>
+    <section class="post-content" itemprop="description articleBody">
+      
+
+      
+      <p>Hello, this is supposed to be a very first note written in Hexo. Let’s see some basics features of it:</p>
+<p>Hm… how about code?</p>
+<p>Hexo supports codeblocks…</p>
+<p>this is how it highlights Python…</p>
+<figure class="highlight python"><figcaption><span>somepy</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span><span class="params">()</span>:</span></span><br><span class="line">  print(sys.info)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</span><br><span class="line">  my_func()</span><br></pre></td></tr></table></figure>          
+<p><br></p>
+<p>JavaScript:<br><figure class="highlight javascript"><figcaption><span>some simple AngularJS controller</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'angularFullstackApp'</span>)</span><br><span class="line">  .controller(<span class="string">'CategoryCtrl'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope, hierarchy, $location</span>) </span>&#123;</span><br><span class="line">    $scope.message = <span class="string">'Hello'</span>;</span><br><span class="line"></span><br><span class="line">    $scope.categories = [];</span><br><span class="line"></span><br><span class="line">    $scope.populateCategories = <span class="function"><span class="keyword">function</span>(<span class="params">allCategories</span>) </span>&#123;</span><br><span class="line">      $scope.categories = allCategories;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $scope.categoryClicked = <span class="function"><span class="keyword">function</span>(<span class="params">categoryId</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'category clicked: '</span>, categoryId);</span><br><span class="line">      $location.url(<span class="string">'/topics'</span>).search(<span class="string">'category'</span>,categoryId);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hierarchy.getAllCategories().then($scope.populateCategories);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p>…and Go:<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> main() &#123;</span><br><span class="line">  fmt.Println(<span class="string">"Hello World from Go!"</span>)</span><br><span class="line">  <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="number">20</span>; i++ &#123;</span><br><span class="line">    <span class="keyword">var</span> t = <span class="string">""</span></span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span> &#123;</span><br><span class="line">      t = <span class="string">"even"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      t = <span class="string">"odd"</span></span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"Number: %02d binary: %05b octal: %02o %#x\t is %v\n"</span>, i, i, i, i, t)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>and this… is how displaying gist looks like:</p>
+<script src="//gist.github.com/38c4ca8e73d9792f8eae.js"></script>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>Maciek Talaska</h4>
+    <p>?</p>
+    
+    <div class="author-meta">
+      <span class="author-location icon-location">Location</span>
+      <span class="author-link icon-link"><a href="Website">Website</a></span>
+    
+      <section>
+        
+          <a href="https://twitter.com/**profile**" class="author-social">twitter</a>
+        
+          <a href="https://plus.google.com/**profile**" class="author-social">google+</a>
+        
+          <a href="https://github.com/**profile**" class="author-social">github</a>
+        
+      </section>
+    </div>
+</section>
+
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://yoursite.com/2015/08/16/Welcome-to-Hexo/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/08/16/Welcome-to-Hexo/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://yoursite.com/2015/08/16/Welcome-to-Hexo/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+  
+  <span class="page-number">•</span>
+  
+</nav>
+
+  
+</div>
+
+</main>
+
+
+  <footer class="site-footer clearfix">
+ <section class="copyright"><a href="/">Not only zeroes and ones</a> &copy; 2015 &bull; All rights reserved.</section>
+ <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/"> Hexo</a></section>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js"><\/script>')</script>
+
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+
+
+</body>
+</html>
