@@ -4,7 +4,7 @@
   <subtitle><![CDATA[code is a modern poetry]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2015-08-16T21:56:48.434Z</updated>
+  <updated>2015-11-07T23:46:38.433Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -13,6 +13,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Go 1.5.x on Kubuntu using fish shell and gvm]]></title>
+    <link href="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/"/>
+    <id>http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/</id>
+    <published>2015-11-07T22:16:08.000Z</published>
+    <updated>2015-11-07T23:46:38.433Z</updated>
+    <content type="html"><![CDATA[<p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It was not good enough even for learning purposes.</p>
+<p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="external">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
+<p>What if need to use two different versions of Go? How do I manage them?</p>
+<p>The best thing is to use something similar to nvm (NodeJS Version Manager) or RVM (Ruby Version Manager). As I am using fish shell instead of bash, things are a bit more complicated. There are couple of steps required to have Go 1.5.x installed on Linux, and make the whole thing work with fish shell.</p>
+<ol>
+<li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="external">https://github.com/moovweb/gvm</a>)</li>
+<li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212</a>). You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="external">https://github.com/edc/bass</a>)</li>
+<li><code>gvm install go1.5.x</code> will not work, as Go 1.5.x requires Go 1.4.x for compilation. Install Go 1.4.x first (<code>gvm install go1.4.3</code>)</li>
+<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Failed to compile. <span class="operator"><span class="keyword">Check</span> the <span class="keyword">logs</span> <span class="keyword">at</span> /home/&lt;username&gt;/.gvm/<span class="keyword">logs</span>/<span class="keyword">go</span>-go1<span class="number">.5</span><span class="number">.1</span>-compile.<span class="keyword">log</span></span><br><span class="line"><span class="keyword">ERROR</span>: <span class="keyword">Failed</span> <span class="keyword">to</span> <span class="keyword">use</span> installed <span class="keyword">version</span></span><br><span class="line">Installing go1<span class="number">.5</span><span class="number">.1</span>...</span><br><span class="line"> * Compiling...</span></span><br></pre></td></tr></table></figure>
+In my case the log content was: <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##### Building Go bootstrap tool.                                             </span></span><br><span class="line">cmd/dist</span><br><span class="line">ERROR: Cannot find /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go.</span><br><span class="line">Set $GOROOT_BOOTSTRAP <span class="built_in">to</span> <span class="operator">a</span> working Go tree &gt;= Go <span class="number">1.4</span>.</span><br><span class="line">./make.bash: <span class="built_in">line</span> <span class="number">121</span>: /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go: No such <span class="built_in">file</span> <span class="operator">or</span> <span class="built_in">directory</span></span><br></pre></td></tr></table></figure></li>
+<li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340</a>):<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
+</ol>
+<p>That should be all fine right now. Go 1.5.x should be installed on your machine (side by side with the Go 1.4.x that was used required to compile the newest version of Go).</p>
+<p>Happy coding (in Go!)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu reposito]]>
+    </summary>
+    
+      <category term="Go" scheme="http://maciektalaska.github.io/tags/Go/"/>
+    
+      <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
+    
+      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Checking out hexo!]]></title>

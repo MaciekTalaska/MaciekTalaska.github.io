@@ -76,7 +76,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -85,7 +85,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -95,6 +95,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/11/07/Go-gvm-and-fish-shell/">Go 1.5.x on Kubuntu using fish shell and gvm</a>
+          </li>
         
           <li>
             <a href="/2015/08/16/Welcome-to-Hexo/">Checking out hexo!</a>
@@ -109,7 +113,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jekyll/">Jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nikola/">Nikola</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/static-site-generators/">static site generators</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/">Go</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jekyll/">Jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nikola/">Nikola</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/configuration/">configuration</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fish-shell/">fish shell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/static-site-generators/">static site generators</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -118,7 +122,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Jekyll/" style="font-size: 10px;">Jekyll</a> <a href="/tags/Nikola/" style="font-size: 10px;">Nikola</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/static-site-generators/" style="font-size: 10px;">static site generators</a>
+      <a href="/tags/Go/" style="font-size: 10px;">Go</a> <a href="/tags/Jekyll/" style="font-size: 10px;">Jekyll</a> <a href="/tags/Nikola/" style="font-size: 10px;">Nikola</a> <a href="/tags/configuration/" style="font-size: 10px;">configuration</a> <a href="/tags/fish-shell/" style="font-size: 10px;">fish shell</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/static-site-generators/" style="font-size: 10px;">static site generators</a>
     </div>
   </div>
 
@@ -141,6 +145,62 @@
 </aside>
         
         <section id="main">
+  
+    <article id="post-Go-gvm-and-fish-shell" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/07/Go-gvm-and-fish-shell/" class="article-date">
+  <time datetime="2015-11-07T22:16:08.000Z" itemprop="datePublished">2015-11-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/07/Go-gvm-and-fish-shell/">Go 1.5.x on Kubuntu using fish shell and gvm</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It was not good enough even for learning purposes.</p>
+<p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="external">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
+<p>What if need to use two different versions of Go? How do I manage them?</p>
+<p>The best thing is to use something similar to nvm (NodeJS Version Manager) or RVM (Ruby Version Manager). As I am using fish shell instead of bash, things are a bit more complicated. There are couple of steps required to have Go 1.5.x installed on Linux, and make the whole thing work with fish shell.</p>
+<ol>
+<li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="external">https://github.com/moovweb/gvm</a>)</li>
+<li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212</a>). You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="external">https://github.com/edc/bass</a>)</li>
+<li><code>gvm install go1.5.x</code> will not work, as Go 1.5.x requires Go 1.4.x for compilation. Install Go 1.4.x first (<code>gvm install go1.4.3</code>)</li>
+<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Failed to compile. <span class="operator"><span class="keyword">Check</span> the <span class="keyword">logs</span> <span class="keyword">at</span> /home/&lt;username&gt;/.gvm/<span class="keyword">logs</span>/<span class="keyword">go</span>-go1<span class="number">.5</span><span class="number">.1</span>-compile.<span class="keyword">log</span></span><br><span class="line"><span class="keyword">ERROR</span>: <span class="keyword">Failed</span> <span class="keyword">to</span> <span class="keyword">use</span> installed <span class="keyword">version</span></span><br><span class="line">Installing go1<span class="number">.5</span><span class="number">.1</span>...</span><br><span class="line"> * Compiling...</span></span><br></pre></td></tr></table></figure>
+In my case the log content was: <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##### Building Go bootstrap tool.                                             </span></span><br><span class="line">cmd/dist</span><br><span class="line">ERROR: Cannot find /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go.</span><br><span class="line">Set $GOROOT_BOOTSTRAP <span class="built_in">to</span> <span class="operator">a</span> working Go tree &gt;= Go <span class="number">1.4</span>.</span><br><span class="line">./make.bash: <span class="built_in">line</span> <span class="number">121</span>: /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go: No such <span class="built_in">file</span> <span class="operator">or</span> <span class="built_in">directory</span></span><br></pre></td></tr></table></figure></li>
+<li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340</a>):<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
+</ol>
+<p>That should be all fine right now. Go 1.5.x should be installed on your machine (side by side with the Go 1.4.x that was used required to compile the newest version of Go).</p>
+<p>Happy coding (in Go!)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/" data-id="cigpqtzap000cunaqhz6o29k5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/configuration/">configuration</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fish-shell/">fish shell</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Welcome-to-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -205,7 +265,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/" data-id="cidf191uk0001qmaq1s7mit86" class="article-share-link">Share</a>
+      <a data-url="http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/" data-id="cigpqtza80001unaqqs8ibym0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jekyll/">Jekyll</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nikola/">Nikola</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/static-site-generators/">static site generators</a></li></ul>
