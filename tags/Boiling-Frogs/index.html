@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Go, Kubuntu, fish-shell &amp; gvm - addendum | Not only zeroes and ones</title>
+  <title>Tag: Boiling Frogs | Not only zeroes and ones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the gvm is not available to you anymore. Wha">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Go, Kubuntu, fish-shell & gvm - addendum">
-<meta property="og:url" content="http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/index.html">
+  <meta name="description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Not only zeroes and ones">
+<meta property="og:url" content="http://maciektalaska.github.io/tags/Boiling-Frogs/index.html">
 <meta property="og:site_name" content="Not only zeroes and ones">
-<meta property="og:description" content="There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the gvm is not available to you anymore. Wha">
-<meta property="og:updated_time" content="2016-01-17T20:37:21.798Z">
+<meta property="og:description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Go, Kubuntu, fish-shell & gvm - addendum">
-<meta name="twitter:description" content="There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the gvm is not available to you anymore. Wha">
+<meta name="twitter:title" content="Not only zeroes and ones">
+<meta name="twitter:description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
   
   
     <link rel="icon" href="/favicon.png">
@@ -153,79 +152,39 @@
   
 </aside>
         
-        <section id="main"><article id="post-Go-Kubuntu-fish-shell-gvm-addendum" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/" class="article-date">
-  <time datetime="2016-01-17T20:03:54.000Z" itemprop="datePublished">2016-01-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      Go, Kubuntu, fish-shell &amp; gvm - addendum
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/01/21/BoilingFrogs-conference/" class="archive-article-date">
+  <time datetime="2016-01-21T06:03:20.000Z" itemprop="datePublished">Jan 21</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/01/21/BoilingFrogs-conference/">Boiling Frogs conference</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the <code>gvm</code> is not available to you anymore. What is the point?<br>Well… this is due to the fact that after a function is created for fish-shell (as in step 2 in previous blog post) it works… but it is not stored for future use. To do that - there is one single thing required - function has to be saved. This will make it persisted, and such a function will be available to you after your machine is restarted. </p>
-<p>How to save a function? This is extreemely easy, you just type <code>funcsave &lt;function_name&gt;</code> - in our case (in case of saving <code>gvm</code>) it will be: <code>funcsave gvm</code>. That’s it. </p>
-<p>Now if you cd to your <code>~/config/fish/function</code> folder, you will spot the file named <code>gvm.fish</code>. The content of the file is (surprise?) the definition of the <code>gvm</code> function used by fish-shell (step 2 of the previous blog note). </p>
-<p>I hope it is now clear </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/" data-id="cijmeoc9v000mzdaqgpzy2t0f" class="article-share-link">Share</a>
-      
-        <a href="http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/configuration/">configuration</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fish-shell/">fish shell</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/">go</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/01/21/BoilingFrogs-conference/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Boiling Frogs conference
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/11/07/Go-gvm-and-fish-shell/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Go 1.5.x on Kubuntu using fish shell and gvm</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
+  
+  
+    </div></section>
+  
 </section>
       </div>
       <footer id="footer">
@@ -243,13 +202,11 @@
 <script>
   var disqus_shortname = 'maciektalaska-github-io';
   
-  var disqus_url = 'http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
