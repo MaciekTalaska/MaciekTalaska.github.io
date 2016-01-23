@@ -127,13 +127,40 @@ body{ -webkit-animation: bugfix infinite 1s; }
         </header>
       
       <div class="entry">
-        
-        
+
+      <p>Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - at least I haven’t heard of it before my friend told me couple of weeks ago. Boiling Frogs is organized in Wroclaw, Poland. As far as I remember this year’s edition was the second one. What is interesting is that there is no huge company behind organizers. You may actually say that Boiling Frogs is a community driven event is oranized by people who form community.</p>
+<p>I was quite surprised that this event offered three separate tracks of talks. I understand how much of an effort is required to prepare even a single track conference, but three separate tracks… well done Boiling Frogs 2016 organinzers! Each track had a mixture of talks: some focused on very technical aspects of software development, some others more focused on a topics that focus on software from a bit higher perspective (architecture, project management etc.).<br>One important thing to note was that even though most of the presenters had their slides in English, talks were held in Polish only (at least all those that I have attended).</p>
+<p>Conference started with opening talk by the main organizer: Tomasz Kaczmarzyk. Tomasz told us about the history of the conference, the effort himself, team and friends and family devoted to make this event happened.</p>
+<p>After the opening talk I decided to listen to Andrzej Krzywda (from Arkency) talking about his journey from “Legacy to DDD”. That was a very interesting talk. Andrzej told us a bit of his effort to find the architecture/approach that would help him build software that is most valuable to his customers. It was great to hear how an adoption of some techniques enables developers to think more in terms of business opportunities than in strictly technical manner. Some time ago I was told that pure technical excelency is not that important as being capable of delivering technical solutions, but in the same time understanding business and being able to suggest new features and functionalities.<br>Slide deck from Andrzej’s talk is available online: <a href="http://www.slideshare.net/andrzejkrzywda/from-legacy-to-ddd-5-starting-steps" target="_blank" rel="external">http://www.slideshare.net/andrzejkrzywda/from-legacy-to-ddd-5-starting-steps</a><br>The most important thing that should be what you take from the talk were:</p>
+<ol>
+<li>Learn ideal DDD - to think about implementing any (part of) system in DDD you should learn the most important concepts first. Obvious, right? :)</li>
+<li>Publish events (just in case to be ready to later make further changes to the application code, and benefit from ‘just publishing events’)</li>
+<li>Microservices are hot. What they bring on board is requirement to have things done in an async way. The question is: do you and your team have enough knowledge and experience to have it done on your own?</li>
+<li>Frameworks are great, but… sometimes you end up being a prisoner of the framework of your choice. It is a good idea to separate framework(s) from the core of your application. Why would framework specific objects leak into the most inner part of your application? Andrzej put a lot of emphgasis on separating network (http) and storage/database layer from the application.</li>
+<li>Learn bounded contexts - this is actually the core of your project. It is the most important to have as good understanding of it as possible, that’s why you should think of how to model your ‘world’.<br>I personally love talks like that one. This is the level of understanding how software works (or should be built) that I think is the most important. This kind of perspective requires not only ability to code, not only knowledge of frameworks, but moreover knowledge of some architectural approaches and (maybe most important) experience: a lot of hours ‘wasted’ staring at the code and thinking how to improve that. </li>
+</ol>
+<p>The very next talk that I have attended was entitled “BDD and agile requirements”, given by Wiktor Żołnowski. Wiktor is experienced QA and consulant, who helps many companies make sure that the software they create is of acceptable quality.<br>This talk was packed with a lot of stuff:</p>
+<ul>
+<li>proper approach to define BDD scenarios</li>
+<li>introduction to GROW (Goal, Reality, Opportunites, Work) approach</li>
+<li>a story of a startup that Wiktor has been advising</li>
+<li>introduction to usage of Cynefin (have you <em>ever</em> heard of it before reading it here? no? google it!)<br>It is easy to spot that Wiktor has a lot of experience in advising companies and organizing how teams work. Great talk.</li>
+</ul>
+<p>Right before the lunch I have attended interesting talk by Michał Płachta “Paradise for polyglots - everything floats”. This one was aimed at reactive progamming. Michał was showing the audience how to build a simple snake game using reactive approach (so approach based on streams). From the very simple thing (snake and fruit in the same place all the time), Michał went to a full featured version of the game. Just to show that reactive approach could be used on both: frontend and backend (same time) - Michał got to the point of having two different players (snakes) at the same time. Snakes were synced using backend (written in Scala+Akka). It was really impressive talk. I was really inspired by the way such a simple application has been built with the reactive concept in mind. </p>
+<p>The lunch was a great opportunity for myself to talk to couple of my colleagues, and to eat some pierogi :) (if you have ever visited Poland, you have surely been offered pierogi, no doubt!).<br>Great time to have another look at the agenda and mark talks that seemed the most interesting.</p>
+<p>First talk after the lunch that I heard was “Effective Software Delivery” by Jakub Kubryński. Jakub cooperates with Bottega Solutions, and I must say, that I have heard couple of talks by people who work for Bottega, and each time it was time well spent. To me this is now clear - presenter who works for Bottega = high quality of the talk.<br>Back to the talk: Jakub was talking about all the different approaches we take to make sure we can deliver software of high quality. Jakub has also pointed out couple of different approaches that are quite common but result in the development of software of not-so-high quality.<br>One of them was hacking models/database - using columns or properties to enable some additional features: “during this transaction we don’t use the property X, so if this is set to Y…”. Does that sound familiar? Another one: “yes, I agree with you - I’d like to have this feature tested, but trust me, this one is special and you can’t test it”. Scripting? “I know it should be automated, but…”.<br>Another thing that was touched by Jakub: what is the difference between PoC and spike(s)? When should you go with PoC? How do you evaluate technology? Should you trust something just because it prooved useful in a previous project you worked on?<br>Another interesting thing that Jakub touched was the way we build software in general, how we think about it. Is architect a good name for someone who is in charge of technical side of software development? Is building houses really good analogy?<br>Apart from that there were couple of other things mentioned: silverbullets (in terms of technology), praising small changes, knowledge of your tools, scripting and automation of tasks, testing software, DRY (and WET), premature optimization, code inspections and couple of more. For experienced developers some (all?) of the things mentioned should be familiar, but still it was a great summary of techniques to make great quality apps. For not that experienced developers this should be one of the required talks.</p>
+<p>The very next talk I went to was another one given by Wiktor Żołnowski: “How to find time for quality? Theory of queues and Little law’s in the software development process”. Originally I wanted to go to my friend’s (Tomasz Pluskiewicz) talk “HATEOS as if you meant it”, but I decided that the previous talk Wiktor gave was so good, and that I have already talked to Tomasz couple of times about HATEOAS that… I have decided to go for the second talk given by Wiktor. His talk started with a simple problem: how to optimize a system. We were thinking about McD-alike “drive-in” system, which  has 3 different stages: placing order, payment and order collection. The trick was that each stage took a different time to be completed. Wiktor has shown couple of simulations using different number of vehicles being in the queue. It was interesting to see that squeezing too much actually makes the whole system performing much worse than we would expect.<br>Taking it from there Wiktor elaborated more about how to improve performance of a team that uses Scrum. He pointed couple of things to consider that are related to work organiation, amount of work planned to be done within a sprint etc.<br>I think that both talks by Wiktor should be attended by all managers in IT. I agree with Wiktor: we do lack managers in IT who have management background (as the common story is that developers are being given a chance to manage and they do it as well as they can). </p>
+<p>The very last talk that I have attended was “Machine Learning for Developers” by Mariusz Gil. I am not sure, but this may have been the most important talk of all for myself. Why? Simple reason: I had no idea what machine learning was, before entering the room where the talk was given. After ~45 minutes I am still no expert in the area, but at least I have an understanding what machine learning is, where could it (possibly) be applied and what are the things the you should consider when building a machine learning system.</p>
+<p>After the conference we have headed to the pub where we had a bit of a disussion on IT, software etc. I came home quite exhausted, but happy, as I considered this day to be a well spent one. I have learned some things, I had a chance to talk to some of my colleagues I know from local tech groups, and make some new acquaintances.</p>
+<p>As for the confenece itself I must say that I like these type of events: organized by smaller group of people. Made with passion and not because there is a business aim, or an opportunity for a company to make its brand better known.<br>Boiling Frogs was one of the events that boost you with energy, that makes you become better in what you do on a daily basis.<br>If there is another Boiling Frogs conference next year to be organized - I will definitely make sure to get a chance to attend it.</p>
+<p>I think that 2016 has started very well. I can’t wait for other opportunities for me to develop my knowledge and attend even more interesting events.</p>
+
+
       </div>
       <footer>
         
           <div class="alignright">
-            <a href="/2016/01/21/BoilingFrogs-conference/#more" class="more-link">more...<i class="fa fa-long-arrow-right fa-1"></i></a>
+            <a href="/2016/01/21/BoilingFrogs-conference/#more" class="more-link">comment...<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
         
         <div class="clearfix"></div>
@@ -164,13 +191,18 @@ body{ -webkit-animation: bugfix infinite 1s; }
         </header>
       
       <div class="entry">
-        
-        
+
+      <p>There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the <code>gvm</code> is not available to you anymore. What is the point?<br>Well… this is due to the fact that after a function is created for fish-shell (as in step 2 in previous blog post) it works… but it is not stored for future use. To do that - there is one single thing required - function has to be saved. This will make it persisted, and such a function will be available to you after your machine is restarted. </p>
+<p>How to save a function? This is extreemely easy, you just type <code>funcsave &lt;function_name&gt;</code> - in our case (in case of saving <code>gvm</code>) it will be: <code>funcsave gvm</code>. That’s it. </p>
+<p>Now if you cd to your <code>~/config/fish/function</code> folder, you will spot the file named <code>gvm.fish</code>. The content of the file is (surprise?) the definition of the <code>gvm</code> function used by fish-shell (step 2 of the previous blog note). </p>
+<p>I hope it is now clear </p>
+
+
       </div>
       <footer>
         
           <div class="alignright">
-            <a href="/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/#more" class="more-link">more...<i class="fa fa-long-arrow-right fa-1"></i></a>
+            <a href="/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/#more" class="more-link">comment...<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
         
         <div class="clearfix"></div>
@@ -201,13 +233,28 @@ body{ -webkit-animation: bugfix infinite 1s; }
         </header>
       
       <div class="entry">
-        
-        
+
+      <p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It was not good enough even for learning purposes.</p>
+<p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="external">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
+<p>What if need to use two different versions of Go? How do I manage them?</p>
+<p>The best thing is to use something similar to nvm (NodeJS Version Manager) or RVM (Ruby Version Manager). As I am using fish shell instead of bash, things are a bit more complicated. There are couple of steps required to have Go 1.5.x installed on Linux, and make the whole thing work with fish shell.</p>
+<ol>
+<li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="external">https://github.com/moovweb/gvm</a>)</li>
+<li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212</a>). You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="external">https://github.com/edc/bass</a>)</li>
+<li><code>gvm install go1.5.x</code> will not work, as Go 1.5.x requires Go 1.4.x for compilation. Install Go 1.4.x first (<code>gvm install go1.4.3</code>)</li>
+<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Failed to compile. <span class="operator"><span class="keyword">Check</span> the <span class="keyword">logs</span> <span class="keyword">at</span> /home/&lt;username&gt;/.gvm/<span class="keyword">logs</span>/<span class="keyword">go</span>-go1<span class="number">.5</span><span class="number">.1</span>-compile.<span class="keyword">log</span></span><br><span class="line"><span class="keyword">ERROR</span>: <span class="keyword">Failed</span> <span class="keyword">to</span> <span class="keyword">use</span> installed <span class="keyword">version</span></span><br><span class="line">Installing go1<span class="number">.5</span><span class="number">.1</span>...</span><br><span class="line"> * Compiling...</span></span><br></pre></td></tr></table></figure>
+In my case the log content was: <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##### Building Go bootstrap tool.                                             </span></span><br><span class="line">cmd/dist</span><br><span class="line">ERROR: Cannot find /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go.</span><br><span class="line">Set $GOROOT_BOOTSTRAP <span class="built_in">to</span> <span class="operator">a</span> working Go tree &gt;= Go <span class="number">1.4</span>.</span><br><span class="line">./make.bash: <span class="built_in">line</span> <span class="number">121</span>: /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go: No such <span class="built_in">file</span> <span class="operator">or</span> <span class="built_in">directory</span></span><br></pre></td></tr></table></figure></li>
+<li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340</a>):<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
+</ol>
+<p>That should be all fine right now. Go 1.5.x should be installed on your machine (side by side with the Go 1.4.x that was used required to compile the newest version of Go).</p>
+<p>Happy coding (in Go!)</p>
+
+
       </div>
       <footer>
         
           <div class="alignright">
-            <a href="/2015/11/07/Go-gvm-and-fish-shell/#more" class="more-link">more...<i class="fa fa-long-arrow-right fa-1"></i></a>
+            <a href="/2015/11/07/Go-gvm-and-fish-shell/#more" class="more-link">comment...<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
         
         <div class="clearfix"></div>
@@ -238,13 +285,47 @@ body{ -webkit-animation: bugfix infinite 1s; }
         </header>
       
       <div class="entry">
-        
-        
+
+      <p>I was thinkig for quite some time how to migrate my old blog from Wordpress to some other blogging platform. Couple of reasons why I started thinking of giving up Wordpress:</p>
+<ul>
+<li>Wordpress is complicated, offers a lot of plugins, and this makes it vulnerable to ‘hacking’ </li>
+<li>I don’t think I really need the flexibility that Wordpress offers. I think for me it is just too much. I am not planning to write blog with someone else (so I don’t need platform which supports many authors)</li>
+<li>Wordpress requires hosting. And that costs.</li>
+</ul>
+<p>Some time ago I’ve bumped on couple of people saying that static sites generators are great for blogging purposes. It seemed to me a good idea having my blog hosted on github, so that I can have all the things in one place. </p>
+<p>I’ve heard about Jekyll, Nikola, Pelican but I knew there were many more. I had to figure out what my needs are, and after a short while, I came up with the most important features my preferred blogging platform should offer:</p>
+<ul>
+<li>good support for code snippets (as I will be using this mainly for my programming related blogging)</li>
+<li>support for plugins (for example: I want to be able to use disqus for comments)</li>
+<li>offering some nice themes, so that I can pick something for the very beginning</li>
+</ul>
+<p>My workmate suggested me to have a look at Nikola. The installation was easy (I’ve used virtualenv so not to spoil my environment). It took me a bit to have a first blog post in the shape of my desire. In a short time I’ve learned how to work with Nikola. I think Nikola is a great piece of software. I was quite amazed when I discovered how easy it was to install additional theme. It wasn’t much harder to change bootstrap’s based theme (for the bootstrap based themes). All with just providing couple of arguments to Nikola. Although… I wasn’t very happy with Nikola. Mainly because:</p>
+<ul>
+<li>Nikola is quite slow, re-generating your site takes quite some time. As I was playing with quite many themes, and was doing a lot of tweaking - that was something hard not to notice</li>
+<li>I’ve spent some time searching for nice themes, and… I was quite dissappointed. I couldn’t find a nice, easthetic theme, that would render code snippets in a fancy way. Some themes looked better in general, some were not that nice, but rendered code snippets better. All in all I haven’t found one theme I could be happy with. I had a quick look at Pelican (<a href="http://blog.getpelican.com/" target="_blank" rel="external">http://blog.getpelican.com/</a>) (which is another static site generator written in Python) and it seemed to me that Pelican offers nicer themes.</li>
+<li>my feeling is that there are not many plugins, and that the community behind Nikola is not very big</li>
+</ul>
+<p>After my experience with Nikola, I decided to give some others platforms a chance. I’ve made some research, and found a site that lists many static sites generators: <a href="https://www.staticgen.com/" target="_blank" rel="external">https://www.staticgen.com/</a> It is definitelly more than enough. I was amazed how many generators are there. Not only for Python and Ruby, but also for functional languages (Haskell, Scala) and some really exotic languages such as Racket (<a href="https://www.staticgen.com/frog" target="_blank" rel="external">https://www.staticgen.com/frog</a>).<br>One of my thoughts was that I should probably go with Jekyll as it has the biggest community, dozens of themes and plugins. What’s more, I think that in comparison to Nikola, it may be easier to find some articles on how to change things in Jekyll. I was pretty much set for trying Jekyll, when I spotted Hexo (<a href="https://www.staticgen.com/hexo" target="_blank" rel="external">https://www.staticgen.com/hexo</a>).</p>
+<p>Hexo is written in JavaScript and uses NodeJS. One of the biggest advantages is Hexo’s popularity: it is ranked 4th when taking github stars. Developers working on Hexo claim it is very fast. And comparing to Nikola… I must say that this is true. Hexo is even easier to set up than Nikola (or maybe it is just me being more fluent with JS stack than Python). If you already have NodeJS on your machine, there is just one package to install. After about a minute I had my “blog” created. Within next couple of minutes I had couple of sample notes, with codeblocks and gists - I decided it looked better than what I was able to create using Nikola. I’ve spent next hour (or two) playing with themes, and making my own modifications of themes. I am pretty happy with what I have achieved so far. There are couple of things I will need to change, but I guess I am good to go with what I have.</p>
+<p>Hexo supports codeblocks…</p>
+<p>this is how it highlights Python…</p>
+<figure class="highlight python"><figcaption><span>somepy</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span><span class="params">()</span>:</span></span><br><span class="line">  print(sys.info)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</span><br><span class="line">  my_func()</span><br></pre></td></tr></table></figure>          
+<p><br></p>
+<p>JavaScript:<br><figure class="highlight javascript"><figcaption><span>some simple AngularJS controller</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'angularFullstackApp'</span>)</span><br><span class="line">  .controller(<span class="string">'CategoryCtrl'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope, hierarchy, $location</span>) </span>&#123;</span><br><span class="line">    $scope.message = <span class="string">'Hello'</span>;</span><br><span class="line"></span><br><span class="line">    $scope.categories = [];</span><br><span class="line"></span><br><span class="line">    $scope.populateCategories = <span class="function"><span class="keyword">function</span>(<span class="params">allCategories</span>) </span>&#123;</span><br><span class="line">      $scope.categories = allCategories;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $scope.categoryClicked = <span class="function"><span class="keyword">function</span>(<span class="params">categoryId</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'category clicked: '</span>, categoryId);</span><br><span class="line">      $location.url(<span class="string">'/topics'</span>).search(<span class="string">'category'</span>,categoryId);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hierarchy.getAllCategories().then($scope.populateCategories);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p>…and Go:<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> main() &#123;</span><br><span class="line">  fmt.Println(<span class="string">"Hello World from Go!"</span>)</span><br><span class="line">  <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="number">20</span>; i++ &#123;</span><br><span class="line">    <span class="keyword">var</span> t = <span class="string">""</span></span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span> &#123;</span><br><span class="line">      t = <span class="string">"even"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      t = <span class="string">"odd"</span></span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"Number: %02d binary: %05b octal: %02o %#x\t is %v\n"</span>, i, i, i, i, t)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>and this… is how Hexo displays gists:</p>
+<script src="//gist.github.com/38c4ca8e73d9792f8eae.js"></script>
+<p>To sum up: I have created my main github page and within minutes I had it published.</p>
+<p>I haven’t thought that setting up new blog using static site generator will be so much fun. I regret I haven’t devoted some time to do it much earlier this year… anyway, I hope that this blog is going to be an opportunity to share what I learn.</p>
+<p>As for the moment, the only thing that bothers me is: how do I write blog notes using differnt machine than the one I have everything set up? With Wordpress and other dynamic bloggin platforms it was easy - most of them offered some kind of web interface (administration panel) one may use to write a blog note. With Hexo this is not the way. I will need to think of some way to make it possible. I will post if I have something to share on this topic. </p>
+
+
       </div>
       <footer>
         
           <div class="alignright">
-            <a href="/2015/08/16/Welcome-to-Hexo/#more" class="more-link">more...<i class="fa fa-long-arrow-right fa-1"></i></a>
+            <a href="/2015/08/16/Welcome-to-Hexo/#more" class="more-link">comment...<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
         
         <div class="clearfix"></div>

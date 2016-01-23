@@ -5,7 +5,7 @@
 body {
   background: #f6f7f9;
   color: #444;
-  font-family: "Helvetica Neue", Roboto, 'Open Sans', Tahoma, Arial, "Droid Sans", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Georgia, Helvetica, "Helvetica Neue", Roboto, 'Open Sans', Tahoma, Arial, "Droid Sans", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
   font-size: 16px;
   height: 100%;
 }
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
 }
 h1 {
   font-size: 1.8em;
@@ -136,7 +136,7 @@ a:hover {
   }
 }
 #header .alignleft h1 a {
-  font-family: 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
 }
 #header .alignleft h1 a:hover {
   color: #009cdc;
@@ -153,10 +153,10 @@ a:hover {
   margin-top: 10px;
 }
 #header .alignleft h2 a {
-  font-family: 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
 }
 #header #main-nav {
-  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
   padding-top: 10px;
   letter-spacing: 1px;
 }
@@ -579,7 +579,7 @@ article .entry blockquote {
 /*border-bottom 1px solid color-border*/
   border-left: 10px solid #ddd;
   font-style: italic;
-  font-family: font-serif;
+  font-family: Georgia, "Times New Roman";
   font-size: 1.2em;
   padding: 1px 0px 1px 20px;
   text-align: left;
@@ -970,7 +970,7 @@ article footer .article-nav .article-next {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", 'Microsoft Yahei', Simsun, sans-serif;
   background: #fff;
   font-style: italic;
   font-size: 1em;
@@ -1053,7 +1053,7 @@ article footer .article-nav .article-next {
 }
 #footer .alignleft {
   padding-top: 22px;
-  font-family: 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
+  font-family: 'DejaVu Serif', Helvetica, 'Play', "Hiragino Sans GB", cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", Simsun, sans-serif;
 }
 #footer .alignright {
   padding: 15px 0;
