@@ -4,7 +4,7 @@
   <subtitle><![CDATA[code is a modern poetry]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2016-01-23T19:03:12.317Z</updated>
+  <updated>2016-02-05T16:17:00.443Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://maciektalaska.github.io/2016/01/21/BoilingFrogs-conference/"/>
     <id>http://maciektalaska.github.io/2016/01/21/BoilingFrogs-conference/</id>
     <published>2016-01-21T06:03:20.000Z</published>
-    <updated>2016-01-23T19:03:12.317Z</updated>
-    <content type="html"><![CDATA[<p>Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - at least I haven’t heard of it before my friend told me couple of weeks ago. Boiling Frogs is organized in Wroclaw, Poland. As far as I remember this year’s edition was the second one. What is interesting is that there is no huge company behind organizers. You may actually say that Boiling Frogs is a community driven event is oranized by people who form community.</p>
+    <updated>2016-02-05T16:17:00.443Z</updated>
+    <content type="html"><![CDATA[<p>Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - at least I haven’t heard of it before my friend told me couple of weeks ago. Boiling Frogs is organized in Wroclaw, Poland. As far as I remember this year’s edition was <del>the second one</del> (actually I was corrected on that: this was the first edition of the conference). What is interesting is that there is no huge company behind organizers. You may actually say that Boiling Frogs is a community driven event is oranized by people who form community.</p>
 <p>I was quite surprised that this event offered three separate tracks of talks. I understand how much of an effort is required to prepare even a single track conference, but three separate tracks… well done Boiling Frogs 2016 organinzers! Each track had a mixture of talks: some focused on very technical aspects of software development, some others more focused on a topics that focus on software from a bit higher perspective (architecture, project management etc.).<br>One important thing to note was that even though most of the presenters had their slides in English, talks were held in Polish only (at least all those that I have attended).</p>
 <h3 id="Opening_Talk">Opening Talk</h3><p>Conference started with opening talk by the main organizer: Tomasz Kaczmarzyk. Tomasz told us about the history of the conference, the effort himself, team and friends and family devoted to make this event happened.</p>
 <h3 id="Talk_#1_-_“From_legacy_to_DDD”">Talk #1 - “From legacy to DDD”</h3><p>After the opening talk I decided to listen to Andrzej Krzywda (from Arkency) talking about his journey from “Legacy to DDD”. That was a very interesting talk. Andrzej told us a bit of his effort to find the architecture/approach that would help him build software that is most valuable to his customers. It was great to hear how an adoption of some techniques enables developers to think more in terms of business opportunities than in strictly technical manner. Some time ago I was told that pure technical excelency is not that important as being capable of delivering technical solutions, but in the same time understanding business and being able to suggest new features and functionalities.<br>Slide deck from Andrzej’s talk is available online: <a href="http://www.slideshare.net/andrzejkrzywda/from-legacy-to-ddd-5-starting-steps" target="_blank" rel="external">http://www.slideshare.net/andrzejkrzywda/from-legacy-to-ddd-5-starting-steps</a><br>The most important things to take from the talk:</p>
