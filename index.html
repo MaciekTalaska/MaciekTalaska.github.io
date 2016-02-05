@@ -116,6 +116,57 @@ body{ -webkit-animation: bugfix infinite 1s; }
         <header>
           <div class="icon"></div>
 
+            <time datetime="2016-02-05T16:19:55.000Z"><a href="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/">2016-02-05</a></time>
+             &nbsp; &nbsp;
+              
+    
+      <h1 class="title transition"><a href="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/">Ugly fonts in Java apps under Linux</a></h1>
+    
+  
+
+        </header>
+      
+      <div class="entry">
+
+      <p>What strikes me from time to time is that under Linux all works well… after you spend some time searching for ways to fix things, and make them work <em>exactly</em> the way you want them too.</p>
+<p>I am really picky when it comes to the UI. I love command line and console, but as I do work a lot with written words… quality of fonts rendering is <em>extremely</em> important for myself. </p>
+<p>I am learning RoR at the moment. I’ve been doing quite some coding recenlty using pure VIM, but decided to give RubyMine a try. RubyMine is very powerful IDE, but under the default JDK/JRE (no difference if this is OpenJDK or Oracle’s JDK/JRE) the way it renders fonts is just pain to the eyes. Eclipse renders fonts much better (by default) than RubyMine, and NetBeans is as bad as RubyMine is.</p>
+<p>I’ve spent a bit of a time trying to configure RubyMine so that it renders fonts as nicely as VIM :) but with no success. I was so desperate on this, that I was planning to either switch to another IDE (but Aptana is no go for me) or to go back to pure VIM again.<br>Fortunately I have found a solution for Debien/Ubuntu:</p>
+<p>1) Do not use Oracle’s Java<br>2) Do not use the OpenJDK default repository<br>3) Add the <code>https://launchpad.net/~no1wantdthisname/+archive/ubuntu/openjdk-fontfix</code> as a ppa</p>
+<p>Install OpenJDK 7/8 from the repo mentioned in point 3.</p>
+<p>If you have other flavors of Java installed, use <code>sudo update-alternative --config java</code> to pick the OpenJDK installed from <code>no1wantdthisname</code> ppa.</p>
+<p>That’s it.</p>
+<p>And the results? Huge, huge differnce:</p>
+<p>Before:</p>
+<img src="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/rubymine-ugly-fonts.jpg" alt="Ugly fonts in RubyMine" title="Ugly fonts in RubyMine">
+<p>After:</p>
+<img src="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/rubymine-nice-fonts.jpg" alt="nicely looking fonts in RubyMine!" title="nicely looking fonts in RubyMine!">
+
+
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/#more" class="more-link">comment...<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
+    </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  
+    <div class="post-content-index">
+  
+      
+        <header>
+          <div class="icon"></div>
+
             <time datetime="2016-01-21T06:03:20.000Z"><a href="/2016/01/21/BoilingFrogs-conference/">2016-01-21</a></time>
              &nbsp; &nbsp;
               
@@ -359,6 +410,10 @@ In my case the log content was: <figure class="highlight livecodeserver"><table>
   <ul class="entry">
     
       <li>
+        <a href="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/">Ugly fonts in Java apps under Linux</a>
+      </li>
+    
+      <li>
         <a href="/2016/01/21/BoilingFrogs-conference/">Boiling Frogs conference</a>
       </li>
     
@@ -405,7 +460,7 @@ In my case the log content was: <figure class="highlight livecodeserver"><table>
   
     <a href="/tags/Nikola/">Nikola<small>1</small></a>
   
-    <a href="/tags/configuration/">configuration<small>2</small></a>
+    <a href="/tags/configuration/">configuration<small>3</small></a>
   
     <a href="/tags/fish-shell/">fish shell<small>2</small></a>
   
