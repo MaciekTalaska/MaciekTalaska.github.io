@@ -4,7 +4,7 @@
   <subtitle><![CDATA[code is a modern poetry]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2016-02-06T08:30:12.056Z</updated>
+  <updated>2016-02-05T17:56:42.759Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -13,40 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Learning how to learn]]></title>
-    <link href="http://maciektalaska.github.io/2016/02/06/Learning-how-to-learn/"/>
-    <id>http://maciektalaska.github.io/2016/02/06/Learning-how-to-learn/</id>
-    <published>2016-02-06T08:30:12.000Z</published>
-    <updated>2016-02-06T08:30:12.056Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Acodemy.io - AngularJS & WebComponents workshop]]></title>
-    <link href="http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/"/>
-    <id>http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/</id>
-    <published>2016-02-05T18:13:18.000Z</published>
-    <updated>2016-02-05T19:04:05.403Z</updated>
-    <content type="html"><![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event has been run by the 10Clouds(<a href="http://10clouds.com" target="_blank" rel="external">http://10clouds.com</a>) - interesting IT company from Warsaw which specializes in modern solutions (made mainly using JavaScript, Php and Python).</p>
-<p>I have had a chance to work with AngularJS and that’s why I was more interested in WebComponents part of the workshop. I have done some reading before the workshop on WebComponents, so I had a bit of understanding what these beasts are, but I have never created one myself :)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event ]]>
-    </summary>
-    
-      <category term="AngularJS" scheme="http://maciektalaska.github.io/tags/AngularJS/"/>
-    
-      <category term="WebComponents" scheme="http://maciektalaska.github.io/tags/WebComponents/"/>
-    
-      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Ugly fonts in Java apps under Linux]]></title>
