@@ -9,10 +9,10 @@ categories:
 
 On the 20th of February 2016, a TestFest conference. It was targeted at testers working in IT industry. I am not one ;) but as my friends were organizing it, and they let me know about it - I decided to take part in it.
 
-###Mutation testing by Tomasz Dubikowski
+### Mutation testing by Tomasz Dubikowski
 It was the best talk of the whole conference from my perspective. It was not only a great introduction into mutation testing, but also very funny talk. Tomasz is great at presenting concepts. If you ever wandered what mutation testing was - you should definitely watch Tomasz's talk. In my opinion the biggest gain here is that Tomasz made sure to present the whole concept on the very well though of example. In my opinion it was huge part of the success of this talk. I have watched several talks about mutation testing, but not a single one was close enought to the quality of the talk given by Tomasz. If you seem to struggle to understand the whole concept of mutation testing - I would strongly advise you to spend ~hour of your life watching Tomasz Dubikowski's talk. Trust me - it will be time well spent.
 
-###Other Talks
+### Other Talks
 Some other talks were mainly adressed to testers (or as Tomasz put that - QA Evangelists :) There were interesting talks on how to test the hardware to be sent into space (small satellites), how big companies from the telco industry make sure that what they develop could cope with high traffic. Some other talks were not that interesting for myself (being a developer) - for example I haven't gained much from the talk that focused on the need of understanding of RDMS for QA person. Everything was already known to me. What stroke me though, was that it seems the "marriage" between QAs and Devs are still... challenging relationships :) I think most of the problems (technical ones) QAs have when aiming at testing particular application are due to the fact that they get very little (if any) help from developers. Yes - we, developers - are to be blamed here.
 That is pretty much surprising, as we all should have a feeling that the success is only possible if we all make an effort to build the product of the best quality possible. So - lesson for us - developers - we should be more open, and more willing to share our knowledge with QAs.
 
@@ -22,7 +22,7 @@ I have missed two other talks:
 
 I hope that videos will be available on the TestFest's youtube channel (https://www.youtube.com/channel/UCsDeChNGyDDHTevmoC3DrEQ) soon.
 
-###Workshop
+### Workshop
 I have missed the 2 talks mentioned above only because I have decided to join one of the workshops: "Predykcja elementów błędogennych w kodzie w praktyce" (Prediction of error causes in practice) - by Jarosław Hryszko. I had no expectations for this workshop whatsoever, but I thought that I know nearly nothing, so there was a high chance for myself to learn something. And I must say I wasn't wrong with my reasoning.
 
 Have you ever heard of KNIME (http://knime.org)? I have not heard about it as well :) So this is Eclipse based tool that allows you to create workflows for data analysis (as I understand). The great power of this solution comes from available "boxes" (components) that are ready to use. These are of different kinds:
@@ -56,7 +56,7 @@ Of course, this requires a lot of discipline (input data - this is not something
 
 Anyway, I think it was very well spent ~2 hours. I may not use this technique, but being aware of such an approach is (in my perspective) a real eye opener.
 
-###Summary
+### Summary
 So even though TestFest was not target at developers, I definitely think it was worth to spend whole Saturday in the building of the local Technical University. I have had a chance not only to get to know of some interesting personas, but also learned couple of things.
 I have meet with my colleagues (organizing the event) later in the evening at the after party, and we have spent good couple of hours discussing different topics (not all related to IT at all), enjoying good food and beverages.
 
