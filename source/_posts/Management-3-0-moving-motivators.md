@@ -16,7 +16,7 @@ After the introduction we started talking about our expectations regards the gro
 At some point we have started discussing work motivation factors, and Piotr - event host - introduced the concept of "moving motivators". As Piotr explained - there were some psychological studies and it seems that there are 12 main motivators: but as 2 of them refer to very personal area (family & sex relationship) we have focused on the remaining 10. Piotr has prepared a card pack for each attendee. The pack contained following cards:
 - curosity (I have plenty of things to investigate and to think about)
 - maestry (My work challenges my competence but it is still within my abilities)
--relatedness (I have a good social contact with the people in and around my work)
+- relatedness (I have a good social contact with the people in and around my work)
 - status (My position is good, and recognized by the people who work with me)
 - goal (My purpose in life is reflected in the work that I do)
 - power (There's enough room for me to influence what happens around me)
