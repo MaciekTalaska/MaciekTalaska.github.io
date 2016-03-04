@@ -4,7 +4,7 @@
   <subtitle><![CDATA[code is a modern poetry]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2016-02-05T17:56:42.759Z</updated>
+  <updated>2016-03-04T22:30:14.471Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -13,6 +13,177 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[My personal rant about GeekWeekWro]]></title>
+    <link href="http://maciektalaska.github.io/2016/03/04/My-personal-rant-about-GeekWeekWro/"/>
+    <id>http://maciektalaska.github.io/2016/03/04/My-personal-rant-about-GeekWeekWro/</id>
+    <published>2016-03-04T22:30:14.475Z</published>
+    <updated>2016-03-04T22:30:14.471Z</updated>
+    <content type="html"><![CDATA[<p>Last year the first edition of the GeekWeekWro (<a href="http://geekweekwro.pl" target="_blank" rel="external">http://geekweekwro.pl</a>) iniative has taken place in Wroclaw. I wasn’t really bought by it, and the same is this year - I don’t understand what is the point of having it (having GeekWeekWro).</p>
+<p>I have couple of doubts, qestsions regarding this idea: </p>
+<ol>
+<li>What is the purpose? What is the aim of it?</li>
+<li>What extra value does that bring? What does it improve within local tech-communites?</li>
+</ol>
+<p>The answer for the 1st question is… “I don’t know”. Even worse, you won’t find <em>any</em> goals of it on its own website (date: 3rd of March, 2016). The only thing you can find is as follows (translation from Polish by me): </p>
+<blockquote><p>GeekWeekWro #2 to tydzień pełen wiedzy, technologii i przede wszystkim zabawy!<br>Od 11 do 16 kwietnia 2016 po raz drugi będziecie mogli wziąć udział w spotkaniach grup, które działają we Wrocławiu!</p>
+<footer><strong>GeekWeekWro #2,</strong><cite><a href="http://geekweekwro.pl" target="_blank" rel="external">geekweekwro.pl</a></cite></footer></blockquote>
+<p>Translation:</p>
+<blockquote><p>GeekWeekWro #2 - a week full of knowledge, technology, and more importantly - fun!<br>During the week of 11 - 16 of April 2016, you will have the chance to take part in tech group meetings in Wroclaw!</p>
+</blockquote>
+<p>Well… that’s all true, but… can’t we take part in the tech group meetings in other months? When no GeekWeekWro is on schedule? Well… sure you can! Most of active group participants are doing it thorough all the year!<br>So… there is nothig that GeekWeekWro improves. There is no gain for the community. There is nothing ‘extra’ that happens during this ‘special’ week.</p>
+<p>Unfortunately, there is one thing that GeekWeekWro makes worse: it introduces clashes between events. </p>
+<p>(Sidenote):<br>When I settled down in Wroclaw in 2012, there were not many actively functioning tech groups. I was complainig a bit about it, but someone told me to put some effort and improve the situation. Since then I have been active member (and co-organizer) of the .Net group (I have given several talks), together with my friend Adam I have started AngularJS group (I am still main organizer), I am founder and leader of the functional programming group and I co-organize local Go Language group. I am not putting all these things in here to show you how awesome I am - I just want to point that in the area of how local tech communities work - I know what I am talking about.</p>
+<p>Let’s get back to the problem of clashing events. As an organizer I tried hard to avoid situation when the newly started group will clash with another one (that is probably more established already). I know that others (organizers) are thinking alike. Why would we put people in a position of choosing between attending meeting of group A vs attending meeting of group B if this is not necessary? I would like everyone to have opportunity to show up on as many events as possible. It should all be only personal limit, not something that myself (other organizers) are doing on purpose.</p>
+<p>So, if you think about cramming many events during a single week - it is obvious that there will be no choice, but to choose which event to give up from. Is that the goal of the GeekWeekWro? To limit, to restrict people from attending many events during the month that GeekWeekWro takes place? If so - well… job well done!</p>
+<p>I don’t see any way as how to improve this situation. In my opinion the whole idea is flawed. I don’t see any benefits of GeekWeekWro, but I can easily see disadvantages of having it. I clearly see how it negatively affects local community, and makes things worse than usual. I hope it will not get very popular (and I hope for it only because I want to be able to attend as many events as I usually do). The groups I am the main organizer of will definitely <em>NOT</em> join this initiative. And I am more than certain, that some others share my views and will thank me for that (for not introducing even more clashes between events).</p>
+<p>I have discussed ‘the problem of GeekWeekWro’ briefly during the last meeting of the local Python group. My friend Paweł suggested that it could have been much better idea to have several groups meeting in one place, each group giving 1 talk only. That could help integrate local community much better than what GeekWeekWro is currently doing.<br>Unfortunately, I still can see couple of problems:</p>
+<ul>
+<li>how to create ‘packs’ of groups? Matching JS/front-end focused with Go/.Net/Java - will that work for everyone?</li>
+<li>when to meet? For some people some days are simply ‘no-go’ days. In case there are many groups having a meeting on this particular ‘no-go’ day - such a person will not be able to attend a single event out of x they ususally attend</li>
+<li>can we prepare such ‘joined’ events in such a way so that these are interesting for many people?</li>
+<li>some groups are quite popular, and you may easily expect 50+ people attending - what if there are 4 groups meeting at the same place, same time? How do we find venue(s) for such meetings? It seems to mee that mostly due to this fact, this is not something we may organize.</li>
+</ul>
+<p>Besides - do we really need this kind of event to ‘integrate local tech groups’? Most of the groups are easy to find on meetup. If someone thinks some particular group could be of her/his interest - there is no other option as to go and check for yourself. That’s it. You don’t need GeekWeekWro for that. You don’t need GeekWeekWro, so that people unaware of existence of such groups will read about ‘how many tech oriented groups we have in Wrocław’. That is a pure nonsense. Anyone from the IT industry must have heard about local communities - either from work mates, colleagues, or via electronic channels. Those who are unaware - are probably not the target anyway.<br>And hearing in the ‘news’ or reading about tech groups on websites that have nothing to do with tech community - is this of any value? For the community?</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Last year the first edition of the GeekWeekWro (<a href="http://geekweekwro.pl" target="_blank" rel="external">http://geekweekwro.pl</a>)]]>
+    </summary>
+    
+      <category term="GeekWeekWro" scheme="http://maciektalaska.github.io/tags/GeekWeekWro/"/>
+    
+      <category term="community" scheme="http://maciektalaska.github.io/tags/community/"/>
+    
+      <category term="meetup" scheme="http://maciektalaska.github.io/tags/meetup/"/>
+    
+      <category term="thoughts" scheme="http://maciektalaska.github.io/tags/thoughts/"/>
+    
+      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[TestFest conference 2016]]></title>
+    <link href="http://maciektalaska.github.io/2016/02/25/TestFest-conference-2016/"/>
+    <id>http://maciektalaska.github.io/2016/02/25/TestFest-conference-2016/</id>
+    <published>2016-02-25T20:22:07.000Z</published>
+    <updated>2016-03-04T22:16:32.583Z</updated>
+    <content type="html"><![CDATA[<p>On the 20th of February 2016, a TestFest conference. It was targeted at testers working in IT industry. I am not one ;) but as my friends were organizing it, and they let me know about it - I decided to take part in it.</p>
+<h3 id="Mutation_testing_by_Tomasz_Dubikowski">Mutation testing by Tomasz Dubikowski</h3><p>It was the best talk of the whole conference from my perspective. It was not only a great introduction into mutation testing, but also very funny talk. Tomasz is great at presenting concepts. If you ever wandered what mutation testing was - you should definitely watch Tomasz’s talk. In my opinion the biggest gain here is that Tomasz made sure to present the whole concept on the very well though of example. In my opinion it was huge part of the success of this talk. I have watched several talks about mutation testing, but not a single one was close enought to the quality of the talk given by Tomasz. If you seem to struggle to understand the whole concept of mutation testing - I would strongly advise you to spend ~hour of your life watching Tomasz Dubikowski’s talk. Trust me - it will be time well spent.</p>
+<h3 id="Other_Talks">Other Talks</h3><p>Some other talks were mainly adressed to testers (or as Tomasz put that - QA Evangelists :) There were interesting talks on how to test the hardware to be sent into space (small satellites), how big companies from the telco industry make sure that what they develop could cope with high traffic. Some other talks were not that interesting for myself (being a developer) - for example I haven’t gained much from the talk that focused on the need of understanding of RDMS for QA person. Everything was already known to me. What stroke me though, was that it seems the “marriage” between QAs and Devs are still… challenging relationships :) I think most of the problems (technical ones) QAs have when aiming at testing particular application are due to the fact that they get very little (if any) help from developers. Yes - we, developers - are to be blamed here.<br>That is pretty much surprising, as we all should have a feeling that the success is only possible if we all make an effort to build the product of the best quality possible. So - lesson for us - developers - we should be more open, and more willing to share our knowledge with QAs.</p>
+<p>I have missed two other talks: </p>
+<ul>
+<li>“Wyzwania w automatyzacji WebDriver” (Challenges in WebDriver automation) by Tomasz Fajks, Tomasz Bień</li>
+<li>“Narzędzia do zautomatyzowanego testowania bezpieczeństwa aplikacji WWW” (Tools for automated security testing for web applications) - by Borys Łącki</li>
+</ul>
+<p>I hope that videos will be available on the TestFest’s youtube channel (<a href="https://www.youtube.com/channel/UCsDeChNGyDDHTevmoC3DrEQ" target="_blank" rel="external">https://www.youtube.com/channel/UCsDeChNGyDDHTevmoC3DrEQ</a>) soon.</p>
+<h3 id="Workshop">Workshop</h3><p>I have missed the 2 talks mentioned above only because I have decided to join one of the workshops: “Predykcja elementów błędogennych w kodzie w praktyce” (Prediction of error causes in practice) - by Jarosław Hryszko. I had no expectations for this workshop whatsoever, but I thought that I know nearly nothing, so there was a high chance for myself to learn something. And I must say I wasn’t wrong with my reasoning.</p>
+<p>Have you ever heard of KNIME (<a href="http://knime.org)?" target="_blank" rel="external">http://knime.org)?</a> I have not heard about it as well :) So this is Eclipse based tool that allows you to create workflows for data analysis (as I understand). The great power of this solution comes from available “boxes” (components) that are ready to use. These are of different kinds:</p>
+<ul>
+<li>data input (reading from various files)</li>
+<li>data transformation (different techniques/algorithms are available)</li>
+</ul>
+<p>So were all given a very short introduction to the KNIME platform at the beginning. Jarosław explained how to create workflows, how to connect elements (boxes/components) together.<br>The last part of the workshop was the most challenging one. Jarosław explained us the real power behind KNIME - ability to create models based on the data provided, and analyzing data with the help of the models.</p>
+<p>So… is there any possibility to predict where errors in code could/would occur? The only technique I knew so far was as follows:</p>
+<ul>
+<li>gather system statistics (especially focus on measure cyclomatic complexity and similar code metrics)</li>
+<li>gather data on which particular files in the repo are the ones that are being changed most often</li>
+</ul>
+<p>Create a 4 section box, having following areas:<br>a) complicated, frequently changed<br>b) complicated, infrequently changed<br>c) non-complicated, frequently changed<br>d) non-complicated, infrequently changed</p>
+<p>Those components/source files that belong to the area ‘a’ are those who are most likely to have new bugs introduced in. Those in the ‘b’ area, probably are buggy (were buggy) and we should make sure that we test them properly. ‘C’ area contains code which is usually frequently changed due to changing requirements, but if not many errors were introduced so far - we should not worry about this area as much as of ‘a’ &amp; ‘b’. The last area is the one that is of the least importance (from the perspective of possibility of new bugs being introduced).<br>As you may think - that is mainly standard approach, nothing new here.</p>
+<p>What Jarosław demonstrated was much more sophisticated. There were 3 requirements:<br>a) code metrics<br>b) history of bug fixes (based in Jira, if I remember correctly)<br>c) data from repository (frequency of changes - if I recall)</p>
+<p>After the model was created it would be possible to have another code metrics applied as input for the workflow, and get prediction on which parts of the application code are very vulnerable to bug introduction. That approach literaly blew my mind out.</p>
+<p>Of course, this requires a lot of discipline (input data - this is not something you can ‘borrow’ from someone else - another team/company). The other thing that could be a bit of a problem is: what happens if team gets changed: new people join and some other leave the team? The overall experience of the team changes. That could definitely impact the structure of the code, and its quality.</p>
+<p>Anyway, I think it was very well spent ~2 hours. I may not use this technique, but being aware of such an approach is (in my perspective) a real eye opener.</p>
+<h3 id="Summary">Summary</h3><p>So even though TestFest was not target at developers, I definitely think it was worth to spend whole Saturday in the building of the local Technical University. I have had a chance not only to get to know of some interesting personas, but also learned couple of things.<br>I have meet with my colleagues (organizing the event) later in the evening at the after party, and we have spent good couple of hours discussing different topics (not all related to IT at all), enjoying good food and beverages.</p>
+<p>Do I plan to show up on TestFest next year? Definitely. I hope I will meet some of the people I meet the next year as well!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>On the 20th of February 2016, a TestFest conference. It was targeted at testers working in IT industry. I am not one ;) but as my friends]]>
+    </summary>
+    
+      <category term="software quality" scheme="http://maciektalaska.github.io/tags/software-quality/"/>
+    
+      <category term="testing" scheme="http://maciektalaska.github.io/tags/testing/"/>
+    
+      <category term="conference" scheme="http://maciektalaska.github.io/categories/conference/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Management 3.0 & moving motivators]]></title>
+    <link href="http://maciektalaska.github.io/2016/02/18/Management-3-0-moving-motivators/"/>
+    <id>http://maciektalaska.github.io/2016/02/18/Management-3-0-moving-motivators/</id>
+    <published>2016-02-18T21:18:19.000Z</published>
+    <updated>2016-03-04T22:34:08.755Z</updated>
+    <content type="html"><![CDATA[<p>Couple of days ago I had a chance to attend first meeting of the newly created group focusing on “Management 3.0”. My understanding was that it was planned to talk about the burn-out and motivation for work, but it turned out that this has been slightly changed.</p>
+<p>After the introduction we started talking about our expectations regards the group and the meetings. It was great, as I had a very little knowledge of what the Management 3.0 is all about (and there were others who knew a lot more in this area than myself).</p>
+<p>At some point we have started discussing work motivation factors, and Piotr - event host - introduced the concept of “moving motivators”. As Piotr explained - there were some psychological studies and it seems that there are 12 main motivators: but as 2 of them refer to very personal area (family &amp; sex relationship) we have focused on the remaining 10. Piotr has prepared a card pack for each attendee. The pack contained following cards:</p>
+<ul>
+<li>curosity (I have plenty of things to investigate and to think about)</li>
+<li>maestry (My work challenges my competence but it is still within my abilities)</li>
+<li>relatedness (I have a good social contact with the people in and around my work)</li>
+<li>status (My position is good, and recognized by the people who work with me)</li>
+<li>goal (My purpose in life is reflected in the work that I do)</li>
+<li>power (There’s enough room for me to influence what happens around me)</li>
+<li>order (There are enough rules and policies for a stable environment)</li>
+<li>honor (I feel proud that my personal values are reflected in how I work)</li>
+<li>acceptance (The people around me approve of what I do and who I am)</li>
+</ul>
+<p>We have briefly discusses the meaning of cards. What was surprising that many of us had different thoughs about the very same card(s).</p>
+<p>Later Piotr asked us to put the cards in the following order:</p>
+<ul>
+<li>pick 3 which are the most important</li>
+<li>pick 4 that are also important, but not as important as the first 3</li>
+<li>pick 3 that are least important for us</li>
+</ul>
+<p>It is all important in regards of picking new work. If 2 out of 3 “most important” things will actually be lower in new place - is this a good choice?</p>
+<p>Another thing that Piotr mentioned was that it was important to take a photo of the order of the cards. Why? As our thinking of “what is the most important for me” changes through time. So it could be interesting to see how our approach to career/motivation goals change.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Couple of days ago I had a chance to attend first meeting of the newly created group focusing on “Management 3.0”. My understanding was t]]>
+    </summary>
+    
+      <category term="career" scheme="http://maciektalaska.github.io/tags/career/"/>
+    
+      <category term="management" scheme="http://maciektalaska.github.io/tags/management/"/>
+    
+      <category term="self development" scheme="http://maciektalaska.github.io/tags/self-development/"/>
+    
+      <category term="thoughts" scheme="http://maciektalaska.github.io/tags/thoughts/"/>
+    
+      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Acodemy.io - AngularJS & WebComponents workshop]]></title>
+    <link href="http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/"/>
+    <id>http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/</id>
+    <published>2016-02-05T18:13:18.000Z</published>
+    <updated>2016-03-04T21:59:52.683Z</updated>
+    <content type="html"><![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event has been run by the 10Clouds(<a href="http://10clouds.com" target="_blank" rel="external">http://10clouds.com</a>) - interesting IT company from Warsaw which specializes in modern solutions (made mainly using JavaScript, Php and Python).</p>
+<p>I have had a chance to work with AngularJS and that’s why I was more interested in WebComponents part of the workshop. I have done some reading before the workshop on WebComponents, so I had a bit of understanding what these beasts are, but I have never created one myself :)</p>
+<p>What I liked about the event is that I get much better understanding of the WebComponents. I haven’t had a chace to use them before. I was not sure what the difference between WebComponents and Polymer library was. Right now I know, that the aim of Polymer is to make using WebComponents a bit easier. Unfortunately, from the talks I had with some of the devs who already done some effort and used WebComponents I realized that Polymer is not yet ready to be used in production environment. Polymer still has no stable version, but its API has been greatly changed, and many breaking changes have been introduced some time ago. So for myself, the take-way was: WebComponents are definitely the future of web development (front-end), but at the moment Polymer is not ready to be used in production quality applications.</p>
+<p>I think that the event was very well prepared. We have started with pure AngularJS application (let’s say it was a Spotify clone) and then slowly made some improvements/changes to it. It was very interesting to see how WebComponents could be used from withing AngularJS application. Some steps were quite complicated, and that was the moment when asking the mentor about help was the best decision.</p>
+<p>The great thing about the event was that the company did not hide its aim: become better known in Wrocław, as they are about to expand their local office (at the time of writing it, the employed only ~3 devs in Wrocław). They way they approached their goal was awesome: no posters all over the town, no “conference” (usually such events are not of high quality) - but organizing something that is a huge challenge, an event that participants can benefit a lot from. Personally, I think this is the very best way to attract people to start working for a newly settled down company.</p>
+<p>The other great thing was that there was a possibility to talk to couple of developers already working for 10Clouds (they were mentoring groups during the event). So if anyone had any question in regards how the company works, what kind of project do they usually work on, what is their approch to forming teams, how do they organize their work in terms of the methodology - all these (and many more) questions could be easily answered either during the meeting or during the after party.</p>
+<p>10Clouds - thank you for making it all happen!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event ]]>
+    </summary>
+    
+      <category term="AngularJS" scheme="http://maciektalaska.github.io/tags/AngularJS/"/>
+    
+      <category term="WebComponents" scheme="http://maciektalaska.github.io/tags/WebComponents/"/>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+      <category term="workshop" scheme="http://maciektalaska.github.io/categories/workshop/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Ugly fonts in Java apps under Linux]]></title>
