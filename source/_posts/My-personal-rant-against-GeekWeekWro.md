@@ -1,4 +1,4 @@
-title: My personal rant about GeekWeekWro
+title: My personal rant against GeekWeekWro
 category:
 - events 
 tags:
