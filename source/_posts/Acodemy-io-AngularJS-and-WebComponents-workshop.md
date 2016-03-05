@@ -6,6 +6,7 @@ tags:
 - programming
 - AngularJS
 - WebComponents
+- Polymer
 ---
 
 Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event has been run by the 10Clouds(http://10clouds.com) - interesting IT company from Warsaw which specializes in modern solutions (made mainly using JavaScript, Php and Python).
