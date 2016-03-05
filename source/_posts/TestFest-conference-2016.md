@@ -25,7 +25,7 @@ I hope that videos will be available on the TestFest's youtube channel (https://
 ### Workshop
 I have missed the 2 talks mentioned above only because I have decided to join one of the workshops: "Predykcja elementów błędogennych w kodzie w praktyce" (Prediction of error causes in practice) - by Jarosław Hryszko. I had no expectations for this workshop whatsoever, but I thought that I know nearly nothing, so there was a high chance for myself to learn something. And I must say I wasn't wrong with my reasoning.
 
-Have you ever heard of KNIME (http://knime.org)? I have not heard about it as well :) So this is Eclipse based tool that allows you to create workflows for data analysis (as I understand). The great power of this solution comes from available "boxes" (components) that are ready to use. These are of different kinds:
+Have you ever heard of KNIME (http://knime.org) ? I have not heard about it as well :) So this is Eclipse based tool that allows you to create workflows for data analysis (as I understand). The great power of this solution comes from available "boxes" (components) that are ready to use. These are of different kinds:
 - data input (reading from various files)
 - data transformation (different techniques/algorithms are available)
 
