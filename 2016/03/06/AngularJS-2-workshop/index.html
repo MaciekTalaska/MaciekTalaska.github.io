@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Polymer | Not only zeroes and ones</title>
+  <title>AngularJS 2 workshop | Not only zeroes and ones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Not only zeroes and ones">
-<meta property="og:url" content="http://maciektalaska.github.io/tags/Polymer/index.html">
+  <meta name="description" content="Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (http://devmeetings.pl), started ~9 am and finished rougly 6 hours later.
+Hosts w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AngularJS 2 workshop">
+<meta property="og:url" content="http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/index.html">
 <meta property="og:site_name" content="Not only zeroes and ones">
-<meta property="og:description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
+<meta property="og:description" content="Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (http://devmeetings.pl), started ~9 am and finished rougly 6 hours later.
+Hosts w">
+<meta property="og:updated_time" content="2016-03-06T18:06:31.298Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Not only zeroes and ones">
-<meta name="twitter:description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
+<meta name="twitter:title" content="AngularJS 2 workshop">
+<meta name="twitter:description" content="Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (http://devmeetings.pl), started ~9 am and finished rougly 6 hours later.
+Hosts w">
   
     <link rel="alternative" href="http://maciektalaska.github.io/atom.xml" title="Not only zeroes and ones" type="application/atom+xml">
   
@@ -76,39 +80,89 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/" class="archive-article-date">
-  <time datetime="2016-02-05T18:13:18.000Z" itemprop="datePublished">Feb 5</time>
+        <section id="main"><article id="post-AngularJS-2-workshop" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/06/AngularJS-2-workshop/" class="article-date">
+  <time datetime="2016-03-06T17:08:41.000Z" itemprop="datePublished">2016-03-06</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/workshop/">workshop</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/">Acodemy.io - AngularJS &amp; WebComponents workshop</a>
+    <h1 class="article-title" itemprop="name">
+      AngularJS 2 workshop
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (<a href="http://devmeetings.pl" target="_blank" rel="external">http://devmeetings.pl</a>), started ~9 am and finished rougly 6 hours later.</p>
+<p>Hosts were employees of LiveChat (<a href="https://www.livechatinc.com/" target="_blank" rel="external">https://www.livechatinc.com/</a>). One of them - Wojciech Kwiatek - gave a talk on AngularJS2 based on their experience at one of the local tech groups. LiveChat decided to switch to AngularJS2 couple of months ago - even though AngularJS2 was not stable at all at that time (they have jumped on the AngularJS2 bandwagon when the whole thing was still in alpha!). It seems they are still pretty happy with the decision. I know that they have been looking at ReactJS as well, but decided that ReactJS may not fit that well into their usecase, and they would need to create a framework from many libraries on their own - so the ‘completeness’ of AngularJS2 was also important.<br>It was great that hosts had real experience with AngularJS2, and not only “played with it” at home :)</p>
+<p>Two skeletons of the apps were prepared - one using gulp, and the other utilizing webpack. If you would like to have a look, the webpack version is freely available on github: <a href="https://github.com/wkwiatek/angular2-webpack2" target="_blank" rel="external">https://github.com/wkwiatek/angular2-webpack2</a></p>
+<p>The whole agenda was as follows:</p>
+<ol>
+<li>Introduction to AngularJS2</li>
+<li>Components</li>
+<li>Events</li>
+<li>Pipes</li>
+<li>Services and Dependency Injection</li>
+<li>Forms</li>
+<li>Http+Rx.js</li>
+<li>Routing</li>
+</ol>
+<p>It was quite a lot of stuff (mostly brand new to most of the attendees) and I don’t think a single person has managed to finish all the tasks. I have personally go through the first 6 of them, but haven’t touched Http+Rx.js &amp; routing at all.</p>
+<p>I especially liked how forms are implemented in AngularJS2 - that is a common thing for web developers to create, and it is not of minor importance. We had interesting discussion on forms in ReactJS at one of the last local tech group meetings. Yes… forms are things you just can’t escape from :)</p>
+<p>What I lacked a bit was how to structure the whole application. I have spotted that many attendess just took the “finished? go with the next task” approach, and had most of the code in single .ts file. I just wanted to avoid that, and spend some more time on re-structuring the application, so I had everything (classes, components) in separate files.</p>
+<p>Summary:<br>I am happy I have attended the event. I only read about AngularJS2 before, and apart from tiny snippets, I have not written any AngularJS2 code. This was the best opportunity to get more familiar with the technology, create something bigger, and get the ‘feeling’ of the new, upcoming and technology.</p>
+<p>The event was another opportunity to do some more coding in TypeScript. I am not sure if I like it or not… on one hand it seems to mee just too much of a ‘C# for JavaScript developers’ type of approach, I realize that there is additional effort required to have type definition for all the libraries you use. But on the other hand - I think that TypeScript may allow for further improvements of JavaScript performance (thanks to type annotations and optimizations that could be possible to achieve thanks to it).</p>
+<p>Thanks to Wojciech Kwiatek, his friend from LiveChat (sorry, forget the name) and DevMeetings team for making this event happen!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/" data-id="cilgvg2ut001opjaqiopqqmio" class="article-share-link">Share</a>
+      
+        <a href="http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AngularJS/">AngularJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AngularJS2/">AngularJS2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TypeScript/">TypeScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/05/My-personal-rant-against-GeekWeekWro/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">My personal rant against GeekWeekWro</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
 </section>
         
           <aside id="sidebar">
@@ -229,11 +283,13 @@
 <script>
   var disqus_shortname = 'maciektalaska-github-io';
   
+  var disqus_url = 'http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//go.disqus.com/count.js';
+    dsq.src = '//go.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
