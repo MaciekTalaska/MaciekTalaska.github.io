@@ -35,5 +35,7 @@ What I lacked a bit was how to structure the whole application. I have spotted t
 Summary:
 I am happy I have attended the event. I only read about AngularJS2 before, and apart from tiny snippets, I have not written any AngularJS2 code. This was the best opportunity to get more familiar with the technology, create something bigger, and get the 'feeling' of the new, upcoming and technology.
 
+The event was another opportunity to do some more coding in TypeScript. I am not sure if I like it or not... on one hand it seems to mee just too much of a 'C# for JavaScript developers' type of approach, I realize that there is additional effort required to have type definition for all the libraries you use. But on the other hand - I think that TypeScript may allow for further improvements of JavaScript performance (thanks to type annotations and optimizations that could be possible to achieve thanks to it).
+
 Thanks to Wojciech Kwiatek, his friend from LiveChat (sorry, forget the name) and DevMeetings team for making this event happen!
 
