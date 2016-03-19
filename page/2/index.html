@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: workshop | Not only zeroes and ones</title>
+  <title>Not only zeroes and ones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Not only zeroes and ones">
-<meta property="og:url" content="http://maciektalaska.github.io/categories/workshop/index.html">
+<meta property="og:url" content="http://maciektalaska.github.io/page/2/index.html">
 <meta property="og:site_name" content="Not only zeroes and ones">
 <meta property="og:description" content="... some personal ramblings about code, programming languages, architecture and IT in general">
 <meta name="twitter:card" content="summary">
@@ -78,55 +78,90 @@
       <div class="outer">
         <section id="main">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/03/06/AngularJS-2-workshop/" class="archive-article-date">
-  <time datetime="2016-03-06T17:08:41.000Z" itemprop="datePublished">Mar 6</time>
+    <article id="post-Welcome-to-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/16/Welcome-to-Hexo/" class="article-date">
+  <time datetime="2015-08-16T10:30:08.000Z" itemprop="datePublished">2015-08-16</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blogging/">blogging</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/06/AngularJS-2-workshop/">AngularJS 2 workshop</a>
+      <a class="article-title" href="/2015/08/16/Welcome-to-Hexo/">Checking out hexo!</a>
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/" class="archive-article-date">
-  <time datetime="2016-02-05T18:13:18.000Z" itemprop="datePublished">Feb 5</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/">Acodemy.io - AngularJS &amp; WebComponents workshop</a>
-    </h1>
-  
+        <p>I was thinkig for quite some time how to migrate my old blog from Wordpress to some other blogging platform. Couple of reasons why I started thinking of giving up Wordpress:</p>
+<ul>
+<li>Wordpress is complicated, offers a lot of plugins, and this makes it vulnerable to ‘hacking’ </li>
+<li>I don’t think I really need the flexibility that Wordpress offers. I think for me it is just too much. I am not planning to write blog with someone else (so I don’t need platform which supports many authors)</li>
+<li>Wordpress requires hosting. And that costs.</li>
+</ul>
+<p>Some time ago I’ve bumped on couple of people saying that static sites generators are great for blogging purposes. It seemed to me a good idea having my blog hosted on github, so that I can have all the things in one place. </p>
+<p>I’ve heard about Jekyll, Nikola, Pelican but I knew there were many more. I had to figure out what my needs are, and after a short while, I came up with the most important features my preferred blogging platform should offer:</p>
+<ul>
+<li>good support for code snippets (as I will be using this mainly for my programming related blogging)</li>
+<li>support for plugins (for example: I want to be able to use disqus for comments)</li>
+<li>offering some nice themes, so that I can pick something for the very beginning</li>
+</ul>
+<p>My workmate suggested me to have a look at Nikola. The installation was easy (I’ve used virtualenv so not to spoil my environment). It took me a bit to have a first blog post in the shape of my desire. In a short time I’ve learned how to work with Nikola. I think Nikola is a great piece of software. I was quite amazed when I discovered how easy it was to install additional theme. It wasn’t much harder to change bootstrap’s based theme (for the bootstrap based themes). All with just providing couple of arguments to Nikola. Although… I wasn’t very happy with Nikola. Mainly because:</p>
+<ul>
+<li>Nikola is quite slow, re-generating your site takes quite some time. As I was playing with quite many themes, and was doing a lot of tweaking - that was something hard not to notice</li>
+<li>I’ve spent some time searching for nice themes, and… I was quite dissappointed. I couldn’t find a nice, easthetic theme, that would render code snippets in a fancy way. Some themes looked better in general, some were not that nice, but rendered code snippets better. All in all I haven’t found one theme I could be happy with. I had a quick look at Pelican (<a href="http://blog.getpelican.com/" target="_blank" rel="external">http://blog.getpelican.com/</a>) (which is another static site generator written in Python) and it seemed to me that Pelican offers nicer themes.</li>
+<li>my feeling is that there are not many plugins, and that the community behind Nikola is not very big</li>
+</ul>
+<p>After my experience with Nikola, I decided to give some others platforms a chance. I’ve made some research, and found a site that lists many static sites generators: <a href="https://www.staticgen.com/" target="_blank" rel="external">https://www.staticgen.com/</a> It is definitelly more than enough. I was amazed how many generators are there. Not only for Python and Ruby, but also for functional languages (Haskell, Scala) and some really exotic languages such as Racket (<a href="https://www.staticgen.com/frog" target="_blank" rel="external">https://www.staticgen.com/frog</a>).<br>One of my thoughts was that I should probably go with Jekyll as it has the biggest community, dozens of themes and plugins. What’s more, I think that in comparison to Nikola, it may be easier to find some articles on how to change things in Jekyll. I was pretty much set for trying Jekyll, when I spotted Hexo (<a href="https://www.staticgen.com/hexo" target="_blank" rel="external">https://www.staticgen.com/hexo</a>).</p>
+<p>Hexo is written in JavaScript and uses NodeJS. One of the biggest advantages is Hexo’s popularity: it is ranked 4th when taking github stars. Developers working on Hexo claim it is very fast. And comparing to Nikola… I must say that this is true. Hexo is even easier to set up than Nikola (or maybe it is just me being more fluent with JS stack than Python). If you already have NodeJS on your machine, there is just one package to install. After about a minute I had my “blog” created. Within next couple of minutes I had couple of sample notes, with codeblocks and gists - I decided it looked better than what I was able to create using Nikola. I’ve spent next hour (or two) playing with themes, and making my own modifications of themes. I am pretty happy with what I have achieved so far. There are couple of things I will need to change, but I guess I am good to go with what I have.</p>
+<p>Hexo supports codeblocks…</p>
+<p>this is how it highlights Python…</p>
+<figure class="highlight python"><figcaption><span>somepy</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span><span class="params">()</span>:</span></span><br><span class="line">  print(sys.info)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</span><br><span class="line">  my_func()</span><br></pre></td></tr></table></figure>          
+<p><br></p>
+<p>JavaScript:<br><figure class="highlight javascript"><figcaption><span>some simple AngularJS controller</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'angularFullstackApp'</span>)</span><br><span class="line">  .controller(<span class="string">'CategoryCtrl'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope, hierarchy, $location</span>) </span>&#123;</span><br><span class="line">    $scope.message = <span class="string">'Hello'</span>;</span><br><span class="line"></span><br><span class="line">    $scope.categories = [];</span><br><span class="line"></span><br><span class="line">    $scope.populateCategories = <span class="function"><span class="keyword">function</span>(<span class="params">allCategories</span>) </span>&#123;</span><br><span class="line">      $scope.categories = allCategories;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $scope.categoryClicked = <span class="function"><span class="keyword">function</span>(<span class="params">categoryId</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'category clicked: '</span>, categoryId);</span><br><span class="line">      $location.url(<span class="string">'/topics'</span>).search(<span class="string">'category'</span>,categoryId);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hierarchy.getAllCategories().then($scope.populateCategories);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p>…and Go:<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> main() &#123;</span><br><span class="line">  fmt.Println(<span class="string">"Hello World from Go!"</span>)</span><br><span class="line">  <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="number">20</span>; i++ &#123;</span><br><span class="line">    <span class="keyword">var</span> t = <span class="string">""</span></span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span> &#123;</span><br><span class="line">      t = <span class="string">"even"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      t = <span class="string">"odd"</span></span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"Number: %02d binary: %05b octal: %02o %#x\t is %v\n"</span>, i, i, i, i, t)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>and this… is how Hexo displays gists:</p>
+<script src="//gist.github.com/38c4ca8e73d9792f8eae.js"></script>
+<p>To sum up: I have created my main github page and within minutes I had it published.</p>
+<p>I haven’t thought that setting up new blog using static site generator will be so much fun. I regret I haven’t devoted some time to do it much earlier this year… anyway, I hope that this blog is going to be an opportunity to share what I learn.</p>
+<p>As for the moment, the only thing that bothers me is: how do I write blog notes using differnt machine than the one I have everything set up? With Wordpress and other dynamic bloggin platforms it was easy - most of them offered some kind of web interface (administration panel) one may use to write a blog note. With Hexo this is not the way. I will need to think of some way to make it possible. I will post if I have something to share on this topic. </p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/" data-id="cilz8edm40002p6aqtec8otxd" class="article-share-link">Share</a>
+      
+        <a href="http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jekyll/">Jekyll</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nikola/">Nikola</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/static-site-generators/">static site generators</a></li></ul>
+
+    </footer>
   </div>
+  
 </article>
+
+
+
   
   
-    </div></section>
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 </section>
         

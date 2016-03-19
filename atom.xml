@@ -4,7 +4,7 @@
   <subtitle><![CDATA[code is a modern poetry]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2016-03-06T18:06:31.298Z</updated>
+  <updated>2016-03-17T07:03:36.408Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -13,6 +13,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Let them know you!]]></title>
+    <link href="http://maciektalaska.github.io/2016/03/17/Let-them-know-you/"/>
+    <id>http://maciektalaska.github.io/2016/03/17/Let-them-know-you/</id>
+    <published>2016-03-17T07:03:36.420Z</published>
+    <updated>2016-03-17T07:03:36.408Z</updated>
+    <content type="html"><![CDATA[<p>Interesting idea has spread in Poland among software developers recently - it is called “Let them know you” (“Daj się poznać” in Polish). It is all about developing an open-source project, and blogging about it for ~3 months (roughly twice a week).</p>
+<p>I thought that as I don not have a lot of time - it is the best idea to join it!</p>
+<p>Couple of years ago, I was working for a company which had a very cool thing happening - it was called “Something new, something interesting, something cool”. It was a weekly digest emails containing links to articles, blog notes etc. which were found interesting/worth sharing by some developers. These links were then put into an email by one person, and sent to all interested within the company.</p>
+<p>I was so bought by this idea that I have even started doing this on my own in one of the companies I was working next. At some point I have realized that doing it all manually was the biggest disadvantage of the whole idea. I happened to forgot about including some links. I have also forgtten couple of times to send the email…</p>
+<p>There were also other problems:</p>
+<ul>
+<li>there was no easy way to search through all the links that have been sent</li>
+<li>newcomers were usually not aware of this initiative at all - someone had to tell them about it</li>
+<li>when a new person wanted this email digest to be send to them - I had to update the distribution list… again a 100% manual process</li>
+</ul>
+<p>Taking all these things under consideration - myself and my friend Cyryl started thinking about starting a project that would solve some of those problems. In the end of 2014 we have created a scaffolding of the Ruby on Rails project, but… after the initial couple of commits we have ‘forgotten’ about it, and for about a year we haven’t contributed to it at all. Recently I have decided to resurect the project, and push it forward. And the “Let them know you” initiative seems to be the perfect opportunity to be more devoted in working on the project.</p>
+<p>The github repository is located under the following location: <a href="https://github.com/curalink/curalink" target="_blank" rel="external">https://github.com/curalink/curalink</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Interesting idea has spread in Poland among software developers recently - it is called “Let them know you” (“Daj się poznać” in Polish).]]>
+    </summary>
+    
+      <category term="curalink" scheme="http://maciektalaska.github.io/tags/curalink/"/>
+    
+      <category term="let them know you" scheme="http://maciektalaska.github.io/tags/let-them-know-you/"/>
+    
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/my-open-source-projects/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[AngularJS 2 workshop]]></title>
