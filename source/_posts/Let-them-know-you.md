@@ -20,7 +20,7 @@ There were also other problems:
 - newcomers were usually not aware of this initiative at all - someone had to tell them about it
 - when a new person wanted this email digest to be send to them - I had to update the distribution list... again a 100% manual process
 
-Taking all these things under consideration - myself and my friend Cyryl started thinking about starting a project that would solve some of those problems. In the end of 2014 we have created a scaffolding of the Ruby on Rails project, but... after the initial couple of commits we have 'forgotten' about it, and for about a year we haven't contributed to it at all. Recently I have decided to resurect the project, and push it forward. And the "Let them know you" initiative seems to be the perfect opportunity to be more devoted in working on the project.
+Taking all these things under consideration - myself and my friend Cyryl(github: https://github.com/cyplo blog: https://blog.cyplo.net) started thinking about starting a project that would solve some of those problems. In the end of 2014 we have created a scaffolding of the Ruby on Rails project, but... after the initial couple of commits we have 'forgotten' about it, and for about a year we haven't contributed to it at all. Recently I have decided to resurect the project, and push it forward. And the "Let them know you" initiative seems to be the perfect opportunity to be more devoted in working on the project.
 
 The github repository is located under the following location: https://github.com/curalink/curalink
 
