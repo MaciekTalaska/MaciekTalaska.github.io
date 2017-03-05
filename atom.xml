@@ -1,25 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Not only zeroes and ones]]></title>
-  <subtitle><![CDATA[code is a modern poetry]]></subtitle>
+  <title>Not only zeroes and ones</title>
+  <subtitle>code is a modern poetry</subtitle>
   <link href="/atom.xml" rel="self"/>
+  
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2016-03-19T16:04:39.798Z</updated>
+  <updated>2017-03-05T22:26:10.177Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
-    <name><![CDATA[Maciek Talaska]]></name>
+    <name>Maciek Talaska</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Let them know you!]]></title>
+    <title>Why Elixir?</title>
+    <link href="http://maciektalaska.github.io/2017/03/04/Why-Elixir/"/>
+    <id>http://maciektalaska.github.io/2017/03/04/Why-Elixir/</id>
+    <published>2017-03-04T21:32:23.000Z</published>
+    <updated>2017-03-05T22:26:10.177Z</updated>
+    
+    <content type="html"><![CDATA[<p>In my first blognote related to this years edition of “Get Noticed” I have mentioned that I am planning to develop web application using Elixir &amp; Phoenix. Why Elixr? </p>
+<p>I have a chance to develop web applications using variety of technologies: C# + ASP.NET &amp; ASP.NET MVC, Python + Tornado, Ruby on Rails, JavaScript + NodeJS + Angular, Meteor (using Blaze as the frontend technolgy). Some technologies were more and some were less “developer friendly”. If I were to sum up what technolgies were the most fun to use I would say: RoR and JavaScript frameworks. MetorJS was a bit more fun, but NodeJS + Angular + MongoDB is something more solid, and still used even today (apart from the fact that teams are migrating from Angular 1.x). C# + ASP.NET/ASP.NET MVC were a bit less fun, altghough ASP.NET MVC was much better and I liked it a lot more than classic ASP.NET. What I didn’t particularly like about MS tech stack was that it was more of a blob than just language + technology stack. What I mean is that it is rather impossible to create something more complicated NOT using Visual Studio. Generators (as yeaoman, rake etc.) were not available at that time, so there was not a chance to use something else for working with code than Visual Studio. Everything was IDE driven. If there was a need to add additional fields to a database, or create new tables - all these actions were invoked from withing the IDE. It was so much different to the approach I could take develiping applications with pure JavaScript or Ruby. Having powerfull command line tools I felt I had more control over the process of application development. And I also had the feeling that I understood better what is happening and why.<br>So - the first thing would be “openess” or simply - technology being open source. Or even free - in terms of leaving all the decisions to the user.</p>
+<h2 id="Scalability">Scalability</h2><p>My personal opinion is that web applications are facing different problems that 10 years ago. Succesful applications right now often get extremely popular in a very short time. This means that it is important to design application with scalability in mind. And that is not so easy. The number of problems one has to face when it comes to designing scalable app is huge: beginning with responsiveness of the frontend itself, scalability of the workers, session management, and (probably the most complicated) picking up proper approach related to data storage. These are all non trivial problems. </p>
+<p>Elixir is based on Erlang virtual machine. Erlang on the other hand is a language developed in 1986 by Swedish company Ericsson. Erlang was born alltogher with OTP - Open Telecom Platform - which was used to to control switches (as far as I understand at the beginning the aim was to control and connect phone calls). Erlang is being described as general purpose, concurrent, fault-tolerant &amp; functional programming language. The concurrency in Erlang is achieved by using actor model, which is extremely interesting concept. In short - Erlang is capable of spawning hundreds or even mant thousands of processes in a very short time. These processes are much lighter than OS processes, and are controlle by Erlang VM. Important thing is that Erlang comes with a lot of tooling for controlling processes. Elixir as a language based on Erlang benefits from all that.</p>
+<p>As I see it nowadays - scalability becomes more and more important in the are of web applications development. Elixir seems like a perfect fit here. Why not Erlang itself? Well - partially because Elixir syntax seems more appealing to me.  </p>
+<h2 id="Functional_Programming">Functional Programming</h2><p>I have a strong feeling that functional programming is one of the most important concepts that each and every developer should deeply grasp. I was taking some Scala and Haskell courses back in the past, but I lacked a proper “battlefield” to test my knowledge. I want to make an effort this year and develop my skills in the area of functional programming. What better opportunity than creating an application using functional programming language?</p>
+<h2 id="Mature_technology">Mature technology</h2><p>I have already mentioned that the technology Elixir is based was created back in the 1986. It means that it is more than 30 years old. Quite a lot of time to prove its maturity.</p>
+<h2 id="Friendly_community">Friendly community</h2><p>What is unique in Ruby community is its openness and friendliness. I had zero problems solving problems I bumped on, when developing my RoR applications. A lot of resources are available, and people in general are very happy to help someone who is not familiar with the technology.<br>I have the feeling that the same is true about Elixir community. Maybe it is due to the fact that a lot of people who are interested in Elixir have Ruby background, but I am not sure if this is the (only) case. </p>
+<h2 id="Hype">Hype</h2><p>Hype may not be the best word… I have a strong feeling that there is a lot of interest in Elixir. Not only from the developers but also from companies. More and more companies are evaluating Elixir and check if it is a good fit for their needs. I see a constant rise in interest of hiring people who are familiar with Elixir. And this interest is no longer only from the companies located on the West Coast of US - there are more and more companies using Elixir located in Europe. I treat the whole adventure as an investment for the future.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In my first blognote related to this years edition of “Get Noticed” I have mentioned that I am planning to develop web application using 
+    
+    </summary>
+    
+      <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+    
+    
+      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+      <category term="my opensource projects" scheme="http://maciektalaska.github.io/tags/my-opensource-projects/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Get Noticed 2017 - start!</title>
+    <link href="http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/"/>
+    <id>http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/</id>
+    <published>2017-03-03T20:32:23.000Z</published>
+    <updated>2017-03-05T22:31:00.445Z</updated>
+    
+    <content type="html"><![CDATA[<p>Some as last year - this year another edition of “Get Noticed” initive is being started. The whole idea is quite simple - to blog about a project - software that will be developed during the next couple of months (all starts beginning of March 2017, ends in May). </p>
+<p>Last year I tried to take part in it, but due to some unpredicted things happening - I was not able to devote enough time for it, and didn’t manage to finish the application. I hope this year is going to be different and that I will be able to share quite a lot of thoughts &amp; decisions related to application development.</p>
+<p>So… as the idea for the application itself stays the same as last year - you may want to read a post about it from last year: <a href="/2016/03/17/Let-them-know-you/">Let them know you</a> </p>
+<p>My idea for the application is still the same - I want to create a simple web application that will allow people to share links to interesting resources. That’s it. Simple stuff. I hope that as time goes by I will implement more and more features for that.</p>
+<p>One thing is changing this year though - I have picked different language (or should I actually say - technology stack?). Last year my choice was to use Ruby+Rails. I was a total newbie with Rails&amp;Ruby at that time, and apart from going through some tutorials I haven’t created any application on my own using RoR. </p>
+<p>So what’s my techonlogy of choice this year? Wel… this year it is going to be Elixir+Phoenix. I haven’t made any other decisions yet. I am not sure what storage I am going to use. I am not sure if I am going to use ReactJS, AngularJS, VueJS or any other fancy technology for the frontend itself, or if I leave it as a pure Phoenix frontend. I hope to make all that decisions while developing the application, and will try to document my choices here - on my blog.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Some as last year - this year another edition of “Get Noticed” initive is being started. The whole idea is quite simple - to blog about a
+    
+    </summary>
+    
+      <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+    
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/my-open-source-projects/"/>
+    
+    
+      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Let them know you!</title>
     <link href="http://maciektalaska.github.io/2016/03/17/Let-them-know-you/"/>
     <id>http://maciektalaska.github.io/2016/03/17/Let-them-know-you/</id>
     <published>2016-03-17T22:13:18.000Z</published>
     <updated>2016-03-19T16:04:39.798Z</updated>
+    
     <content type="html"><![CDATA[<p>Interesting idea has spread in Poland among software developers recently - it is called “Let them know you” (“Daj się poznać” in Polish). It is all about developing an open-source project, and blogging about it for ~3 months (roughly twice a week).</p>
 <p>I thought that as I don not have a lot of time - it is the best idea to join it!</p>
 <p>Couple of years ago, I was working for a company which had a very cool thing happening - it was called “Something new, something interesting, something cool”. It was a weekly digest emails containing links to articles, blog notes etc. which were found interesting/worth sharing by some developers. These links were then put into an email by one person, and sent to all interested within the company.</p>
@@ -33,24 +102,29 @@
 <p>Taking all these things under consideration - myself and my friend Cyryl(github: <a href="https://github.com/cyplo" target="_blank" rel="external">https://github.com/cyplo</a> blog: <a href="https://blog.cyplo.net" target="_blank" rel="external">https://blog.cyplo.net</a>) started thinking about starting a project that would solve some of those problems. In the end of 2014 we have created a scaffolding of the Ruby on Rails project, but… after the initial couple of commits we have ‘forgotten’ about it, and for about a year we haven’t contributed to it at all. Recently I have decided to resurect the project, and push it forward. And the “Let them know you” initiative seems to be the perfect opportunity to be more devoted in working on the project.</p>
 <p>The github repository is located under the following location: <a href="https://github.com/curalink/curalink" target="_blank" rel="external">https://github.com/curalink/curalink</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Interesting idea has spread in Poland among software developers recently - it is called “Let them know you” (“Daj się poznać” in Polish).]]>
+    
+      &lt;p&gt;Interesting idea has spread in Poland among software developers recently - it is called “Let them know you” (“Daj się poznać” in Polish).
+    
     </summary>
     
-      <category term="curalink" scheme="http://maciektalaska.github.io/tags/curalink/"/>
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/my-open-source-projects/"/>
+    
     
       <category term="let them know you" scheme="http://maciektalaska.github.io/tags/let-them-know-you/"/>
     
-      <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/my-open-source-projects/"/>
+      <category term="curalink" scheme="http://maciektalaska.github.io/tags/curalink/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[AngularJS 2 workshop]]></title>
+    <title>AngularJS 2 workshop</title>
     <link href="http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/"/>
     <id>http://maciektalaska.github.io/2016/03/06/AngularJS-2-workshop/</id>
     <published>2016-03-06T17:08:41.000Z</published>
     <updated>2016-03-06T18:06:31.298Z</updated>
+    
     <content type="html"><![CDATA[<p>Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (<a href="http://devmeetings.pl" target="_blank" rel="external">http://devmeetings.pl</a>), started ~9 am and finished rougly 6 hours later.</p>
 <p>Hosts were employees of LiveChat (<a href="https://www.livechatinc.com/" target="_blank" rel="external">https://www.livechatinc.com/</a>). One of them - Wojciech Kwiatek - gave a talk on AngularJS2 based on their experience at one of the local tech groups. LiveChat decided to switch to AngularJS2 couple of months ago - even though AngularJS2 was not stable at all at that time (they have jumped on the AngularJS2 bandwagon when the whole thing was still in alpha!). It seems they are still pretty happy with the decision. I know that they have been looking at ReactJS as well, but decided that ReactJS may not fit that well into their usecase, and they would need to create a framework from many libraries on their own - so the ‘completeness’ of AngularJS2 was also important.<br>It was great that hosts had real experience with AngularJS2, and not only “played with it” at home :)</p>
 <p>Two skeletons of the apps were prepared - one using gulp, and the other utilizing webpack. If you would like to have a look, the webpack version is freely available on github: <a href="https://github.com/wkwiatek/angular2-webpack2" target="_blank" rel="external">https://github.com/wkwiatek/angular2-webpack2</a></p>
@@ -72,9 +146,17 @@
 <p>The event was another opportunity to do some more coding in TypeScript. I am not sure if I like it or not… on one hand it seems to mee just too much of a ‘C# for JavaScript developers’ type of approach, I realize that there is additional effort required to have type definition for all the libraries you use. But on the other hand - I think that TypeScript may allow for further improvements of JavaScript performance (thanks to type annotations and optimizations that could be possible to achieve thanks to it).</p>
 <p>Thanks to Wojciech Kwiatek, his friend from LiveChat (sorry, forget the name) and DevMeetings team for making this event happen!</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (<a href="http://d]]>
+    
+      &lt;p&gt;Last Saturday I have attended AngularJS 2.0 workshop organized in Wrocław. The event has been organized by DevMeetings (&lt;a href=&quot;http://d
+    
     </summary>
+    
+      <category term="workshop" scheme="http://maciektalaska.github.io/categories/workshop/"/>
+    
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
     
       <category term="AngularJS" scheme="http://maciektalaska.github.io/tags/AngularJS/"/>
     
@@ -82,18 +164,15 @@
     
       <category term="TypeScript" scheme="http://maciektalaska.github.io/tags/TypeScript/"/>
     
-      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
-    
-      <category term="workshop" scheme="http://maciektalaska.github.io/categories/workshop/"/>
-    
   </entry>
   
   <entry>
-    <title><![CDATA[My personal rant against GeekWeekWro]]></title>
+    <title>My personal rant against GeekWeekWro</title>
     <link href="http://maciektalaska.github.io/2016/03/05/My-personal-rant-against-GeekWeekWro/"/>
     <id>http://maciektalaska.github.io/2016/03/05/My-personal-rant-against-GeekWeekWro/</id>
     <published>2016-03-05T08:33:25.395Z</published>
     <updated>2016-03-05T08:33:25.383Z</updated>
+    
     <content type="html"><![CDATA[<p>Last year the first edition of the GeekWeekWro (<a href="http://geekweekwro.pl" target="_blank" rel="external">http://geekweekwro.pl</a>) iniative has taken place in Wroclaw. I wasn’t really bought by it, and the same is this year - I don’t understand what is the point of having it (having GeekWeekWro).</p>
 <p>I have couple of doubts, qestsions regarding this idea: </p>
 <ol>
@@ -101,7 +180,7 @@
 <li>What extra value does that bring? What does it improve within local tech-communites?</li>
 </ol>
 <p>The answer for the 1st question is… “I don’t know”. Even worse, you won’t find <em>any</em> goals of it on its own website (date: 3rd of March, 2016). The only thing you can find is as follows (translation from Polish by me): </p>
-<blockquote><p>GeekWeekWro #2 to tydzień pełen wiedzy, technologii i przede wszystkim zabawy!<br>Od 11 do 16 kwietnia 2016 po raz drugi będziecie mogli wziąć udział w spotkaniach grup, które działają we Wrocławiu!</p>
+<blockquote><p>GeekWeekWro #2 to tydzień pełen wiedzy, technologii i przede wszystkim zabawy!<br>Od 11 do 16 kwietnia 2016 po raz drugi będziecie mogli wziąć udział w spotkaniach grup, które działają we Wrocławiu! </p>
 <footer><strong>GeekWeekWro #2,</strong><cite><a href="http://geekweekwro.pl" target="_blank" rel="external">geekweekwro.pl</a></cite></footer></blockquote>
 <p>Translation:</p>
 <blockquote><p>GeekWeekWro #2 - a week full of knowledge, technology, and more importantly - fun!<br>During the week of 11 - 16 of April 2016, you will have the chance to take part in tech group meetings in Wroclaw!</p>
@@ -121,28 +200,33 @@
 </ul>
 <p>Besides - do we really need this kind of event to ‘integrate local tech groups’? Most of the groups are easy to find on meetup. If someone thinks some particular group could be of her/his interest - there is no other option as to go and check for yourself. That’s it. You don’t need GeekWeekWro for that. You don’t need GeekWeekWro, so that people unaware of existence of such groups will read about ‘how many tech oriented groups we have in Wrocław’. That is a pure nonsense. Anyone from the IT industry must have heard about local communities - either from work mates, colleagues, or via electronic channels. Those who are unaware - are probably not the target anyway.<br>And hearing in the ‘news’ or reading about tech groups on websites that have nothing to do with tech community - is this of any value? For the community?</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Last year the first edition of the GeekWeekWro (<a href="http://geekweekwro.pl" target="_blank" rel="external">http://geekweekwro.pl</a>)]]>
+    
+      &lt;p&gt;Last year the first edition of the GeekWeekWro (&lt;a href=&quot;http://geekweekwro.pl&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://geekweekwro.pl&lt;/a&gt;)
+    
     </summary>
     
-      <category term="GeekWeekWro" scheme="http://maciektalaska.github.io/tags/GeekWeekWro/"/>
+      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
     
-      <category term="community" scheme="http://maciektalaska.github.io/tags/community/"/>
-    
-      <category term="meetup" scheme="http://maciektalaska.github.io/tags/meetup/"/>
     
       <category term="thoughts" scheme="http://maciektalaska.github.io/tags/thoughts/"/>
     
-      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
+      <category term="community" scheme="http://maciektalaska.github.io/tags/community/"/>
+    
+      <category term="GeekWeekWro" scheme="http://maciektalaska.github.io/tags/GeekWeekWro/"/>
+    
+      <category term="meetup" scheme="http://maciektalaska.github.io/tags/meetup/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[TestFest conference 2016]]></title>
+    <title>TestFest conference 2016</title>
     <link href="http://maciektalaska.github.io/2016/02/25/TestFest-conference-2016/"/>
     <id>http://maciektalaska.github.io/2016/02/25/TestFest-conference-2016/</id>
     <published>2016-02-25T20:22:07.000Z</published>
     <updated>2016-03-05T10:05:23.375Z</updated>
+    
     <content type="html"><![CDATA[<p>On the 20th of February 2016 I have attended a TestFest conference ([PL] <a href="http://www.testfest.pl" target="_blank" rel="external">http://www.testfest.pl</a>). It was targeted at testers/QAs working in IT industry. I am not one of them ;) but as my friends were organizing the whole event, and they let me know about it - I decided to take part in it.</p>
 <h3 id="Epic_Battle:_Zombies_vs_Mutants_(Mutation_testing)_by_Tomasz_Dubikowski">Epic Battle: Zombies vs Mutants (Mutation testing) by Tomasz Dubikowski</h3><p>It was the best talk of the whole conference from my perspective. It was not only a great introduction into mutation testing, but also very funny talk. Tomasz is great at presenting concepts. If you ever wandered what mutation testing was - you should definitely watch Tomasz’s talk (it is not available to watch yet). In my opinion the biggest gain there was that Tomasz made sure to present the whole concept on the very well though of example(s). In my opinion it was huge part of the success of this talk. I have watched several talks about mutation testing so far, but not many were close to the quality of the talk given by Tomasz. If you seem to struggle to understand the whole concept of mutation testing - I would strongly advise you to spend ~hour of your life watching Tomasz Dubikowski’s talk. Trust me - it will be time well spent.</p>
 <h3 id="Other_Talks">Other Talks</h3><p>Some other talks were mainly adressed to testers (or as Tomasz put that - QA Evangelists :) There were interesting talks on how to test the hardware to be sent into space (small satellites), how big companies from the telco industry make sure that what they develop could cope with high traffic. </p>
@@ -176,24 +260,29 @@
 <p>Do I plan to show up on TestFest next year? Definitely. I hope I will meet some of the people I meet the next year as well!</p>
 <p>Please note, that talks, conference site etc. are in Polih only.<br>TestFest conference site [PL]: <a href="http://www.testfest.pl" target="_blank" rel="external">http://www.testfest.pl</a><br>TestFest conference YouTube channel [PL]: <a href="https://www.youtube.com/channel/UCsDeChNGyDDHTevmoC3DrEQ" target="_blank" rel="external">https://www.youtube.com/channel/UCsDeChNGyDDHTevmoC3DrEQ</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>On the 20th of February 2016 I have attended a TestFest conference ([PL] <a href="http://www.testfest.pl" target="_blank" rel="external">]]>
+    
+      &lt;p&gt;On the 20th of February 2016 I have attended a TestFest conference ([PL] &lt;a href=&quot;http://www.testfest.pl&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;
+    
     </summary>
+    
+      <category term="conference" scheme="http://maciektalaska.github.io/categories/conference/"/>
+    
     
       <category term="software quality" scheme="http://maciektalaska.github.io/tags/software-quality/"/>
     
       <category term="testing" scheme="http://maciektalaska.github.io/tags/testing/"/>
     
-      <category term="conference" scheme="http://maciektalaska.github.io/categories/conference/"/>
-    
   </entry>
   
   <entry>
-    <title><![CDATA[Management 3.0 & moving motivators]]></title>
+    <title>Management 3.0 &amp; moving motivators</title>
     <link href="http://maciektalaska.github.io/2016/02/18/Management-3-0-moving-motivators/"/>
     <id>http://maciektalaska.github.io/2016/02/18/Management-3-0-moving-motivators/</id>
     <published>2016-02-18T21:18:19.000Z</published>
     <updated>2016-03-04T22:34:08.755Z</updated>
+    
     <content type="html"><![CDATA[<p>Couple of days ago I had a chance to attend first meeting of the newly created group focusing on “Management 3.0”. My understanding was that it was planned to talk about the burn-out and motivation for work, but it turned out that this has been slightly changed.</p>
 <p>After the introduction we started talking about our expectations regards the group and the meetings. It was great, as I had a very little knowledge of what the Management 3.0 is all about (and there were others who knew a lot more in this area than myself).</p>
 <p>At some point we have started discussing work motivation factors, and Piotr - event host - introduced the concept of “moving motivators”. As Piotr explained - there were some psychological studies and it seems that there are 12 main motivators: but as 2 of them refer to very personal area (family &amp; sex relationship) we have focused on the remaining 10. Piotr has prepared a card pack for each attendee. The pack contained following cards:</p>
@@ -218,28 +307,33 @@
 <p>It is all important in regards of picking new work. If 2 out of 3 “most important” things will actually be lower in new place - is this a good choice?</p>
 <p>Another thing that Piotr mentioned was that it was important to take a photo of the order of the cards. Why? As our thinking of “what is the most important for me” changes through time. So it could be interesting to see how our approach to career/motivation goals change.</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Couple of days ago I had a chance to attend first meeting of the newly created group focusing on “Management 3.0”. My understanding was t]]>
+    
+      &lt;p&gt;Couple of days ago I had a chance to attend first meeting of the newly created group focusing on “Management 3.0”. My understanding was t
+    
     </summary>
     
-      <category term="career" scheme="http://maciektalaska.github.io/tags/career/"/>
+      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
     
-      <category term="management" scheme="http://maciektalaska.github.io/tags/management/"/>
-    
-      <category term="self development" scheme="http://maciektalaska.github.io/tags/self-development/"/>
     
       <category term="thoughts" scheme="http://maciektalaska.github.io/tags/thoughts/"/>
     
-      <category term="events" scheme="http://maciektalaska.github.io/categories/events/"/>
+      <category term="self development" scheme="http://maciektalaska.github.io/tags/self-development/"/>
+    
+      <category term="management" scheme="http://maciektalaska.github.io/tags/management/"/>
+    
+      <category term="career" scheme="http://maciektalaska.github.io/tags/career/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Acodemy.io - AngularJS & WebComponents workshop]]></title>
+    <title>Acodemy.io - AngularJS &amp; WebComponents workshop</title>
     <link href="http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/"/>
     <id>http://maciektalaska.github.io/2016/02/05/Acodemy-io-AngularJS-and-WebComponents-workshop/</id>
     <published>2016-02-05T18:13:18.000Z</published>
     <updated>2016-03-05T08:52:18.783Z</updated>
+    
     <content type="html"><![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event has been run by the 10Clouds(<a href="http://10clouds.com" target="_blank" rel="external">http://10clouds.com</a>) - interesting IT company from Warsaw which specializes in modern solutions (made mainly using JavaScript, Php and Python).</p>
 <p>I have had a chance to work with AngularJS and that’s why I was more interested in WebComponents part of the workshop. I have done some reading before the workshop on WebComponents, so I had a bit of understanding what these beasts are, but I have never created one myself :)</p>
 <p>What I liked about the event is that I get much better understanding of the WebComponents. I haven’t had a chace to use them before. I was not sure what the difference between WebComponents and Polymer library was. Right now I know, that the aim of Polymer is to make using WebComponents a bit easier. Unfortunately, from the talks I had with some of the devs who already done some effort and used WebComponents I realized that Polymer is not yet ready to be used in production environment. Polymer still has no stable version, but its API has been greatly changed, and many breaking changes have been introduced some time ago. So for myself, the take-way was: WebComponents are definitely the future of web development (front-end), but at the moment Polymer is not ready to be used in production quality applications.</p>
@@ -248,28 +342,33 @@
 <p>The other great thing was that there was a possibility to talk to couple of developers already working for 10Clouds (they were mentoring groups during the event). So if anyone had any question in regards how the company works, what kind of project do they usually work on, what is their approch to forming teams, how do they organize their work in terms of the methodology - all these (and many more) questions could be easily answered either during the meeting or during the after party.</p>
 <p>10Clouds - thank you for making it all happen!</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event ]]>
+    
+      &lt;p&gt;Last Saturday I had a chance to join couple of folks from Wroclaw and take part in the AngularJS+WebComponents workshop. The whole event 
+    
     </summary>
     
-      <category term="AngularJS" scheme="http://maciektalaska.github.io/tags/AngularJS/"/>
+      <category term="workshop" scheme="http://maciektalaska.github.io/categories/workshop/"/>
     
-      <category term="Polymer" scheme="http://maciektalaska.github.io/tags/Polymer/"/>
-    
-      <category term="WebComponents" scheme="http://maciektalaska.github.io/tags/WebComponents/"/>
     
       <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
     
-      <category term="workshop" scheme="http://maciektalaska.github.io/categories/workshop/"/>
+      <category term="AngularJS" scheme="http://maciektalaska.github.io/tags/AngularJS/"/>
+    
+      <category term="WebComponents" scheme="http://maciektalaska.github.io/tags/WebComponents/"/>
+    
+      <category term="Polymer" scheme="http://maciektalaska.github.io/tags/Polymer/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Ugly fonts in Java apps under Linux]]></title>
+    <title>Ugly fonts in Java apps under Linux</title>
     <link href="http://maciektalaska.github.io/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/"/>
     <id>http://maciektalaska.github.io/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/</id>
     <published>2016-02-05T16:19:55.000Z</published>
     <updated>2016-02-05T17:56:42.759Z</updated>
+    
     <content type="html"><![CDATA[<p>What strikes me from time to time is that under Linux all works well… after you spend some time searching for ways to fix things, and make them work <em>exactly</em> the way you want them too.</p>
 <p>I am really picky when it comes to the UI. I love command line and console, but as I do work a lot with written words… quality of fonts rendering is <em>extremely</em> important for myself. </p>
 <p>I am learning RoR at the moment. I’ve been doing quite some coding recenlty using pure VIM, but decided to give RubyMine a try. RubyMine is very powerful IDE, but under the default JDK/JRE (no difference if this is OpenJDK or Oracle’s JDK/JRE) the way it renders fonts is just pain to the eyes. Eclipse renders fonts much better (by default) than RubyMine, and NetBeans is as bad as RubyMine is.</p>
@@ -284,20 +383,25 @@
 <p>After:</p>
 <img src="/2016/02/05/Ugly-fonts-in-Java-apps-under-Linux/rubymine-nice-fonts.jpg" alt="nicely looking fonts in RubyMine!" title="nicely looking fonts in RubyMine!">
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>What strikes me from time to time is that under Linux all works well… after you spend some time searching for ways to fix things, and mak]]>
+    
+      &lt;p&gt;What strikes me from time to time is that under Linux all works well… after you spend some time searching for ways to fix things, and mak
+    
     </summary>
+    
     
       <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Boiling Frogs conference]]></title>
+    <title>Boiling Frogs conference</title>
     <link href="http://maciektalaska.github.io/2016/01/21/BoilingFrogs-conference/"/>
     <id>http://maciektalaska.github.io/2016/01/21/BoilingFrogs-conference/</id>
     <published>2016-01-21T06:03:20.000Z</published>
     <updated>2016-02-05T16:17:00.443Z</updated>
+    
     <content type="html"><![CDATA[<p>Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - at least I haven’t heard of it before my friend told me couple of weeks ago. Boiling Frogs is organized in Wroclaw, Poland. As far as I remember this year’s edition was <del>the second one</del> (actually I was corrected on that: this was the first edition of the conference). What is interesting is that there is no huge company behind organizers. You may actually say that Boiling Frogs is a community driven event is oranized by people who form community.</p>
 <p>I was quite surprised that this event offered three separate tracks of talks. I understand how much of an effort is required to prepare even a single track conference, but three separate tracks… well done Boiling Frogs 2016 organinzers! Each track had a mixture of talks: some focused on very technical aspects of software development, some others more focused on a topics that focus on software from a bit higher perspective (architecture, project management etc.).<br>One important thing to note was that even though most of the presenters had their slides in English, talks were held in Polish only (at least all those that I have attended).</p>
 <h3 id="Opening_Talk">Opening Talk</h3><p>Conference started with opening talk by the main organizer: Tomasz Kaczmarzyk. Tomasz told us about the history of the conference, the effort himself, team and friends and family devoted to make this event happened.</p>
@@ -327,47 +431,57 @@
 <h3 id="Summary">Summary</h3><p>As for the confenece itself I must say that I like these type of events: organized by smaller group of people. Made with passion and not because there is a business aim, or an opportunity for a company to make its brand better known.<br>Boiling Frogs was one of the events that boost you with energy, that makes you become better in what you do on a daily basis.<br>If there is another Boiling Frogs conference next year to be organized - I will definitely make sure to get a chance to attend it.</p>
 <p>I think that 2016 has started very well. I can’t wait for other opportunities for me to develop my knowledge and attend even more interesting events.</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - a]]>
+    
+      &lt;p&gt;Last Saturday (16th of January) I had a chance to take part in the Boiling Frogs 2016 conference. This is not very widely known event - a
+    
     </summary>
     
-      <category term="Boiling Frogs" scheme="http://maciektalaska.github.io/tags/Boiling-Frogs/"/>
-    
       <category term="conference" scheme="http://maciektalaska.github.io/categories/conference/"/>
+    
+    
+      <category term="Boiling Frogs" scheme="http://maciektalaska.github.io/tags/Boiling-Frogs/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Go, Kubuntu, fish-shell & gvm - addendum]]></title>
+    <title>Go, Kubuntu, fish-shell &amp; gvm - addendum</title>
     <link href="http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/"/>
     <id>http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/</id>
     <published>2016-01-17T20:03:54.000Z</published>
     <updated>2016-01-20T05:56:37.828Z</updated>
+    
     <content type="html"><![CDATA[<p>There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you quickly realize that the <code>gvm</code> is not available to you anymore. What is the point?<br>Well… this is due to the fact that after a function is created for fish-shell (as in step 2 in previous blog post) it works… but it is not stored for future use. To do that - there is one single thing required - function has to be saved. This will make it persisted, and such a function will be available to you after your machine is restarted. </p>
 <p>How to save a function? This is extreemely easy, you just type <code>funcsave &lt;function_name&gt;</code> - in our case (in case of saving <code>gvm</code>) it will be: <code>funcsave gvm</code>. That’s it. </p>
 <p>Now if you cd to your <code>~/config/fish/function</code> folder, you will spot the file named <code>gvm.fish</code>. The content of the file is (surprise?) the definition of the <code>gvm</code> function used by fish-shell (step 2 of the previous blog note). </p>
 <p>I hope it is now clear </p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you qu]]>
+    
+      &lt;p&gt;There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you qu
+    
     </summary>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+    
+    
+      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
     
       <category term="Go" scheme="http://maciektalaska.github.io/tags/Go/"/>
     
       <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
     
-      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
-    
-      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
-    
   </entry>
   
   <entry>
-    <title><![CDATA[Go 1.5.x on Kubuntu using fish shell and gvm]]></title>
+    <title>Go 1.5.x on Kubuntu using fish shell and gvm</title>
     <link href="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/"/>
     <id>http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/</id>
     <published>2015-11-07T22:16:08.000Z</published>
     <updated>2015-11-07T23:46:38.433Z</updated>
+    
     <content type="html"><![CDATA[<p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It was not good enough even for learning purposes.</p>
 <p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="external">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
 <p>What if need to use two different versions of Go? How do I manage them?</p>
@@ -376,33 +490,38 @@
 <li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="external">https://github.com/moovweb/gvm</a>)</li>
 <li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212</a>). You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="external">https://github.com/edc/bass</a>)</li>
 <li><code>gvm install go1.5.x</code> will not work, as Go 1.5.x requires Go 1.4.x for compilation. Install Go 1.4.x first (<code>gvm install go1.4.3</code>)</li>
-<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Failed to compile. <span class="operator"><span class="keyword">Check</span> the <span class="keyword">logs</span> <span class="keyword">at</span> /home/&lt;username&gt;/.gvm/<span class="keyword">logs</span>/<span class="keyword">go</span>-go1<span class="number">.5</span><span class="number">.1</span>-compile.<span class="keyword">log</span></span><br><span class="line"><span class="keyword">ERROR</span>: <span class="keyword">Failed</span> <span class="keyword">to</span> <span class="keyword">use</span> installed <span class="keyword">version</span></span><br><span class="line">Installing go1<span class="number">.5</span><span class="number">.1</span>...</span><br><span class="line"> * Compiling...</span></span><br></pre></td></tr></table></figure>
-In my case the log content was: <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##### Building Go bootstrap tool.                                             </span></span><br><span class="line">cmd/dist</span><br><span class="line">ERROR: Cannot find /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go.</span><br><span class="line">Set $GOROOT_BOOTSTRAP <span class="built_in">to</span> <span class="operator">a</span> working Go tree &gt;= Go <span class="number">1.4</span>.</span><br><span class="line">./make.bash: <span class="built_in">line</span> <span class="number">121</span>: /home/&lt;username&gt;/go1<span class="number">.4</span>/bin/go: No such <span class="built_in">file</span> <span class="operator">or</span> <span class="built_in">directory</span></span><br></pre></td></tr></table></figure></li>
+<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">ERROR: </span>Failed to compile. Check the logs at /home/&lt;username&gt;/.gvm/logs/go-go1.5.1-compile.log</div><div class="line"><span class="keyword">ERROR: </span>Failed to use installed version</div><div class="line">Installing go1.5.1...</div><div class="line"> * Compiling...</div></pre></td></tr></table></figure>
+In my case the log content was: <figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">##### Building Go bootstrap tool.                                             </div><div class="line">cmd/dist</div><div class="line"><span class="keyword">ERROR: </span>Cannot find /home/&lt;username&gt;/go1.4/bin/go.</div><div class="line">Set $GOROOT_BOOTSTRAP to a working Go tree &gt;= Go 1.4.</div><div class="line">./make.bash: line 121: /home/&lt;username&gt;/go1.4/bin/go: No such file or directory</div></pre></td></tr></table></figure></li>
 <li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340</a>):<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
 </ol>
 <p>That should be all fine right now. Go 1.5.x should be installed on your machine (side by side with the Go 1.4.x that was used required to compile the newest version of Go).</p>
 <p>Happy coding (in Go!)</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu reposito]]>
+    
+      &lt;p&gt;I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu reposito
+    
     </summary>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+    
+    
+      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
     
       <category term="Go" scheme="http://maciektalaska.github.io/tags/Go/"/>
     
       <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
     
-      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
-    
-      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
-    
   </entry>
   
   <entry>
-    <title><![CDATA[Checking out hexo!]]></title>
+    <title>Checking out hexo!</title>
     <link href="http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/"/>
     <id>http://maciektalaska.github.io/2015/08/16/Welcome-to-Hexo/</id>
     <published>2015-08-16T10:30:08.000Z</published>
     <updated>2015-08-16T21:56:48.434Z</updated>
+    
     <content type="html"><![CDATA[<p>I was thinkig for quite some time how to migrate my old blog from Wordpress to some other blogging platform. Couple of reasons why I started thinking of giving up Wordpress:</p>
 <ul>
 <li>Wordpress is complicated, offers a lot of plugins, and this makes it vulnerable to ‘hacking’ </li>
@@ -426,30 +545,34 @@ In my case the log content was: <figure class="highlight livecodeserver"><table>
 <p>Hexo is written in JavaScript and uses NodeJS. One of the biggest advantages is Hexo’s popularity: it is ranked 4th when taking github stars. Developers working on Hexo claim it is very fast. And comparing to Nikola… I must say that this is true. Hexo is even easier to set up than Nikola (or maybe it is just me being more fluent with JS stack than Python). If you already have NodeJS on your machine, there is just one package to install. After about a minute I had my “blog” created. Within next couple of minutes I had couple of sample notes, with codeblocks and gists - I decided it looked better than what I was able to create using Nikola. I’ve spent next hour (or two) playing with themes, and making my own modifications of themes. I am pretty happy with what I have achieved so far. There are couple of things I will need to change, but I guess I am good to go with what I have.</p>
 <p>Hexo supports codeblocks…</p>
 <p>this is how it highlights Python…</p>
-<figure class="highlight python"><figcaption><span>somepy</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span><span class="params">()</span>:</span></span><br><span class="line">  print(sys.info)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</span><br><span class="line">  my_func()</span><br></pre></td></tr></table></figure>          
+<figure class="highlight python"><figcaption><span>somepy</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> sys </div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span><span class="params">()</span>:</span></div><div class="line">  print(sys.info)</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</div><div class="line">  my_func()</div><div class="line"></div></pre></td></tr></table></figure>          
 <p><br></p>
-<p>JavaScript:<br><figure class="highlight javascript"><figcaption><span>some simple AngularJS controller</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'angularFullstackApp'</span>)</span><br><span class="line">  .controller(<span class="string">'CategoryCtrl'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope, hierarchy, $location</span>) </span>&#123;</span><br><span class="line">    $scope.message = <span class="string">'Hello'</span>;</span><br><span class="line"></span><br><span class="line">    $scope.categories = [];</span><br><span class="line"></span><br><span class="line">    $scope.populateCategories = <span class="function"><span class="keyword">function</span>(<span class="params">allCategories</span>) </span>&#123;</span><br><span class="line">      $scope.categories = allCategories;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $scope.categoryClicked = <span class="function"><span class="keyword">function</span>(<span class="params">categoryId</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'category clicked: '</span>, categoryId);</span><br><span class="line">      $location.url(<span class="string">'/topics'</span>).search(<span class="string">'category'</span>,categoryId);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    hierarchy.getAllCategories().then($scope.populateCategories);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript:<br><figure class="highlight javascript"><figcaption><span>some simple AngularJS controller</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">angular.module(<span class="string">'angularFullstackApp'</span>)</div><div class="line">  .controller(<span class="string">'CategoryCtrl'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope, hierarchy, $location</span>) </span>&#123;</div><div class="line">    $scope.message = <span class="string">'Hello'</span>;</div><div class="line"></div><div class="line">    $scope.categories = [];</div><div class="line"></div><div class="line">    $scope.populateCategories = <span class="function"><span class="keyword">function</span>(<span class="params">allCategories</span>) </span>&#123;</div><div class="line">      $scope.categories = allCategories;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    $scope.categoryClicked = <span class="function"><span class="keyword">function</span>(<span class="params">categoryId</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">'category clicked: '</span>, categoryId);</div><div class="line">      $location.url(<span class="string">'/topics'</span>).search(<span class="string">'category'</span>,categoryId);</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    hierarchy.getAllCategories().then($scope.populateCategories);</div><div class="line">  &#125;);</div><div class="line"></div></pre></td></tr></table></figure></p>
 <p><br></p>
-<p>…and Go:<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> main() &#123;</span><br><span class="line">  fmt.Println(<span class="string">"Hello World from Go!"</span>)</span><br><span class="line">  <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="number">20</span>; i++ &#123;</span><br><span class="line">    <span class="keyword">var</span> t = <span class="string">""</span></span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span> &#123;</span><br><span class="line">      t = <span class="string">"even"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      t = <span class="string">"odd"</span></span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"Number: %02d binary: %05b octal: %02o %#x\t is %v\n"</span>, i, i, i, i, t)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>…and Go:<br><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">package</span> main</div><div class="line"></div><div class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line">  fmt.Println(<span class="string">"Hello World from Go!"</span>)</div><div class="line">  <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="number">20</span>; i++ &#123;</div><div class="line">    <span class="keyword">var</span> t = <span class="string">""</span></div><div class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span> &#123;</div><div class="line">      t = <span class="string">"even"</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      t = <span class="string">"odd"</span></div><div class="line">    &#125;</div><div class="line">    fmt.Printf(<span class="string">"Number: %02d binary: %05b octal: %02o %#x\t is %v\n"</span>, i, i, i, i, t)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure></p>
 <p>and this… is how Hexo displays gists:</p>
 <script src="//gist.github.com/38c4ca8e73d9792f8eae.js"></script>
 <p>To sum up: I have created my main github page and within minutes I had it published.</p>
 <p>I haven’t thought that setting up new blog using static site generator will be so much fun. I regret I haven’t devoted some time to do it much earlier this year… anyway, I hope that this blog is going to be an opportunity to share what I learn.</p>
 <p>As for the moment, the only thing that bothers me is: how do I write blog notes using differnt machine than the one I have everything set up? With Wordpress and other dynamic bloggin platforms it was easy - most of them offered some kind of web interface (administration panel) one may use to write a blog note. With Hexo this is not the way. I will need to think of some way to make it possible. I will post if I have something to share on this topic. </p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>I was thinkig for quite some time how to migrate my old blog from Wordpress to some other blogging platform. Couple of reasons why I star]]>
+    
+      &lt;p&gt;I was thinkig for quite some time how to migrate my old blog from Wordpress to some other blogging platform. Couple of reasons why I star
+    
     </summary>
     
-      <category term="Jekyll" scheme="http://maciektalaska.github.io/tags/Jekyll/"/>
+      <category term="blogging" scheme="http://maciektalaska.github.io/categories/blogging/"/>
     
-      <category term="Nikola" scheme="http://maciektalaska.github.io/tags/Nikola/"/>
     
       <category term="hexo" scheme="http://maciektalaska.github.io/tags/hexo/"/>
     
-      <category term="static site generators" scheme="http://maciektalaska.github.io/tags/static-site-generators/"/>
+      <category term="Nikola" scheme="http://maciektalaska.github.io/tags/Nikola/"/>
     
-      <category term="blogging" scheme="http://maciektalaska.github.io/categories/blogging/"/>
+      <category term="Jekyll" scheme="http://maciektalaska.github.io/tags/Jekyll/"/>
+    
+      <category term="static site generators" scheme="http://maciektalaska.github.io/tags/static-site-generators/"/>
     
   </entry>
   
