@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title></title>
+    
+    <link href="/categories/get-noticed-2017/my-open-source-projects/atom.xml" rel="self"/>
+    
+    <link href="http://maciektalaska.github.io/"/>
+    <updated>2017-03-05T22:31:00.445Z</updated>
+    <id>/categories/get-noticed-2017/my-open-source-projects/</id>
+    
+    <generator uri="http://hexo.io/">Hexo</generator>
+    
+    <entry>
+        <title>Get Noticed 2017 - start!</title>
+        <link href="http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/"/>
+        <id>http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/</id>
+        <published>2017-03-03T20:32:23.000Z</published>
+        <updated>2017-03-05T22:31:00.445Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;Some as last year - this year another edition of “Get Noticed” initive is being started. The whole idea is quite simple - to blog about a
+            
+        </summary>
+        
+        <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+        
+        <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/my-open-source-projects/"/>
+        
+        
+        <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+        
+        <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+        
+    </entry>
+    
+</feed>

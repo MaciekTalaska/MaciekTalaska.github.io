@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title></title>
+    
+    <link href="/categories/programming/atom.xml" rel="self"/>
+    
+    <link href="http://maciektalaska.github.io/"/>
+    <updated>2016-01-20T05:56:37.828Z</updated>
+    <id>/categories/programming/</id>
+    
+    <generator uri="http://hexo.io/">Hexo</generator>
+    
+    <entry>
+        <title>Go, Kubuntu, fish-shell &amp; gvm - addendum</title>
+        <link href="http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/"/>
+        <id>http://maciektalaska.github.io/2016/01/17/Go-Kubuntu-fish-shell-gvm-addendum/</id>
+        <published>2016-01-17T20:03:54.000Z</published>
+        <updated>2016-01-20T05:56:37.828Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;There is just one important thing that I have missed in my previous post. It all seems to work ok, but if you restart your machine you qu
+            
+        </summary>
+        
+        <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+        
+        
+        <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
+        
+        <category term="Go" scheme="http://maciektalaska.github.io/tags/Go/"/>
+        
+        <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
+        
+    </entry>
+    
+    <entry>
+        <title>Go 1.5.x on Kubuntu using fish shell and gvm</title>
+        <link href="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/"/>
+        <id>http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/</id>
+        <published>2015-11-07T22:16:08.000Z</published>
+        <updated>2015-11-07T23:46:38.433Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu reposito
+            
+        </summary>
+        
+        <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+        
+        
+        <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
+        
+        <category term="Go" scheme="http://maciektalaska.github.io/tags/Go/"/>
+        
+        <category term="configuration" scheme="http://maciektalaska.github.io/tags/configuration/"/>
+        
+    </entry>
+    
+</feed>
