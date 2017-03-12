@@ -1,6 +1,7 @@
 title: 'Elixir: setting up environment'
 date: 2017-03-12 23:31:37
 category:
+- get-noticed-2017
 - programming
 - functional programming
 tags:
