@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2017-03-12T22:52:00.973Z</updated>
+  <updated>2017-03-12T22:57:30.384Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/"/>
     <id>http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/</id>
     <published>2017-03-12T22:31:37.000Z</published>
-    <updated>2017-03-12T22:52:00.973Z</updated>
+    <updated>2017-03-12T22:57:30.384Z</updated>
     
     <content type="html"><![CDATA[<p>One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…</p>
 <p>I am happily using nvm (for NodeJS) gvm (for Go) and rvm (Ruby) for quite a long time, and I started looking for something similar for Elixir and Erlang.<br>I wasn’t very lucky at first, as my first approaches were not really successful. It was mainly due to the fact that I am happy user of fish shell, and I don’t want to give up using it (even in favor for zsh).</p>
@@ -52,9 +52,11 @@
     
     </summary>
     
-      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+      <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
     
-      <category term="functional programming" scheme="http://maciektalaska.github.io/categories/programming/functional-programming/"/>
+      <category term="programming" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/programming/"/>
+    
+      <category term="functional programming" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/programming/functional-programming/"/>
     
     
       <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
