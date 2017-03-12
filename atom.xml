@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2017-03-05T22:26:10.177Z</updated>
+  <updated>2017-03-12T22:52:00.973Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -16,11 +16,132 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Elixir: setting up environment</title>
+    <link href="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/"/>
+    <id>http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/</id>
+    <published>2017-03-12T22:31:37.000Z</published>
+    <updated>2017-03-12T22:52:00.973Z</updated>
+    
+    <content type="html"><![CDATA[<p>One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…</p>
+<p>I am happily using nvm (for NodeJS) gvm (for Go) and rvm (Ruby) for quite a long time, and I started looking for something similar for Elixir and Erlang.<br>I wasn’t very lucky at first, as my first approaches were not really successful. It was mainly due to the fact that I am happy user of fish shell, and I don’t want to give up using it (even in favor for zsh).</p>
+<p>I think I am this kind of a person who really tries to makes everything complicated ;) Even though I could have Elixir and Erlang easily installed issuing something as simple as “sudo apt install erlang elixir” I am not really keen on doing that. Two reasons:</p>
+<ul>
+<li>in most cases versions of the compilers/interpreters in system repository are really far from the latest (and that gets worse and worst as time passes by)</li>
+<li>in such a scenario it is not possible to have many versions of a specified compiler / interpreter installed. And sometimes it is a must (maintenance of some old application etc.)</li>
+</ul>
+<h2 id="asdf_to_the_rescue!">asdf to the rescue!</h2><p>Back in summer 2016 I was quite successful using hybrid approach. I have used asdf () for Erlang and kiex for Elixir. Asdf was required only to get specified version of Erlang. Asdf was not accessible for me via fish (so I had to use bash for asdf) but luckily kiex was running all fine under fish. The whole thing didn’t bother me that much, and I have been using such approach for quite a while. Today - as I was trying to set up environment on another machine - I have realized that asdf does support fish shell right now :) What a nice surprise. It all became so easy right now.</p>
+<p>Asdf seems to be much more flexible than the other version managers that I am using. Asdf does not focus on one particular language. There is a concept of plugins for asdf which allow it use asdf for managing versions for many different languages. Installing plugin(s) is the second thing you will have to do right after you have asdf installed. But if you get to that point, installing new version of Erlang becomes as easy as:</p>
+<p><code>asdf install erlang 19.2</code></p>
+<p>which (to me) is as simple as <code>sudo apt install erlang</code> but, of course, using asdf has advantage of installing specific version(s)!</p>
+<p>Asdf is very simple but powerful. All your version management is literally under your fingertips.</p>
+<p>So, if you’re like me, and you like to have 100% control of the versions of compilers installed - please try asdf. This is a great tool!</p>
+<p>I am actually thinking if it would be a good idea to try asdf for managing NodeJS, Go and Ruby versions (oh, and I am planning to get my hands dirty a bit with Clojure and Rust in the nearest future, and asdf supports these as well…) </p>
+<h2 id="Caution:_dependencies">Caution: dependencies</h2><p>It is essential to study erlang plugin home page. It brings a lot of info on dependencies that are required to have Erlang offer everything. I haven’t paid enough attention first, and ended up with environment I wasnt able to run obser (or debugger). This particular issue is easily fixed by installing dev version of wxwidgets library (and rebuilding Erlang, unfortunately…). </p>
+<p>So if you encounter “wxe_driver.so” related error whenever you try to launch observer/debugger - you know what to do :)</p>
+<p>Another thing worth mentioning is having xsltproc installed, so that documentation could be properly created during the process of installing Erlang.</p>
+<h2 id="Elixir">Elixir</h2><p>Having Erlang installed, and being familiar with asdf, bringing Elixir on board is piece of cake (assuming you have elixir plugin for asdf installed first):</p>
+<p><code>asdf install elixir 1.3.4</code></p>
+<p>Elixir installation is much, much faster than Erlang. </p>
+<h2 id="Disadvantages_of_asdf">Disadvantages of asdf</h2><p>The only disdvantage of asdf I can think of right now is that installing new version of Erlang does take time. Why? It is not as simple as just retrieving binary from some repository. Source code for specific version is being downloaded and then built. It all take several minutes on my machine - but hey, how often do you install new version of your favorite compiler? Personally I think that flexibility described is worth waiting from time to time to have a specific version of the language installed. It is important to note that removing version previously installed is almost instant.<br>Note: after adding additional libraries (wxgtk-dev among others, so that I can start observer and debugger) compilation time now takes significantly longer. It is althought the price I am still willing to pay for the flexibility that asdf brings.</p>
+<p>After a quick break from writing this blog post, I realized that there is one more thing which I don’t particularly like about asdf. Installing a new plugin requires one to go to asdf project site on github and check what is the plugin repo url - when you have it, a simple <code>asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git</code> (for Elixir) will do. I’d rather have possibility of doing all that via command line. But that a really minor thing.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and pre
+    
+    </summary>
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/categories/programming/"/>
+    
+      <category term="functional programming" scheme="http://maciektalaska.github.io/categories/programming/functional-programming/"/>
+    
+    
+      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+    
+      <category term="Erlang" scheme="http://maciektalaska.github.io/tags/Erlang/"/>
+    
+      <category term="fish shell" scheme="http://maciektalaska.github.io/tags/fish-shell/"/>
+    
+      <category term="asdf" scheme="http://maciektalaska.github.io/tags/asdf/"/>
+    
+      <category term="asdf-erlang" scheme="http://maciektalaska.github.io/tags/asdf-erlang/"/>
+    
+      <category term="asdf-elixir" scheme="http://maciektalaska.github.io/tags/asdf-elixir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linkr - description of the project</title>
+    <link href="http://maciektalaska.github.io/2017/03/12/Linkr-description-of-the-project/"/>
+    <id>http://maciektalaska.github.io/2017/03/12/Linkr-description-of-the-project/</id>
+    <published>2017-03-12T21:49:01.000Z</published>
+    <updated>2017-03-12T22:49:30.971Z</updated>
+    
+    <content type="html"><![CDATA[<p>This week I have been preparing for starting work on my Linkr project. I have been thinking about functionalities, and what mechanisms the project should support. What I have planned so far is:</p>
+<p>Milestone 1: </p>
+<ul>
+<li>any user should be allowed to add a link (URI) + short description of the resource</li>
+<li>any user should be able to search (the search mechanism should look for the search term in the description and the URI itself)</li>
+</ul>
+<p>Milestone 2:</p>
+<ul>
+<li>user should be allowed to add tags</li>
+<li>user should be allowed to sort filter links by tags </li>
+</ul>
+<p>Milestone 3:</p>
+<ul>
+<li>user should be allowed to create an acount - i.e. only registered users should be able to add new links (that whould be a change to what is M1)</li>
+<li>only owner should be able to change description of the link (I think it should not be possible to remove added links)</li>
+</ul>
+<p>Milestone 4:</p>
+<ul>
+<li>user should be able to see only links of tags of interest (global filtering for logged in user)</li>
+</ul>
+<p>Mileston 5:</p>
+<ul>
+<li>‘likes’ - users should be able to sort links starting with those which were given the highest rank in the category. I am not sure how the sorting should actually work. I guess it should not sort all the links within particular tag - that would be a nonse, as it could happen that old link were displayed on the top all the time. Maybe it should be as follows: “sort by date first (descending) and then after the ranking”?</li>
+</ul>
+<p>Milestone 6:</p>
+<ul>
+<li>users should be allowed to use rss/atom - so that they’re constantly updated with new links being added</li>
+</ul>
+<p>Milestne 7:</p>
+<ul>
+<li>users should recieve email notification on new links - this option should be configurable, so that it is possible to receive a notifaction in following scenarios:<ul>
+<li>no notifications at all</li>
+<li>after there is a new link added</li>
+<li>daily</li>
+<li>on a specific day/time of the week (I am not really sure about that. I am not 100% sold to that idea, as I don’t know if such a flexibility is important. It may as well be fixed as - Friday 6PM GMT or something alike)</li>
+</ul>
+</li>
+</ul>
+<p>If I were to sum the whole idea of the project - I’d say that it is something like ‘delicious for a group of people’. I have a strong feeling that this could be useful for a group of people who may be exploring a specific area of knowledge, and this would be a nice thing to share their finding among the group.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This week I have been preparing for starting work on my Linkr project. I have been thinking about functionalities, and what mechanisms th
+    
+    </summary>
+    
+      <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+    
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/tags/my-open-source-projects/"/>
+    
+      <category term="elixir" scheme="http://maciektalaska.github.io/tags/elixir/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Why Elixir?</title>
     <link href="http://maciektalaska.github.io/2017/03/04/Why-Elixir/"/>
     <id>http://maciektalaska.github.io/2017/03/04/Why-Elixir/</id>
     <published>2017-03-04T21:32:23.000Z</published>
-    <updated>2017-03-05T22:26:10.177Z</updated>
+    <updated>2017-03-05T22:32:56.216Z</updated>
     
     <content type="html"><![CDATA[<p>In my first blognote related to this years edition of “Get Noticed” I have mentioned that I am planning to develop web application using Elixir &amp; Phoenix. Why Elixr? </p>
 <p>I have a chance to develop web applications using variety of technologies: C# + ASP.NET &amp; ASP.NET MVC, Python + Tornado, Ruby on Rails, JavaScript + NodeJS + Angular, Meteor (using Blaze as the frontend technolgy). Some technologies were more and some were less “developer friendly”. If I were to sum up what technolgies were the most fun to use I would say: RoR and JavaScript frameworks. MetorJS was a bit more fun, but NodeJS + Angular + MongoDB is something more solid, and still used even today (apart from the fact that teams are migrating from Angular 1.x). C# + ASP.NET/ASP.NET MVC were a bit less fun, altghough ASP.NET MVC was much better and I liked it a lot more than classic ASP.NET. What I didn’t particularly like about MS tech stack was that it was more of a blob than just language + technology stack. What I mean is that it is rather impossible to create something more complicated NOT using Visual Studio. Generators (as yeaoman, rake etc.) were not available at that time, so there was not a chance to use something else for working with code than Visual Studio. Everything was IDE driven. If there was a need to add additional fields to a database, or create new tables - all these actions were invoked from withing the IDE. It was so much different to the approach I could take develiping applications with pure JavaScript or Ruby. Having powerfull command line tools I felt I had more control over the process of application development. And I also had the feeling that I understood better what is happening and why.<br>So - the first thing would be “openess” or simply - technology being open source. Or even free - in terms of leaving all the decisions to the user.</p>
@@ -42,9 +163,9 @@
       <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
     
     
-      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
-    
       <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
     
       <category term="my opensource projects" scheme="http://maciektalaska.github.io/tags/my-opensource-projects/"/>
     
@@ -55,12 +176,12 @@
     <link href="http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/"/>
     <id>http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/</id>
     <published>2017-03-03T20:32:23.000Z</published>
-    <updated>2017-03-05T22:31:00.445Z</updated>
+    <updated>2017-03-05T22:33:44.729Z</updated>
     
     <content type="html"><![CDATA[<p>Some as last year - this year another edition of “Get Noticed” initive is being started. The whole idea is quite simple - to blog about a project - software that will be developed during the next couple of months (all starts beginning of March 2017, ends in May). </p>
 <p>Last year I tried to take part in it, but due to some unpredicted things happening - I was not able to devote enough time for it, and didn’t manage to finish the application. I hope this year is going to be different and that I will be able to share quite a lot of thoughts &amp; decisions related to application development.</p>
-<p>So… as the idea for the application itself stays the same as last year - you may want to read a post about it from last year: <a href="/2016/03/17/Let-them-know-you/">Let them know you</a> </p>
 <p>My idea for the application is still the same - I want to create a simple web application that will allow people to share links to interesting resources. That’s it. Simple stuff. I hope that as time goes by I will implement more and more features for that.</p>
+<p>So… as the idea for the application itself stays the same as last year - you may want to read a post about it from last year: <a href="/2016/03/17/Let-them-know-you/">Let them know you</a> </p>
 <p>One thing is changing this year though - I have picked different language (or should I actually say - technology stack?). Last year my choice was to use Ruby+Rails. I was a total newbie with Rails&amp;Ruby at that time, and apart from going through some tutorials I haven’t created any application on my own using RoR. </p>
 <p>So what’s my techonlogy of choice this year? Wel… this year it is going to be Elixir+Phoenix. I haven’t made any other decisions yet. I am not sure what storage I am going to use. I am not sure if I am going to use ReactJS, AngularJS, VueJS or any other fancy technology for the frontend itself, or if I leave it as a pure Phoenix frontend. I hope to make all that decisions while developing the application, and will try to document my choices here - on my blog.</p>
 ]]></content>
@@ -73,12 +194,12 @@
     
       <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
     
-      <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/my-open-source-projects/"/>
     
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
     
       <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
     
-      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/tags/my-open-source-projects/"/>
     
   </entry>
   

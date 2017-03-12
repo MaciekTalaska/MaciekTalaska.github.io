@@ -5,17 +5,41 @@
     <link href="/categories/get-noticed-2017/atom.xml" rel="self"/>
     
     <link href="http://maciektalaska.github.io/"/>
-    <updated>2017-03-05T22:26:10.177Z</updated>
+    <updated>2017-03-12T22:49:30.971Z</updated>
     <id>/categories/get-noticed-2017/</id>
     
     <generator uri="http://hexo.io/">Hexo</generator>
+    
+    <entry>
+        <title>Linkr - description of the project</title>
+        <link href="http://maciektalaska.github.io/2017/03/12/Linkr-description-of-the-project/"/>
+        <id>http://maciektalaska.github.io/2017/03/12/Linkr-description-of-the-project/</id>
+        <published>2017-03-12T21:49:01.000Z</published>
+        <updated>2017-03-12T22:49:30.971Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;This week I have been preparing for starting work on my Linkr project. I have been thinking about functionalities, and what mechanisms th
+            
+        </summary>
+        
+        <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+        
+        
+        <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+        
+        <category term="my open source projects" scheme="http://maciektalaska.github.io/tags/my-open-source-projects/"/>
+        
+        <category term="elixir" scheme="http://maciektalaska.github.io/tags/elixir/"/>
+        
+    </entry>
     
     <entry>
         <title>Why Elixir?</title>
         <link href="http://maciektalaska.github.io/2017/03/04/Why-Elixir/"/>
         <id>http://maciektalaska.github.io/2017/03/04/Why-Elixir/</id>
         <published>2017-03-04T21:32:23.000Z</published>
-        <updated>2017-03-05T22:26:10.177Z</updated>
+        <updated>2017-03-05T22:32:56.216Z</updated>
         
         <summary type="html">
             
@@ -26,9 +50,9 @@
         <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
         
         
-        <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
-        
         <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+        
+        <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
         
         <category term="my opensource projects" scheme="http://maciektalaska.github.io/tags/my-opensource-projects/"/>
         
@@ -39,7 +63,7 @@
         <link href="http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/"/>
         <id>http://maciektalaska.github.io/2017/03/03/get-noticed-2017-start/</id>
         <published>2017-03-03T20:32:23.000Z</published>
-        <updated>2017-03-05T22:31:00.445Z</updated>
+        <updated>2017-03-05T22:33:44.729Z</updated>
         
         <summary type="html">
             
@@ -49,12 +73,12 @@
         
         <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
         
-        <category term="my open source projects" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/my-open-source-projects/"/>
         
+        <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
         
         <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
         
-        <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+        <category term="my open source projects" scheme="http://maciektalaska.github.io/tags/my-open-source-projects/"/>
         
     </entry>
     
