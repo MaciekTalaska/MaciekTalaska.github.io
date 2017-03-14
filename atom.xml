@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2017-03-12T22:57:30.384Z</updated>
+  <updated>2017-03-14T19:31:51.949Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -16,20 +16,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Elixir-setting-up-environment-doc</title>
+    <link href="http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-doc/"/>
+    <id>http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-doc/</id>
+    <published>2017-03-14T19:11:53.000Z</published>
+    <updated>2017-03-14T19:31:51.949Z</updated>
+    
+    <content type="html"><![CDATA[<p>In my last (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.</p>
+<p>There is one important thing that was not covered in that post: documentation. Erlang and Elixr they both come with documentation included. For Elixir it is all about using <code>iex</code>. For Erlang - there are manpages available. As always - things a bit more complicated when someone uses versions managers (such as asdf/kerl etc). It seems that documentation for Erlang is not properly installed when using asdf-erlang. Issuing <code>erl -man mnesia</code> results in ‘No manual entry for mnesia’ instead of proer manual page being displayed.</p>
+<p>I have found a temporary solution for that though: <a href="http://stackoverflow.com/a/42053208" target="_blank" rel="external">http://stackoverflow.com/a/42053208</a></p>
+<p>The proper solution would be to have documentation files downloaded, extracted and copied as part of the installation process. The manual workaound works for me at the moment, and I haven’t found enough time to try to enhance asdf-erlang to be capable of taking care of installing proper version of Erlang documentation.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In my last (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.&lt;/p&gt;
+&lt;p&gt;There is 
+    
+    </summary>
+    
+      <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+    
+    
+      <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+    
+      <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+    
+      <category term="my open source projects" scheme="http://maciektalaska.github.io/tags/my-open-source-projects/"/>
+    
+      <category term="functional programming" scheme="http://maciektalaska.github.io/tags/functional-programming/"/>
+    
+      <category term="Erlang" scheme="http://maciektalaska.github.io/tags/Erlang/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Elixir: setting up environment</title>
     <link href="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/"/>
     <id>http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/</id>
     <published>2017-03-12T22:31:37.000Z</published>
-    <updated>2017-03-12T22:57:30.384Z</updated>
+    <updated>2017-03-14T19:20:47.344Z</updated>
     
     <content type="html"><![CDATA[<p>One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…</p>
 <p>I am happily using nvm (for NodeJS) gvm (for Go) and rvm (Ruby) for quite a long time, and I started looking for something similar for Elixir and Erlang.<br>I wasn’t very lucky at first, as my first approaches were not really successful. It was mainly due to the fact that I am happy user of fish shell, and I don’t want to give up using it (even in favor for zsh).</p>
-<p>I think I am this kind of a person who really tries to makes everything complicated ;) Even though I could have Elixir and Erlang easily installed issuing something as simple as “sudo apt install erlang elixir” I am not really keen on doing that. Two reasons:</p>
+<p>I think I am this kind of a person who really tries to makes everything complicated ;) Even though I could have Elixir and Erlang easily installed issuing something as simple as <code>sudo apt install erlang elixir</code> I am not really keen on doing that. Two reasons:</p>
 <ul>
-<li>in most cases versions of the compilers/interpreters in system repository are really far from the latest (and that gets worse and worst as time passes by)</li>
-<li>in such a scenario it is not possible to have many versions of a specified compiler / interpreter installed. And sometimes it is a must (maintenance of some old application etc.)</li>
+<li>in most cases versions of the compilers/interpreters in system repository are really not the latest (and that gets worse and worse as time passes by)</li>
+<li>in such a scenario (installing programming language using system repository) it is not possible to have many different versions of a specified compiler / interpreter installed. And sometimes it is a must (maintenance of some old application etc.)</li>
 </ul>
-<h2 id="asdf_to_the_rescue!">asdf to the rescue!</h2><p>Back in summer 2016 I was quite successful using hybrid approach. I have used asdf () for Erlang and kiex for Elixir. Asdf was required only to get specified version of Erlang. Asdf was not accessible for me via fish (so I had to use bash for asdf) but luckily kiex was running all fine under fish. The whole thing didn’t bother me that much, and I have been using such approach for quite a while. Today - as I was trying to set up environment on another machine - I have realized that asdf does support fish shell right now :) What a nice surprise. It all became so easy right now.</p>
+<h2 id="asdf_to_the_rescue!">asdf to the rescue!</h2><p>Back in summer 2016 I was quite successful using hybrid approach. I have used asdf (github.com/asdf-vm/asdf) for Erlang and kiex (<a href="https://github.com/taylor/kiex" target="_blank" rel="external">https://github.com/taylor/kiex</a>) for Elixir. Asdf was required only to get specified version of Erlang (as this is required by Elixir). Asdf was not accessible for me via fish - so I had to use bash for asdf and to have Erlang version of choice installed. Luckily kiex was running all fine under fish. The whole thing was not super convenient (switching between fish and bash etc.) but it worked.<br>The whole thing didn’t bother me that much, and I have been using such approach for quite a while. Today - as I was trying to set up environment on another machine - I have realized that asdf does support fish shell right now :) What a nice surprise. It all became so easy right now.</p>
 <p>Asdf seems to be much more flexible than the other version managers that I am using. Asdf does not focus on one particular language. There is a concept of plugins for asdf which allow it use asdf for managing versions for many different languages. Installing plugin(s) is the second thing you will have to do right after you have asdf installed. But if you get to that point, installing new version of Erlang becomes as easy as:</p>
 <p><code>asdf install erlang 19.2</code></p>
 <p>which (to me) is as simple as <code>sudo apt install erlang</code> but, of course, using asdf has advantage of installing specific version(s)!</p>
@@ -38,12 +73,14 @@
 <p>I am actually thinking if it would be a good idea to try asdf for managing NodeJS, Go and Ruby versions (oh, and I am planning to get my hands dirty a bit with Clojure and Rust in the nearest future, and asdf supports these as well…) </p>
 <h2 id="Caution:_dependencies">Caution: dependencies</h2><p>It is essential to study erlang plugin home page. It brings a lot of info on dependencies that are required to have Erlang offer everything. I haven’t paid enough attention first, and ended up with environment I wasnt able to run obser (or debugger). This particular issue is easily fixed by installing dev version of wxwidgets library (and rebuilding Erlang, unfortunately…). </p>
 <p>So if you encounter “wxe_driver.so” related error whenever you try to launch observer/debugger - you know what to do :)</p>
-<p>Another thing worth mentioning is having xsltproc installed, so that documentation could be properly created during the process of installing Erlang.</p>
 <h2 id="Elixir">Elixir</h2><p>Having Erlang installed, and being familiar with asdf, bringing Elixir on board is piece of cake (assuming you have elixir plugin for asdf installed first):</p>
 <p><code>asdf install elixir 1.3.4</code></p>
 <p>Elixir installation is much, much faster than Erlang. </p>
-<h2 id="Disadvantages_of_asdf">Disadvantages of asdf</h2><p>The only disdvantage of asdf I can think of right now is that installing new version of Erlang does take time. Why? It is not as simple as just retrieving binary from some repository. Source code for specific version is being downloaded and then built. It all take several minutes on my machine - but hey, how often do you install new version of your favorite compiler? Personally I think that flexibility described is worth waiting from time to time to have a specific version of the language installed. It is important to note that removing version previously installed is almost instant.<br>Note: after adding additional libraries (wxgtk-dev among others, so that I can start observer and debugger) compilation time now takes significantly longer. It is althought the price I am still willing to pay for the flexibility that asdf brings.</p>
+<h2 id="Disadvantages_of_asdf">Disadvantages of asdf</h2><p>The only disdvantage of asdf I can think of right now is that installing new version of Erlang does take time. Why? It is not as simple as just retrieving binary from some repository. Source code for specific version is being downloaded and then built. It all take several minutes on my machine - but hey, how often do you install new version of your favorite compiler? Personally I think that flexibility described is worth waiting from time to time to have a specific version of the language installed. It is important to note that removing version previously installed is almost instant.<br>Note: after adding additional libraries (wxgtk-dev among others, so that I can start observer and debugger) compilation time now takes significantly longer. It is the price I am still willing to pay for the flexibility that asdf brings.</p>
 <p>After a quick break from writing this blog post, I realized that there is one more thing which I don’t particularly like about asdf. Installing a new plugin requires one to go to asdf project site on github and check what is the plugin repo url - when you have it, a simple <code>asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git</code> (for Elixir) will do. I’d rather have possibility of doing all that via command line. But that a really minor thing.</p>
+<h2 id="Sidenote:">Sidenote:</h2><p>I have also tried using kerl (github.com/kerl/kerl) for Erlang and kiex (github.com/taylor/kiex) for Elixir, but it was not all that convenient as asdf with 2 plugins. I am not sure if it was due to the fact that I wanted kerl and kiex to run under fish shell… but as asdf works so well for me right now - I am no longer looking for any alternatives.</p>
+<h2 id="Summary">Summary</h2><p>I am happily using asdf with Erlang and Elixir for quite some time, and frankly speaking I started thinking of giving up on other solutions, such as nvm, gvm, rvm etc. Why would I bother with so many different tools/scripts if I may have just one (plus couple of additional plugins)?<br>The advantage of having asdf replacing all other version managers is that I don’t have to remember about differences in command line arguments / switches.</p>
+<p>One thing may may not be that easy to achieve using asdf with its NodeJS plugin: having specific version of NodeJS installed with all the plugins from current (or yet another installed version). I am using this approach quite often, as I have to have some global pacakges installed (for example: to make hexo, yeoman work). Using nvm this is as simple as: <code>nvm install v7.4.0 --reinstall-packages-from=v7.0.0</code>. It sees that asdf-nodejs (<a href="https://github.com/asdf-vm/asdf-nodejs" target="_blank" rel="external">https://github.com/asdf-vm/asdf-nodejs</a>) doesn’t support such a behavior.</p>
 ]]></content>
     
     <summary type="html">
