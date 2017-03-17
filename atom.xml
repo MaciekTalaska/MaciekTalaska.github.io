@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maciektalaska.github.io/"/>
-  <updated>2017-03-14T19:31:51.949Z</updated>
+  <updated>2017-03-17T15:09:20.525Z</updated>
   <id>http://maciektalaska.github.io/</id>
   
   <author>
@@ -16,22 +16,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Elixir-setting-up-environment-doc</title>
-    <link href="http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-doc/"/>
-    <id>http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-doc/</id>
+    <title>Elixir: setting up environment part 2: documentation</title>
+    <link href="http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-part2-documentation/"/>
+    <id>http://maciektalaska.github.io/2017/03/14/Elixir-setting-up-environment-part2-documentation/</id>
     <published>2017-03-14T19:11:53.000Z</published>
-    <updated>2017-03-14T19:31:51.949Z</updated>
+    <updated>2017-03-17T15:09:20.525Z</updated>
     
-    <content type="html"><![CDATA[<p>In my last (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.</p>
-<p>There is one important thing that was not covered in that post: documentation. Erlang and Elixr they both come with documentation included. For Elixir it is all about using <code>iex</code>. For Erlang - there are manpages available. As always - things a bit more complicated when someone uses versions managers (such as asdf/kerl etc). It seems that documentation for Erlang is not properly installed when using asdf-erlang. Issuing <code>erl -man mnesia</code> results in ‘No manual entry for mnesia’ instead of proer manual page being displayed.</p>
-<p>I have found a temporary solution for that though: <a href="http://stackoverflow.com/a/42053208" target="_blank" rel="external">http://stackoverflow.com/a/42053208</a></p>
-<p>The proper solution would be to have documentation files downloaded, extracted and copied as part of the installation process. The manual workaound works for me at the moment, and I haven’t found enough time to try to enhance asdf-erlang to be capable of taking care of installing proper version of Erlang documentation.</p>
+    <content type="html"><![CDATA[<p>In my last post (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.</p>
+<p>There is one important thing that I have not covered: documentation. Erlang and Elixr both come with documentation included. For Elixir it is all simple as using <code>iex</code> and its <code>h</code> helper (read more about it: <a href="https://hexdocs.pm/iex/IEx.Helpers.html" target="_blank" rel="external">https://hexdocs.pm/iex/IEx.Helpers.html</a>). </p>
+<p>For Erlang - there are manpages available. As always - things a bit more complicated when someone uses versions managers (such as asdf/kerl etc). First of all, you can’t expect that it would be possible to access Erlang’s manpages usin system ‘man’ - unfortunately this is not how things work (maybe if you install Erlang using repository instead of version manager such as asdf…). The other important thing is that documentation for Erlang is not properly installed when using asdf-erlang. Issuing <code>erl -man mnesia</code> (mnesia being name of the module) results in ‘No manual entry for mnesia’ instead of proer manual page being displayed.<br>I have found a temporary solution for that: <a href="http://stackoverflow.com/a/42053208" target="_blank" rel="external">http://stackoverflow.com/a/42053208</a></p>
+<p>The proper solution would be to have documentation files downloaded, extracted and copied as part of the installation process. The manual workaround works for me at the moment, and I haven’t found enough time to try and enhance asdf-erlang to be capable of taking care of installing proper version of Erlang documentation.</p>
+<p>It has been discussed that Elixir’s iex helper should be able to display documentation for Erlang modules (<a href="https://github.com/elixir-lang/elixir/issues/3589" target="_blank" rel="external">https://github.com/elixir-lang/elixir/issues/3589</a>). Unfortunately it seems that at the moment there is no working solution for such a behavior. There are some alternate solutions, but I haven’t tried any yet.</p>
+<p>Interesting solution for viewing Erlag/Elixir documentation is Zeal (<a href="http://zealdocs.org" target="_blank" rel="external">http://zealdocs.org</a>). It is available for Linux, MacOS and Windows, and allows easy browser Erlang and Elixir modules. For some it may be much more convenient to use Zeal instead of using erl or iex depending if module is part of Elixir or Erlang.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;In my last (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.&lt;/p&gt;
-&lt;p&gt;There is 
+      &lt;p&gt;In my last post (which was prepared some time ago) I have described how to use asdf for Erlang and Elixir version management.&lt;/p&gt;
+&lt;p&gt;Ther
     
     </summary>
     
