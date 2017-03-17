@@ -1,4 +1,4 @@
-title: Elixir setting up environment part 2: documentation
+title: 'Elixir: setting up environment part 2: documentation'
 date: 2017-03-14 20:11:53
 category:
 - get-noticed-2017
