@@ -5,10 +5,40 @@
     <link href="/categories/get-noticed-2017/atom.xml" rel="self"/>
     
     <link href="http://maciektalaska.github.io/"/>
-    <updated>2017-03-17T15:09:20.525Z</updated>
+    <updated>2017-03-20T03:12:28.333Z</updated>
     <id>/categories/get-noticed-2017/</id>
     
     <generator uri="http://hexo.io/">Hexo</generator>
+    
+    <entry>
+        <title>Wrocloverb 2017: Elixir vs Ruby</title>
+        <link href="http://maciektalaska.github.io/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/"/>
+        <id>http://maciektalaska.github.io/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/</id>
+        <published>2017-03-20T03:04:42.000Z</published>
+        <updated>2017-03-20T03:12:28.333Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;I had a chance to spent couple of hours on the annual Wrocloverb conference this weekend. One of the most anticipated events during the c
+            
+        </summary>
+        
+        <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+        
+        
+        <category term="programming" scheme="http://maciektalaska.github.io/tags/programming/"/>
+        
+        <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+        
+        <category term="functional programming" scheme="http://maciektalaska.github.io/tags/functional-programming/"/>
+        
+        <category term="Erlang" scheme="http://maciektalaska.github.io/tags/Erlang/"/>
+        
+        <category term="Ruby" scheme="http://maciektalaska.github.io/tags/Ruby/"/>
+        
+        <category term="Rails" scheme="http://maciektalaska.github.io/tags/Rails/"/>
+        
+    </entry>
     
     <entry>
         <title>Elixir: setting up environment part 2: documentation</title>
