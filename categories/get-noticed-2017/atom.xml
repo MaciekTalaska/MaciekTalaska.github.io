@@ -5,17 +5,43 @@
     <link href="/categories/get-noticed-2017/atom.xml" rel="self"/>
     
     <link href="http://maciektalaska.github.io/"/>
-    <updated>2017-03-20T03:12:28.333Z</updated>
+    <updated>2017-03-25T22:58:08.776Z</updated>
     <id>/categories/get-noticed-2017/</id>
     
     <generator uri="http://hexo.io/">Hexo</generator>
     
     <entry>
+        <title>Wrocloverb 2017: Elixir vs Ruby - unanswered questions</title>
+        <link href="http://maciektalaska.github.io/2017/03/25/Wrocloverb-2017-Elixir-vs-Ruby-unanswered-questions/"/>
+        <id>http://maciektalaska.github.io/2017/03/25/Wrocloverb-2017-Elixir-vs-Ruby-unanswered-questions/</id>
+        <published>2017-03-25T22:43:34.000Z</published>
+        <updated>2017-03-25T22:58:08.776Z</updated>
+        
+        <summary type="html">
+            
+            &lt;p&gt;s promised in the last blog post - I am trying to answer some of the questions that were asked by the Ruby community during the ‘Wroclove
+            
+        </summary>
+        
+        <category term="get-noticed-2017" scheme="http://maciektalaska.github.io/categories/get-noticed-2017/"/>
+        
+        
+        <category term="Elixir" scheme="http://maciektalaska.github.io/tags/Elixir/"/>
+        
+        <category term="functional programming" scheme="http://maciektalaska.github.io/tags/functional-programming/"/>
+        
+        <category term="Erlang" scheme="http://maciektalaska.github.io/tags/Erlang/"/>
+        
+        <category term="Wrocloverb" scheme="http://maciektalaska.github.io/tags/Wrocloverb/"/>
+        
+    </entry>
+    
+    <entry>
         <title>Wrocloverb 2017: Elixir vs Ruby</title>
-        <link href="http://maciektalaska.github.io/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/"/>
-        <id>http://maciektalaska.github.io/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/</id>
-        <published>2017-03-20T03:04:42.000Z</published>
-        <updated>2017-03-20T03:12:28.333Z</updated>
+        <link href="http://maciektalaska.github.io/2017/03/19/Wrocloverb-2017-Elixir-vs-Ruby/"/>
+        <id>http://maciektalaska.github.io/2017/03/19/Wrocloverb-2017-Elixir-vs-Ruby/</id>
+        <published>2017-03-19T21:49:41.000Z</published>
+        <updated>2017-03-20T03:14:59.426Z</updated>
         
         <summary type="html">
             
