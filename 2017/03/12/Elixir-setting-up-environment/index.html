@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
   <title>Elixir: setting up environment | Not only zeroes and ones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…
-I am happily using nvm (for NodeJ">
+  <meta name="description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche… I am happily using nvm (for NodeJ">
+<meta name="keywords" content="Elixir,Erlang,fish shell,asdf,asdf-erlang,asdf-elixir">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Elixir: setting up environment">
 <meta property="og:url" content="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/index.html">
 <meta property="og:site_name" content="Not only zeroes and ones">
-<meta property="og:description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…
-I am happily using nvm (for NodeJ">
-<meta property="og:updated_time" content="2017-03-14T19:20:47.344Z">
+<meta property="og:description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche… I am happily using nvm (for NodeJ">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-05T15:40:28.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elixir: setting up environment">
-<meta name="twitter:description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche…
-I am happily using nvm (for NodeJ">
+<meta name="twitter:description" content="One of the first things that is required when starting with new (programming) language is… to have compiler/interpreter installed and prepare the environment. Cliche… I am happily using nvm (for NodeJ">
+<meta name="twitter:creator" content="@MaciekTalaska">
   
-    <link rel="alternative" href="http://maciektalaska.github.io/atom.xml" title="Not only zeroes and ones" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Not only zeroes and ones" type="application/atom+xml">
   
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
 <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#00a300">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
   <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="/css/style.css">
   
-</head>
 
+</head>
+</html>
 <body>
   <div id="container">
     <div id="wrap">
@@ -63,22 +54,29 @@ I am happily using nvm (for NodeJ">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
           <a class="main-nav-link" href="/">Home</a>
-        
+          
           <a class="main-nav-link" href="/archives/">Archives</a>
-        
+          
+          <a class="main-nav-link" href="/about">About Me</a>
+          
+          <a class="main-nav-link" target="_blank" href="https://twitter.com/MaciekTalaska"><i class="fa-twitter" title="follow our twitter account to stay up to date!"></i></a>
+          <a class="nav-icon" id="nav-twitter-link" target="_blank" href="https://twitter.com/MaciekTalaska" title="my twitter account"></a>        
+          <a class="nav-icon" id="nav-github-link" target="_blank" href="https://github.com/MaciekTalaska" title="my gihub repo"></a>        
+          <a class="nav-icon" id="nav-linkedin-link" target="_blank" href="https://linkedin.com/in/mtalaska" title="My LinkedIn profile"></a>        
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="http://maciektalaska.github.io/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://maciektalaska.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://maciektalaska.github.io"></form>
       </div>
     </div>
   </div>
 </header>
+
       <div class="outer">
         <section id="main"><article id="post-Elixir-setting-up-environment" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -115,28 +113,35 @@ I am happily using nvm (for NodeJ">
 <li>in most cases versions of the compilers/interpreters in system repository are really not the latest (and that gets worse and worse as time passes by)</li>
 <li>in such a scenario (installing programming language using system repository) it is not possible to have many different versions of a specified compiler / interpreter installed. And sometimes it is a must (maintenance of some old application etc.)</li>
 </ul>
-<h2 id="asdf_to_the_rescue!">asdf to the rescue!</h2><p>Back in summer 2016 I was quite successful using hybrid approach. I have used asdf (github.com/asdf-vm/asdf) for Erlang and kiex (<a href="https://github.com/taylor/kiex" target="_blank" rel="external">https://github.com/taylor/kiex</a>) for Elixir. Asdf was required only to get specified version of Erlang (as this is required by Elixir). Asdf was not accessible for me via fish - so I had to use bash for asdf and to have Erlang version of choice installed. Luckily kiex was running all fine under fish. The whole thing was not super convenient (switching between fish and bash etc.) but it worked.<br>The whole thing didn’t bother me that much, and I have been using such approach for quite a while. Today - as I was trying to set up environment on another machine - I have realized that asdf does support fish shell right now :) What a nice surprise. It all became so easy right now.</p>
+<h2 id="asdf-to-the-rescue"><a href="#asdf-to-the-rescue" class="headerlink" title="asdf to the rescue!"></a>asdf to the rescue!</h2><p>Back in summer 2016 I was quite successful using hybrid approach. I have used asdf (github.com/asdf-vm/asdf) for Erlang and kiex (<a href="https://github.com/taylor/kiex" target="_blank" rel="noopener">https://github.com/taylor/kiex</a>) for Elixir. Asdf was required only to get specified version of Erlang (as this is required by Elixir). Asdf was not accessible for me via fish - so I had to use bash for asdf and to have Erlang version of choice installed. Luckily kiex was running all fine under fish. The whole thing was not super convenient (switching between fish and bash etc.) but it worked.<br>The whole thing didn’t bother me that much, and I have been using such approach for quite a while. Today - as I was trying to set up environment on another machine - I have realized that asdf does support fish shell right now :) What a nice surprise. It all became so easy right now.</p>
 <p>Asdf seems to be much more flexible than the other version managers that I am using. Asdf does not focus on one particular language. There is a concept of plugins for asdf which allow it use asdf for managing versions for many different languages. Installing plugin(s) is the second thing you will have to do right after you have asdf installed. But if you get to that point, installing new version of Erlang becomes as easy as:</p>
 <p><code>asdf install erlang 19.2</code></p>
 <p>which (to me) is as simple as <code>sudo apt install erlang</code> but, of course, using asdf has advantage of installing specific version(s)!</p>
 <p>Asdf is very simple but powerful. All your version management is literally under your fingertips.</p>
 <p>So, if you’re like me, and you like to have 100% control of the versions of compilers installed - please try asdf. This is a great tool!</p>
 <p>I am actually thinking if it would be a good idea to try asdf for managing NodeJS, Go and Ruby versions (oh, and I am planning to get my hands dirty a bit with Clojure and Rust in the nearest future, and asdf supports these as well…) </p>
-<h2 id="Caution:_dependencies">Caution: dependencies</h2><p>It is essential to study erlang plugin home page. It brings a lot of info on dependencies that are required to have Erlang offer everything. I haven’t paid enough attention first, and ended up with environment I wasnt able to run obser (or debugger). This particular issue is easily fixed by installing dev version of wxwidgets library (and rebuilding Erlang, unfortunately…). </p>
+<h2 id="Caution-dependencies"><a href="#Caution-dependencies" class="headerlink" title="Caution: dependencies"></a>Caution: dependencies</h2><p>It is essential to study erlang plugin home page. It brings a lot of info on dependencies that are required to have Erlang offer everything. I haven’t paid enough attention first, and ended up with environment I wasnt able to run obser (or debugger). This particular issue is easily fixed by installing dev version of wxwidgets library (and rebuilding Erlang, unfortunately…). </p>
 <p>So if you encounter “wxe_driver.so” related error whenever you try to launch observer/debugger - you know what to do :)</p>
-<h2 id="Elixir">Elixir</h2><p>Having Erlang installed, and being familiar with asdf, bringing Elixir on board is piece of cake (assuming you have elixir plugin for asdf installed first):</p>
+<h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><p>Having Erlang installed, and being familiar with asdf, bringing Elixir on board is piece of cake (assuming you have elixir plugin for asdf installed first):</p>
 <p><code>asdf install elixir 1.3.4</code></p>
 <p>Elixir installation is much, much faster than Erlang. </p>
-<h2 id="Disadvantages_of_asdf">Disadvantages of asdf</h2><p>The only disdvantage of asdf I can think of right now is that installing new version of Erlang does take time. Why? It is not as simple as just retrieving binary from some repository. Source code for specific version is being downloaded and then built. It all take several minutes on my machine - but hey, how often do you install new version of your favorite compiler? Personally I think that flexibility described is worth waiting from time to time to have a specific version of the language installed. It is important to note that removing version previously installed is almost instant.<br>Note: after adding additional libraries (wxgtk-dev among others, so that I can start observer and debugger) compilation time now takes significantly longer. It is the price I am still willing to pay for the flexibility that asdf brings.</p>
+<h2 id="Disadvantages-of-asdf"><a href="#Disadvantages-of-asdf" class="headerlink" title="Disadvantages of asdf"></a>Disadvantages of asdf</h2><p>The only disdvantage of asdf I can think of right now is that installing new version of Erlang does take time. Why? It is not as simple as just retrieving binary from some repository. Source code for specific version is being downloaded and then built. It all take several minutes on my machine - but hey, how often do you install new version of your favorite compiler? Personally I think that flexibility described is worth waiting from time to time to have a specific version of the language installed. It is important to note that removing version previously installed is almost instant.<br>Note: after adding additional libraries (wxgtk-dev among others, so that I can start observer and debugger) compilation time now takes significantly longer. It is the price I am still willing to pay for the flexibility that asdf brings.</p>
 <p>After a quick break from writing this blog post, I realized that there is one more thing which I don’t particularly like about asdf. Installing a new plugin requires one to go to asdf project site on github and check what is the plugin repo url - when you have it, a simple <code>asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git</code> (for Elixir) will do. I’d rather have possibility of doing all that via command line. But that a really minor thing.</p>
-<h2 id="Sidenote:">Sidenote:</h2><p>I have also tried using kerl (github.com/kerl/kerl) for Erlang and kiex (github.com/taylor/kiex) for Elixir, but it was not all that convenient as asdf with 2 plugins. I am not sure if it was due to the fact that I wanted kerl and kiex to run under fish shell… but as asdf works so well for me right now - I am no longer looking for any alternatives.</p>
-<h2 id="Summary">Summary</h2><p>I am happily using asdf with Erlang and Elixir for quite some time, and frankly speaking I started thinking of giving up on other solutions, such as nvm, gvm, rvm etc. Why would I bother with so many different tools/scripts if I may have just one (plus couple of additional plugins)?<br>The advantage of having asdf replacing all other version managers is that I don’t have to remember about differences in command line arguments / switches.</p>
-<p>One thing may may not be that easy to achieve using asdf with its NodeJS plugin: having specific version of NodeJS installed with all the plugins from current (or yet another installed version). I am using this approach quite often, as I have to have some global pacakges installed (for example: to make hexo, yeoman work). Using nvm this is as simple as: <code>nvm install v7.4.0 --reinstall-packages-from=v7.0.0</code>. It sees that asdf-nodejs (<a href="https://github.com/asdf-vm/asdf-nodejs" target="_blank" rel="external">https://github.com/asdf-vm/asdf-nodejs</a>) doesn’t support such a behavior.</p>
+<h2 id="Sidenote"><a href="#Sidenote" class="headerlink" title="Sidenote:"></a>Sidenote:</h2><p>I have also tried using kerl (github.com/kerl/kerl) for Erlang and kiex (github.com/taylor/kiex) for Elixir, but it was not all that convenient as asdf with 2 plugins. I am not sure if it was due to the fact that I wanted kerl and kiex to run under fish shell… but as asdf works so well for me right now - I am no longer looking for any alternatives.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>I am happily using asdf with Erlang and Elixir for quite some time, and frankly speaking I started thinking of giving up on other solutions, such as nvm, gvm, rvm etc. Why would I bother with so many different tools/scripts if I may have just one (plus couple of additional plugins)?<br>The advantage of having asdf replacing all other version managers is that I don’t have to remember about differences in command line arguments / switches.</p>
+<p>One thing may may not be that easy to achieve using asdf with its NodeJS plugin: having specific version of NodeJS installed with all the plugins from current (or yet another installed version). I am using this approach quite often, as I have to have some global pacakges installed (for example: to make hexo, yeoman work). Using nvm this is as simple as: <code>nvm install v7.4.0 --reinstall-packages-from=v7.0.0</code>. It sees that asdf-nodejs (<a href="https://github.com/asdf-vm/asdf-nodejs" target="_blank" rel="noopener">https://github.com/asdf-vm/asdf-nodejs</a>) doesn’t support such a behavior.</p>
 
       
     </div>
+    <div class="article-category-footer">
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/get-noticed-2017/">get-noticed-2017</a>►<a class="article-category-link" href="/categories/get-noticed-2017/programming/">programming</a>►<a class="article-category-link" href="/categories/get-noticed-2017/programming/functional-programming/">functional programming</a>
+  </div>
+
+    </div>
     <footer class="article-footer">
-      <a data-url="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/" data-id="cj0pujomt000qbfaq2xya6029" class="article-share-link">Share</a>
+      <a data-url="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/" data-id="ck2tmzfgq0007019v8roxpykx" class="article-share-link">Share</a>
       
         <a href="http://maciektalaska.github.io/2017/03/12/Elixir-setting-up-environment/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -182,7 +187,7 @@ I am happily using nvm (for NodeJ">
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget recent-posts">
       <ul>
         
@@ -191,7 +196,7 @@ I am happily using nvm (for NodeJ">
           </li>
         
           <li>
-            <a href="/2017/03/19/Wrocloverb-2017-Elixir-vs-Ruby/">Wrocloverb 2017: Elixir vs Ruby</a>
+            <a href="/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/">Wrocloverb 2017: Elixir vs Ruby</a>
           </li>
         
           <li>
@@ -234,9 +239,9 @@ I am happily using nvm (for NodeJ">
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget" class="category-list">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/conference/">conference</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/">get-noticed-2017</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/">programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/functional-programming/">functional programming</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/my-open-source-projects/">my open source projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshop/">workshop</a><span class="category-list-count">2</span></li></ul>
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget archive-list">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -244,9 +249,9 @@ I am happily using nvm (for NodeJ">
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget archive-list">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget category-list">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/conference/">conference</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/">get-noticed-2017</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/">programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/functional-programming/">functional programming</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/my-open-source-projects/">my open source projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/setup/">setup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshop/">workshop</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -260,12 +265,11 @@ I am happily using nvm (for NodeJ">
     </div>
   </div>
 
-
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
-    <div class="widget tag-list">
+    <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS/">AngularJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS2/">AngularJS2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Boiling-Frogs/">Boiling Frogs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Elixir/">Elixir</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Erlang/">Erlang</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GeekWeekWro/">GeekWeekWro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/">Go</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jekyll/">Jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nikola/">Nikola</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Polymer/">Polymer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rails/">Rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ruby/">Ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebComponents/">WebComponents</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Wrocloverb/">Wrocloverb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf/">asdf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf-elixir/">asdf-elixir</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf-erlang/">asdf-erlang</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/community/">community</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/configuration/">configuration</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/curalink/">curalink</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elixir/">elixir</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fish-shell/">fish shell</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/functional-programming/">functional programming</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/let-them-know-you/">let them know you</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/management/">management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/meetup/">meetup</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/my-open-source-projects/">my open source projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/my-opensource-projects/">my opensource projects</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/self-development/">self development</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-quality/">software quality</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/static-site-generators/">static site generators</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testing/">testing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thoughts/">thoughts</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
@@ -279,7 +283,7 @@ I am happily using nvm (for NodeJ">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 Maciek Talaska<br>
+      &copy; 2019 Maciek Talaska<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -290,6 +294,8 @@ I am happily using nvm (for NodeJ">
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives/" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
   
 </nav>
     
@@ -302,7 +308,7 @@ I am happily using nvm (for NodeJ">
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//go.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
@@ -316,7 +322,6 @@ I am happily using nvm (for NodeJ">
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/scrollspy/scrollspy.js"></script>
 <script src="/js/script.js"></script>
 
   </div>

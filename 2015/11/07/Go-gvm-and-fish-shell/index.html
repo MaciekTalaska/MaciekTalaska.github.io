@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
   <title>Go 1.5.x on Kubuntu using fish shell and gvm | Not only zeroes and ones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It">
+<meta name="keywords" content="fish shell,Go,configuration">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Go 1.5.x on Kubuntu using fish shell and gvm">
 <meta property="og:url" content="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/index.html">
 <meta property="og:site_name" content="Not only zeroes and ones">
 <meta property="og:description" content="I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It">
-<meta property="og:updated_time" content="2015-11-07T23:46:38.433Z">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-05T15:40:28.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Go 1.5.x on Kubuntu using fish shell and gvm">
 <meta name="twitter:description" content="I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It">
+<meta name="twitter:creator" content="@MaciekTalaska">
   
-    <link rel="alternative" href="http://maciektalaska.github.io/atom.xml" title="Not only zeroes and ones" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Not only zeroes and ones" type="application/atom+xml">
   
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
 <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#00a300">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
   <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="/css/style.css">
   
-</head>
 
+</head>
+</html>
 <body>
   <div id="container">
     <div id="wrap">
@@ -60,22 +54,29 @@
         <a id="main-nav-toggle" class="nav-icon"></a>
         
           <a class="main-nav-link" href="/">Home</a>
-        
+          
           <a class="main-nav-link" href="/archives/">Archives</a>
-        
+          
+          <a class="main-nav-link" href="/about">About Me</a>
+          
+          <a class="main-nav-link" target="_blank" href="https://twitter.com/MaciekTalaska"><i class="fa-twitter" title="follow our twitter account to stay up to date!"></i></a>
+          <a class="nav-icon" id="nav-twitter-link" target="_blank" href="https://twitter.com/MaciekTalaska" title="my twitter account"></a>        
+          <a class="nav-icon" id="nav-github-link" target="_blank" href="https://github.com/MaciekTalaska" title="my gihub repo"></a>        
+          <a class="nav-icon" id="nav-linkedin-link" target="_blank" href="https://linkedin.com/in/mtalaska" title="My LinkedIn profile"></a>        
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="http://maciektalaska.github.io/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://maciektalaska.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://maciektalaska.github.io"></form>
       </div>
     </div>
   </div>
 </header>
+
       <div class="outer">
         <section id="main"><article id="post-Go-gvm-and-fish-shell" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -106,24 +107,31 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>I got really interested in Go and I am learning it in my spare time. Unfortunately the verion of Go that is available via Ubuntu repository is very old (at the moment of writing this it was 1.2.x). It was not good enough even for learning purposes.</p>
-<p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="external">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
+<p>I wanted to use the very latest version of Go (1.5.x) and started looking for an PPA that would allow me to install the newest version. I quickly found one: <a href="https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5" target="_blank" rel="noopener">https://launchpad.net/~evarlast/+archive/ubuntu/golang1.5</a> Unfortunately I quickly realized that it may not be the best idea. </p>
 <p>What if need to use two different versions of Go? How do I manage them?</p>
 <p>The best thing is to use something similar to nvm (NodeJS Version Manager) or RVM (Ruby Version Manager). As I am using fish shell instead of bash, things are a bit more complicated. There are couple of steps required to have Go 1.5.x installed on Linux, and make the whole thing work with fish shell.</p>
 <ol>
-<li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="external">https://github.com/moovweb/gvm</a>)</li>
-<li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212</a>). You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="external">https://github.com/edc/bass</a>)</li>
+<li>Install gvm (<a href="https://github.com/moovweb/gvm" target="_blank" rel="noopener">https://github.com/moovweb/gvm</a>)</li>
+<li>Make gvm work with fish shell (<a href="https://github.com/moovweb/gvm/issues/137#issuecomment-131400212)" target="_blank" rel="noopener">https://github.com/moovweb/gvm/issues/137#issuecomment-131400212)</a>. You may need to install bass first (<a href="https://github.com/edc/bass" target="_blank" rel="noopener">https://github.com/edc/bass</a>)</li>
 <li><code>gvm install go1.5.x</code> will not work, as Go 1.5.x requires Go 1.4.x for compilation. Install Go 1.4.x first (<code>gvm install go1.4.3</code>)</li>
-<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">ERROR: </span>Failed to compile. Check the logs at /home/&lt;username&gt;/.gvm/logs/go-go1.5.1-compile.log</div><div class="line"><span class="keyword">ERROR: </span>Failed to use installed version</div><div class="line">Installing go1.5.1...</div><div class="line"> * Compiling...</div></pre></td></tr></table></figure>
-In my case the log content was: <figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">##### Building Go bootstrap tool.                                             </div><div class="line">cmd/dist</div><div class="line"><span class="keyword">ERROR: </span>Cannot find /home/&lt;username&gt;/go1.4/bin/go.</div><div class="line">Set $GOROOT_BOOTSTRAP to a working Go tree &gt;= Go 1.4.</div><div class="line">./make.bash: line 121: /home/&lt;username&gt;/go1.4/bin/go: No such file or directory</div></pre></td></tr></table></figure></li>
-<li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340" target="_blank" rel="external">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340</a>):<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
+<li><code>gvm install go1.5.x</code> will fail again, due to the fact that it will be unable to find Go 1.4.x. You will probably see similar error message<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ERROR: </span>Failed to compile. Check the logs at /home/&lt;username&gt;/.gvm/logs/go-go1.5.1-compile.log</span><br><span class="line"><span class="keyword">ERROR: </span>Failed to use installed version</span><br><span class="line">Installing go1.5.1...</span><br><span class="line"> * Compiling...</span><br></pre></td></tr></table></figure>
+In my case the log content was: <figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">##### Building Go bootstrap tool.                                             </span><br><span class="line">cmd/dist</span><br><span class="line"><span class="keyword">ERROR: </span>Cannot find /home/&lt;username&gt;/go1.4/bin/go.</span><br><span class="line">Set $GOROOT_BOOTSTRAP to a working Go tree &gt;= Go 1.4.</span><br><span class="line">./make.bash: line 121: /home/&lt;username&gt;/go1.4/bin/go: No such file or directory</span><br></pre></td></tr></table></figure></li>
+<li>Execute the folling commands to help gvm to succesfully compile Go 1.5.x (this is based on the discussion: <a href="https://github.com/moovweb/gvm/issues/155#issuecomment-135855340)" target="_blank" rel="noopener">https://github.com/moovweb/gvm/issues/155#issuecomment-135855340)</a>:<br>a) <code>gvm use go1.4.3</code><br>b) <code>set -x GOROOT_BOOTSTRAP $GOROOT</code><br>c) <code>gvm install go1.5.1</code> </li>
 </ol>
 <p>That should be all fine right now. Go 1.5.x should be installed on your machine (side by side with the Go 1.4.x that was used required to compile the newest version of Go).</p>
 <p>Happy coding (in Go!)</p>
 
       
     </div>
+    <div class="article-category-footer">
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming</a>
+  </div>
+
+    </div>
     <footer class="article-footer">
-      <a data-url="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/" data-id="cj0pujomw000ubfaqjw3rs9kl" class="article-share-link">Share</a>
+      <a data-url="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/" data-id="ck2tmzfgy000b019v3tm2fv9u" class="article-share-link">Share</a>
       
         <a href="http://maciektalaska.github.io/2015/11/07/Go-gvm-and-fish-shell/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -169,7 +177,7 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget recent-posts">
       <ul>
         
@@ -178,7 +186,7 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
           </li>
         
           <li>
-            <a href="/2017/03/19/Wrocloverb-2017-Elixir-vs-Ruby/">Wrocloverb 2017: Elixir vs Ruby</a>
+            <a href="/2017/03/20/Wrocloverb-2017-Elixir-vs-Ruby/">Wrocloverb 2017: Elixir vs Ruby</a>
           </li>
         
           <li>
@@ -221,9 +229,9 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget" class="category-list">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/conference/">conference</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/">get-noticed-2017</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/">programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/functional-programming/">functional programming</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/my-open-source-projects/">my open source projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshop/">workshop</a><span class="category-list-count">2</span></li></ul>
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget archive-list">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -231,9 +239,9 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget archive-list">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget category-list">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogging/">blogging</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/conference/">conference</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/events/">events</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/">get-noticed-2017</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/">programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/get-noticed-2017/programming/functional-programming/">functional programming</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/my-open-source-projects/">my open source projects</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/setup/">setup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/workshop/">workshop</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -247,12 +255,11 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
     </div>
   </div>
 
-
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
-    <div class="widget tag-list">
+    <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS/">AngularJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS2/">AngularJS2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Boiling-Frogs/">Boiling Frogs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Elixir/">Elixir</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Erlang/">Erlang</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GeekWeekWro/">GeekWeekWro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/">Go</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jekyll/">Jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nikola/">Nikola</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Polymer/">Polymer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rails/">Rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ruby/">Ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebComponents/">WebComponents</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Wrocloverb/">Wrocloverb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf/">asdf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf-elixir/">asdf-elixir</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/asdf-erlang/">asdf-erlang</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/career/">career</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/community/">community</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/configuration/">configuration</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/curalink/">curalink</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elixir/">elixir</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fish-shell/">fish shell</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/functional-programming/">functional programming</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/let-them-know-you/">let them know you</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/management/">management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/meetup/">meetup</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/my-open-source-projects/">my open source projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/my-opensource-projects/">my opensource projects</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/self-development/">self development</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-quality/">software quality</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/static-site-generators/">static site generators</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testing/">testing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thoughts/">thoughts</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
@@ -266,7 +273,7 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 Maciek Talaska<br>
+      &copy; 2019 Maciek Talaska<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -277,6 +284,8 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives/" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
   
 </nav>
     
@@ -289,7 +298,7 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//go.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
@@ -303,7 +312,6 @@ In my case the log content was: <figure class="highlight subunit"><table><tr><td
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/scrollspy/scrollspy.js"></script>
 <script src="/js/script.js"></script>
 
   </div>
