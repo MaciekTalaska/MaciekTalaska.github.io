@@ -1,4 +1,5 @@
 title: My personal rant against GeekWeekWro
+date: 2016-03-05 21:22:07
 category:
 - events 
 tags:

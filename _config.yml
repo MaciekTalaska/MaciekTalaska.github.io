@@ -62,11 +62,22 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+# disable pagination for archive, category & tag
+archive_generator:
+  yearly: true
+  monthly: true
+  per_page: 0
+
+category_generator:
+  per_page: 0
+
+tag_generator:
+   per_page: 0
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: l2
-
 
 
 # Deployment
