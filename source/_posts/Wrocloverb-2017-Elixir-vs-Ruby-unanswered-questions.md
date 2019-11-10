@@ -9,7 +9,7 @@ tags:
 - functional programming
 ---
 
-s promised in the last blog post - I am trying to answer some of the questions that were asked by the Ruby community during the 'Wrocloverb 2017' conference, and we're supposed to be asked during the 'Ruby vs Elixir' discussion panel. Sadly the panel was too short to have all the questions answered. 
+As promised in the last blog post - I am trying to answer some of the questions that were asked by the Ruby community during the 'Wrocloverb 2017' conference, and we're supposed to be asked during the 'Ruby vs Elixir' discussion panel. Sadly the panel was too short to have all the questions answered. 
 
 ### Wrocloverb 2017: Ruby vs Elixir discussion panel (unanswered questions) 
 

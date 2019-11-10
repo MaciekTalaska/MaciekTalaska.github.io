@@ -73,7 +73,7 @@ angular.module('angularFullstackApp')
 <br/>
 
 ...and Go:
-{% codeblock lang:go %}
+{% codeblock some simple example in Go lang:go %}
 
 package main
 

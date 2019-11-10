@@ -1,5 +1,7 @@
 title: Ugly fonts in Java apps under Linux
 date: 2016-02-05 17:19:55
+categories:
+- setup
 tags:
 - configuration
 ---

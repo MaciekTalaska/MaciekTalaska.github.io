@@ -1,5 +1,5 @@
 title: 'Wrocloverb 2017: Elixir vs Ruby'
-date: 2017-03-19 22:49:41
+date: 2017-03-20 22:49:41
 category:
 - get-noticed-2017
 tags:
@@ -24,6 +24,7 @@ The "Elixir side" were two developers having background in Ruby (as well as in E
 "Ruby side" was represented by two Ruby, Rails experts from Arkency (the company behind Wrocloverb):
 - Andrzej Krzywda
 - Robert Pankowiecki
+
 First thing, and first bias: AFAIR neither Andrzej nor Robert have any hands on experience with Elixir. That means that on Elixir side there was good understanding of Ruby/Rails applications, but on the other hand - the "Ruby side" was very lacking in terms of 'What Elixir is' (saying that 'Elixir is Erlang based functional language' is just a simplification).
 
 ### Questions
