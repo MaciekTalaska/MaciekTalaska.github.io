@@ -2,15 +2,12 @@ title: 'Elixir: setting up environment'
 date: 2017-03-12 23:31:37
 category:
 - get-noticed-2017
-- programming
-- functional programming
 tags:
 - Elixir
 - Erlang
 - fish shell
 - asdf
-- asdf-erlang
-- asdf-elixir
+- functional programming
 ---
 
 One of the first things that is required when starting with new (programming) language is... to have compiler/interpreter installed and prepare the environment. Cliche...
