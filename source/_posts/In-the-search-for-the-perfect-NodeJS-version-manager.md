@@ -11,13 +11,13 @@ tags:
 
 Some time ago I shared how much I liked the way `asdf` simplified version management of some of the developer tools (mostly: programming languages) for me. 
 
-`Asdf` is mature and offers a lot of ready to use plugins. It syntax is easy to remember and concise. But I newer actually used it for NodeJS version management. Why? Mainly it was due to the fact that I was pretty happy with `nvm` that I started using couple of years ago. `Nvm` has unique ability to install new version of NodeJS reinstalling all packages (global ones) that are installed for the currently used version, the syntax is as follows:
+`asdf` is mature and offers a lot of ready to use plugins. It syntax is easy to remember and concise. But I newer actually used it for NodeJS version management. Why? Mainly it was due to the fact that I was pretty happy with `nvm` that I started using couple of years ago. `nvm` has unique ability to install new version of NodeJS reinstalling all packages (global ones) that are installed for the currently used version, the syntax is as follows:
 
 `nvm install <new_version> --reinstall-packages-from=<old_version>`
 
-That is super convenient, as it does it automatically, so after installing new version you end up with all the packages you need. Awesome. 
+That is super convenient, as it happens automatically, so after installing new version you end up with all the packages you need. Awesome. 
 
-`Nvm` just doesn't seem to work well under `fish`. For some strange reason I had to remember every time on setting default version, otherwise `npm` and all the globally installed packages were not seen as available. This was a bit of pain.
+`nvm` just doesn't seem to work well under `fish`. For some strange reason I had to remember every time on setting default version, otherwise `npm` and all the globally installed packages were not seen as available. This was a bit of pain.
 I have spent some time trying to find some solution for this issue, but nothing worked as I wanted. I tried some additional wrappers - but these affected either `fish` start performance or were not convenient for me to use.
 
 My friend suggested me to try `asdf` for NodeJS - and I was all like 'why haven't I thought of it before'?
@@ -48,7 +48,9 @@ I have installed another `NodeJS` version and run the script to test it (using `
 
 So I started reading about the issue, and it seems this is something that community behind `asdf` (or `asdf-nodejs` specifically) is very well aware of:
 
-**[put links here]**
+* https://github.com/asdf-vm/asdf-nodejs/issues/104
+* https://github.com/asdf-vm/asdf-nodejs/issues/46
+
 
 I have experimented with the `SKIP_RESHIM=1` flag, that help a lot, but not as much as I hoped for, and the times were not even close to those I have experienced when using `nvm`.
 
