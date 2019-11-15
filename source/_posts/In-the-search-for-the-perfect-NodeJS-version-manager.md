@@ -65,7 +65,7 @@ I knew, I felt there just "has to be a better way"...
 
 I have tried some other version managers for NodeJS. I have re-evaluated `nvm` but experiencing the pain of setting default `NodeJS` version each time... no, it was not something I wanted to get back into.
 
-And then at some point I have found... `fnm`!
+And then at some point I have found... [fnm](https://github.com/Schniz/fnm)!
 
 ## FNM to the rescue!
 
