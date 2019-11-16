@@ -96,7 +96,7 @@ So I was quite impressed with the performance. I was happy `fnm` works well unde
 
 * making installed version default version:
 
-`fnm default <version>`
+`fnm alias <version> default`
 
 So the very last thing I needed was to change the script I have originally developed for `asdf-nodejs` so that it supports `fnm`. If you would like to have a look/use it, you could find it in the same repo: https://github.com/MaciekTalaska/dotfiles/blob/master/fnm_reinstall.sh
 
