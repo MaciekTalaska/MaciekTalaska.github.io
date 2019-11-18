@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Maciej Talaśka, software engineer/architect
-date: 2019-11-16 00:12:35
 comments: false
 share: false
 ---
@@ -49,6 +48,8 @@ I am passionate about technology and love sharing my knowledge with others - I a
 <dt>Functional Programming Wroclaw</dt><dd>https://fp-wroc.github.io</dd>
 <dt>Elixir Wrocław</dt><dd>https://elixir-wroclaw.github.io</dd>
 </dl>
+
+In the past I have founded and lead "Angular Wroclaw", and co-organized ".Net Wroclaw" & "GoWroc".
 
 I have organized several tech events in Wrocław: 
 * CodeRetreats (2012, 2013, 2014) (I have been leading this events as well)
