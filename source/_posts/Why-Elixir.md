@@ -4,8 +4,9 @@ tags:
 - programming
 - my opensource projects
 - Elixir
-category: 
-- get-noticed-2017
+categories:
+- [get-noticed-2017]
+- [programming]
 ---
 
 In my first blognote related to this years edition of "Get Noticed" I have mentioned that I am planning to develop web application using Elixir & Phoenix. Why Elixr? 
