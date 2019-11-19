@@ -19,7 +19,6 @@
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-stylus": "^0.3.0",
     "hexo-server": "^0.1.2",
-    "hexo-tag-bootstrap": "0.0.8",
     "lodash": "^3.10.1",
     "marked": "^0.3.5"
   }
