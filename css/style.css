@@ -1062,14 +1062,6 @@ body {
   line-height: 36px;
 }
 .article-share-links {
-  background: #eee;
-}
-.article-share-links:before,
-.article-share-links:after {
-  content: "";
-  display: table;
-}
-.article-share-links:after {
   clear: both;
 }
 .article-share-twitter,
@@ -1082,7 +1074,6 @@ body {
   float: left;
   position: relative;
   color: #999;
-  text-shadow: 0 1px #fff;
 }
 .article-share-twitter:before,
 .article-share-facebook:before,
@@ -1099,39 +1090,39 @@ body {
   margin-left: -10px;
   text-align: center;
 }
-.article-share-twitter:hover,
-.article-share-facebook:hover,
-.article-share-pinterest:hover,
-.article-share-reddit:hover {
+.article-share-twitter:hover:before,
+.article-share-facebook:hover:before,
+.article-share-pinterest:hover:before,
+.article-share-reddit:hover:before {
   color: #fff;
 }
 .article-share-twitter:before {
   content: "\f099";
+  color: #00aced;
 }
 .article-share-twitter:hover {
   background: #00aced;
-  text-shadow: 0 1px #008abe;
 }
 .article-share-facebook:before {
   content: "\f09a";
+  color: #3b5998;
 }
 .article-share-facebook:hover {
   background: #3b5998;
-  text-shadow: 0 1px #2f477a;
 }
 .article-share-pinterest:before {
   content: "\f0d2";
+  color: #cb2027;
 }
 .article-share-pinterest:hover {
   background: #cb2027;
-  text-shadow: 0 1px #a21a1f;
 }
 .article-share-reddit:before {
   content: "\f1a1";
+  color: #ff5700;
 }
 .article-share-reddit:hover {
   background: #ff5700;
-  text-shadow: 0 1px #cc4600;
 }
 .article-gallery {
   background: #000;
