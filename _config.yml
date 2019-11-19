@@ -73,6 +73,7 @@ category_generator:
 tag_generator:
    per_page: 0
 
+all_minifier: true
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
