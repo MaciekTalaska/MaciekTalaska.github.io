@@ -13,7 +13,7 @@ I am really picky when it comes to the UI. I love command line and console, but 
 I am learning RoR at the moment. I've been doing quite some coding recenlty using pure VIM, but decided to give RubyMine a try. RubyMine is very powerful IDE, but under the default JDK/JRE (no difference if this is OpenJDK or Oracle's JDK/JRE) the way it renders fonts is just pain to the eyes. Eclipse renders fonts much better (by default) than RubyMine, and NetBeans is as bad as RubyMine is.
 
 I've spent a bit of a time trying to configure RubyMine so that it renders fonts as nicely as VIM :) but with no success. I was so desperate on this, that I was planning to either switch to another IDE (but Aptana is no go for me) or to go back to pure VIM again.
-Fortunately I have found a solution for Debien/Ubuntu:
+Fortunately I have found a solution for Debian/Ubuntu:
 
 1) Do not use Oracle's Java
 2) Do not use the OpenJDK default repository
