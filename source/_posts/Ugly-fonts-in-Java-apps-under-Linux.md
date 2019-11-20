@@ -17,11 +17,11 @@ Fortunately I have found a solution for Debian/Ubuntu:
 
 1) Do not use Oracle's Java
 2) Do not use the OpenJDK default repository
-3) Add the ```https://launchpad.net/~no1wantdthisname/+archive/ubuntu/openjdk-fontfix``` as a ppa
+3) Add the `https://launchpad.net/~no1wantdthisname/+archive/ubuntu/openjdk-fontfix` as a ppa
 
 Install OpenJDK 7/8 from the repo mentioned in point 3.
 
-If you have other flavors of Java installed, use ```sudo update-alternative --config java``` to pick the OpenJDK installed from ```no1wantdthisname``` ppa.
+If you have other flavors of Java installed, use `sudo update-alternative --config java` to pick the OpenJDK installed from `no1wantdthisname` ppa.
 
 That's it.
 
