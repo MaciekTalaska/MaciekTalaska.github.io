@@ -42,7 +42,7 @@ checking if file has not changed is very easy:
 
 You may also want to use MD5 instead of SHA. MD5 seem to be almost twice as fast as SHA2, but AFAIK SHA2 seem to be more reliable when it comes to possibility of collisions happening.
 
-***Please note:*** that there are couple of versions of `shaxxxsum` tool available, for the full list and description of difference please have a look at [Wikipedia page on SHA-2](https://en.wikipedia.org/wiki/SHA-2a) and [discussion on StackOverflow](https://stackoverflow.com/questions/10061532/why-chose-sha512-over-sha384).
+***Please note:*** that there are couple of versions of `shaXYZsum` tool available, for the full list and description of difference please have a look at [Wikipedia page on SHA-2](https://en.wikipedia.org/wiki/SHA-2a) and [discussion on StackOverflow](https://stackoverflow.com/questions/10061532/why-chose-sha512-over-sha384).
 
 ## Working with recovery files 
 
@@ -87,11 +87,11 @@ Similarly to restoring content of the single partition it is possible to recover
 
 One of the most important thing is ability to mount disk image, so that it is possible to copy file(s) from it, exactly the same as if it was another drive/partition.
 
-Mounting single: `sudo mount <image> /folder -loop,ro,noatime`
+Mounting single: `sudo mount <image> /folder -o loop,ro,noatime`
 
 Important things to mention:
-- loop
-- ro
+- loop - required to mount an image as a block device
+- ro - mount image in read-only mode - this should be sufficient and no `noatime` should be required, but it happened to me several times that even though `ro` was specified, atime was still updated (which led to disk image being changed...)
 - noatime - that one is very important - it means we **do not want to modify files/folders access time**. First: I have never seen a need to rely on access time for any purpose, and second: allowing mount to modify access times means **changing the image itself** so checking the file integrity of the image **will fail**.
 
 Mounting paritition from a multi-partition disk requires one additional step - enlisting all partitions as a loop device:
