@@ -115,7 +115,7 @@ To check if image contains single partition or multiple partitions use `fdisk`:
 
 Copying disk image content to partition has some drawback - this needs to touch each and single sector (or cell in case of SSD) of the disk. This may result in extra disk wear for SSDs. Sometimes it is enough to copy data from such an image to the destination partition. This seem to be super easy with data, but what to do in case of system partition (Linux)?
 
-In such a case it is best to use `rsync` as follows:
+In such a case it is best to use `rsync`:
 
 `rsync -axHAWXS --numeric-ids --info=progress2 <source> <destination>` 
 
@@ -123,6 +123,6 @@ In case you need explanation: [whole thread on SuperUser.com](https://superuser.
 
 # Summary
 
-This post presents how to build your workflow from small utilities, and do not rely on one big application. This approach is in line with "The Unix way" - create something small that does one thing very well, have bunch of such tools and build on top of them.
+This post presents how to build your workflow using small utilities, and not rely on one big application. This approach is inspired by ["The Unix way"/Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) - i.e. creating small utilities capable of solving one problem very well, have bunch of such tools and build on top of them.
 
-All utilities mentioned are pretty much standard tools & should be available in your distribution repository.
+All utilities mentioned are pretty much standard tools & should be available in your distribution's repository (I am not sure if/how many are available for OSX).
